@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -30,4 +30,63 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --BGCOLOR: #333;
+  --FONTCOLOR: whitesmoke;
+  --BORDERCOLOR: #333;
+  --LINKCOLOR: #fff;
+  --LINKHOVERCOLOR: #ccc;
+  --HIGHLIGHTCOLOR: #fff;
+}
+
+/* || GENERAL */
+body {
+  background-color: var(--BGCOLOR);
+  color: var(--FONTCOLOR);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--LINKCOLOR);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--LINKHOVERCOLOR);
+}
+
+/* || UTILITIES */
+.center {
+  text-align: center;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+/* || COMPONENTS */
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--BGCOLOR);
+  padding: 1rem;
+  border-bottom: 1px solid var(--BORDERCOLOR);
+}
+.navbar__ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  font-weight: bold;
 }
