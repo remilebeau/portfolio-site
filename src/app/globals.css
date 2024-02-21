@@ -1,4 +1,4 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -30,63 +30,60 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-} */
-
-/* || RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
-/* || VARIABLES */
-:root {
-  /* COLORS */
-  --BGCOLOR: #333;
-  --FONTCOLOR: whitesmoke;
-  --BORDERCOLOR: #333;
-  --LINKCOLOR: #fff;
-  --LINKHOVERCOLOR: #ccc;
-  --HIGHLIGHTCOLOR: #fff;
+/* || LAYOUT */
+
+/* HEADER */
+.header__h1 {
+  @apply text-3xl;
 }
 
-/* || GENERAL */
-body {
-  background-color: var(--BGCOLOR);
-  color: var(--FONTCOLOR);
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  font-size: 1.5rem;
+.header__nav {
+  @apply flex justify-center items-center;
 }
 
-a {
-  color: var(--LINKCOLOR);
-  text-decoration: none;
+.header__nav__ul {
+  @apply flex gap-4 text-xl;
 }
 
-a:hover {
-  color: var(--LINKHOVERCOLOR);
+.header__nav__li {
+  @apply cursor-pointer hover:text-gray-500;
 }
 
-/* || UTILITIES */
-.center {
-  text-align: center;
+/* MAIN */
+.main {
+  @apply min-h-screen flex flex-col justify-center items-center;
 }
-.nowrap {
-  white-space: nowrap;
+
+.main__h1 {
+  @apply text-5xl;
+}
+
+.main__h2 {
+  @apply text-4xl;
+}
+
+.main__p {
+  @apply text-3xl;
+}
+
+/* FOOTER */
+.footer {
+  @apply bg-slate-800 text-white p-4;
+}
+
+.footer__p {
+  @apply text-xl;
 }
 
 /* || COMPONENTS */
 
-/* NAVBAR */
-.navbar {
-  background-color: var(--BGCOLOR);
-  padding: 1rem;
-  border-bottom: 1px solid var(--BORDERCOLOR);
+/* REPOCARD */
+.repo-card {
+  @apply bg-slate-800 p-4 m-3 rounded-xl;
 }
-.navbar__ul {
-  list-style-type: none;
-  display: flex;
-  gap: 1rem;
-  font-weight: bold;
+
+.repo-card__h2 {
+  @apply font-bold;
 }
