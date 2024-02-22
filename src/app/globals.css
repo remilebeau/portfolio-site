@@ -51,7 +51,7 @@ body {
 }
 
 .header__nav {
-  @apply flex justify-center items-center;
+  @apply flex justify-center items-center bg-slate-800;
 }
 
 .header__nav__ul {
@@ -64,7 +64,7 @@ body {
 
 /* MAIN */
 .main {
-  @apply min-h-screen flex flex-col justify-center items-center;
+  @apply min-h-screen flex flex-col;
 }
 
 .main__h1 {
