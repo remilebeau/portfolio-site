@@ -1,6 +1,6 @@
 import React from "react";
 import RepoCard from "../components/RepoCard";
-import getRepos from "../lib/getRepos";
+import getRepos from "../lib/getRepo";
 
 export default async function ProjectPage() {
   const repos = await getRepos();

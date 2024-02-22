@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* || VARIABLES */
+
+/* LIGHT MODE COLORS */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
+/* DARK MODE COLORS */
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -26,13 +30,20 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* || UTILITIES */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .nowrap {
+    white-space: nowrap;
+  }
+  .center {
+    text-align: center;
+  }
 }
 
-/* || LAYOUT */
+/* || GENERAL LAYOUT */
 
 /* HEADER */
 .header__h1 {
