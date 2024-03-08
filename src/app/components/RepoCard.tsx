@@ -7,12 +7,12 @@ export default async function RepoCard({ repo }: { repo: string }) {
   const repoHost = getRepoHost(repo);
 
   return (
-    <section className="repo-card">
+    <section>
       <Link href={`https://github.com/${repo}`}>
-        <h2 className="repo-card__h2">{repo}</h2>
+        <h2>{repo}</h2>
       </Link>
-      <p className="repo-card__p">{repoDescription}</p>
-      <p className="repo-card__p">
+      <p>{repoDescription}</p>
+      <p>
         <a href={repoHost}>{repoHost}</a>
       </p>
     </section>
