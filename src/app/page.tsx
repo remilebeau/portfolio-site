@@ -3,8 +3,8 @@ export default function HomePage() {
     <main>
       <h1>Hello and welcome. I'm Remi.</h1>
       <p>
-        I am aspiring software developer with a financial background seeking to
-        change careers from finance into software development. Currently
+        I am an aspiring software developer with a financial background seeking
+        to change careers from finance into software development. Currently
         training in web development but also open to other areas of software
         development.
       </p>

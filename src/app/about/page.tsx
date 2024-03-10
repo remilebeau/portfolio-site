@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <main className="grid grid-cols-2">
+    <main className="grid grid-cols-3 gap-4 m-4 p-4">
       <Image
         src="/images/osu.svg"
         width={400}
         height={400}
         alt="Ohio State Buckeyes"
-        priority
       />
       <Image
+        className=" ease-out"
         src="/images/nintendo.svg"
         width={400}
         height={400}

@@ -8,12 +8,12 @@ export default function Header() {
     { name: "Projects", path: "/projects" },
   ];
   return (
-    <header>
-      <h1>Remi's Portfolio</h1>
-      <nav>
-        <ul>
+    <header className="flex flex-col gap-4 mx-4 my-8 bg-slate-800">
+      <h1 className="text-3xl font-bold">Remi's Portfolio</h1>
+      <nav className="">
+        <ul className="flex gap-8 text-lg justify-center">
           {links.map((link) => (
-            <li key={link.path}>
+            <li key={link.path} className="hover:text-orange-500">
               <Link href={link.path}>{link.name}</Link>
             </li>
           ))}
