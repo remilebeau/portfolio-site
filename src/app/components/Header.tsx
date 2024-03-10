@@ -9,7 +9,7 @@ export default function Header() {
   ];
   return (
     <header className="flex flex-col gap-4 mx-4 my-8 bg-slate-800">
-      <h1 className="text-3xl font-bold">Remi's Portfolio</h1>
+      <h1 className="text-3xl font-bold">Remi Lebeau</h1>
       <nav className="">
         <ul className="flex gap-8 text-lg justify-center">
           {links.map((link) => (
