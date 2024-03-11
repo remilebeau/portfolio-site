@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <main>
+    <main className="max-w-4xl mx-auto">
       <h1>Hello and welcome. I&apos;m Remi.</h1>
       <p>
         I am an aspiring software developer with a financial background seeking
