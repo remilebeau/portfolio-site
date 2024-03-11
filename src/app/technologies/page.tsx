@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function TechnologyPage() {
   return (
     <main className="grid grid-cols-5 place-items-center gap-4 m-4 p-4">
-      {/* languages */}
+      {/* || LANGUAGES: HTML, CSS, JS, TS, Python */}
       <Image src="./images/html.svg" width={400} height={400} alt="HTML" />
       <Image src="./images/css.svg" width={400} height={400} alt="CSS" />
       <Image
@@ -28,7 +28,7 @@ export default function TechnologyPage() {
         alt="Python"
       />
 
-      {/* mern apps individually */}
+      {/* || TECH STACKS: MERN and Next.js */}
       <Image
         src="./images/mongodb.svg"
         width={400}
@@ -45,27 +45,37 @@ export default function TechnologyPage() {
       <Image src="./images/react.svg" width={400} height={400} alt="React" />
       <Image src="./images/nodejs.svg" width={400} height={400} alt="NodeJS" />
 
-      {/* mern combined */}
-      {/* <Image src="./images/mern.svg" width={400} height={400} alt="MERN" /> */}
-
-      {/* frameworks */}
       <Image
-        className="invert col-span-5 place-self-center"
-        src="./images/nextjs.svg"
+        className="invert"
+        src="./images/nextjs-logo.svg"
         width={400}
         height={400}
         alt="NextJS"
       />
 
-      {/* addtional tools */}
-      {/* <Image src="./images/redux.svg" width={400} height={400} alt="Redux" />
+      {/* || ADDITIONAL TOOLS: Redux, SASS, Tailwind, Django, Flask */}
+      <Image src="./images/redux.svg" width={400} height={400} alt="Redux" />
       <Image src="./images/sass.svg" width={400} height={400} alt="SASS" />
       <Image
         src="./images/tailwind.svg"
         width={400}
         height={400}
         alt="Tailwind"
-      /> */}
+      />
+      <Image
+        className="rounded-xl"
+        src="./images/django.svg"
+        width={400}
+        height={400}
+        alt="Django"
+      />
+      <Image
+        className="invert"
+        src="./images/flask.svg"
+        width={400}
+        height={400}
+        alt="Flask"
+      />
     </main>
   );
 }
