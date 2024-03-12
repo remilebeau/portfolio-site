@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <main className="grid grid-cols-4 gap-4 m-4 p-4">
+    <main className="grid grid-cols-4 mt-auto place-items-center gap-4 m-4 p-4">
       <Image
         src="/images/osu.svg"
         width={400}
