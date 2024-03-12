@@ -23,11 +23,9 @@ export default function AboutPage() {
       />
       <Image src="/images/ubuntu.svg" width={400} height={400} alt="Ubuntu" />
       <Image src="/images/usa.svg" width={400} height={400} alt="USA" />
-      <Image src="/images/lebanon.svg" width={400} height={400} alt="Lebanon" />
       <Image src="/images/canada.svg" width={400} height={400} alt="Canada" />
+      <Image src="/images/lebanon.svg" width={400} height={400} alt="Lebanon" />
       <Image src="/images/france.svg" width={400} height={400} alt="France" />
-      {/* <Image src="/images/tux.svg" width={400} height={400} alt="Tux" /> */}
-      {/* <Image src="/images/popos.svg" width={400} height={400} alt="Popos" /> */}
     </main>
   );
 }
