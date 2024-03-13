@@ -75,8 +75,8 @@ export default function AboutPage() {
       >
         <Image src="/images/ubuntu.svg" width={400} height={400} alt="Ubuntu" />
         <p className="col-span-4">
-          Using Linux desktop since 2021. Advocate of Free and Open Source
-          Software.
+          Full-time Linux desktop user since 2021. Advocate of Free and Open
+          Source Software.
         </p>
       </article>
     </main>
