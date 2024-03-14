@@ -51,7 +51,7 @@ export default function AboutPage() {
           height={400}
           alt="PlayStation"
         />
-        <p className="col-span-2">
+        <p className="col-span-2 ">
           Gaming for over 20 years <br />
           Favorite console: Nintendo 64 <br />
           Favorite game: <br />
