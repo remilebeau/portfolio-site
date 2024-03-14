@@ -32,8 +32,9 @@ export default function AboutPage() {
           alt="Ohio State Buckeyes"
         />
         <p className="col-start-2">
-          Bachelor of Science in Business Administration, Finance; Summa Cum
-          Laude; 2020
+          BSBA <br />
+          Summa Cum Laude <br />
+          2020
         </p>
       </article>
 
@@ -53,18 +54,25 @@ export default function AboutPage() {
           alt="PlayStation"
         />
         <p className="col-span-2">
-          Avid gamer for over 20 years. Favorite console: Nintendo 64. Favorite
-          game: The Legend of Zelda: Ocarina of Time.
+          Avid gamer for over 20 years <br />
+          Favorite console: Nintendo 64 <br />
+          Favorite game: The Legend of Zelda: Ocarina of Time
         </p>
       </article>
 
       <hr />
 
       <article id="linux">
+        <Image
+          src="./images/debian.svg"
+          width={400}
+          height={400}
+          alt="Debian"
+        />
         <Image src="/images/ubuntu.svg" width={400} height={400} alt="Ubuntu" />
-        <p className="col-span-4">
-          Full-time Linux desktop user since 2021. Advocate of Free and Open
-          Source Software.
+        <p className="col-span-2">
+          Full-time Linux desktop user since 2021. <br />
+          Advocate of Free and Open Source Software.
         </p>
       </article>
     </main>
