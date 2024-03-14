@@ -2,9 +2,10 @@ import Image from "next/image";
 
 export default function TechnologyPage() {
   return (
-    <>
+    <main>
+      <h1>Technologies</h1>
       {/* || LANGUAGES: HTML, CSS, JS, TS, Python */}
-      <section className="grid grid-cols-5 place-items-center gap-4 m-4 p-4">
+      <article className="grid grid-cols-5 place-items-center gap-4 m-4 p-4">
         <Image src="./images/html.svg" width={400} height={400} alt="HTML" />
         <Image src="./images/css.svg" width={400} height={400} alt="CSS" />
         <Image
@@ -57,7 +58,28 @@ export default function TechnologyPage() {
           alt="NextJS"
         />
 
-        {/* || ADDITIONAL TOOLS: Django, Flask */}
+        {/* || ADDITIONAL TOOLS: Redux, Tailwind, SASS, Django, Flask */}
+        <Image
+          className="rounded-xl"
+          src="./images/redux.svg"
+          width={400}
+          height={400}
+          alt="Redux"
+        />
+        <Image
+          className="rounded-xl"
+          src="./images/tailwind.svg"
+          width={400}
+          height={400}
+          alt="Tailwind"
+        />
+        <Image
+          className="rounded-xl"
+          src="./images/sass.svg"
+          width={400}
+          height={400}
+          alt="SASS"
+        />
         <Image
           className="rounded-xl"
           src="./images/django.svg"
@@ -72,7 +94,7 @@ export default function TechnologyPage() {
           height={400}
           alt="Flask"
         />
-      </section>
-    </>
+      </article>
+    </main>
   );
 }
