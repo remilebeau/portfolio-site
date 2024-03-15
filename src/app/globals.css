@@ -27,7 +27,7 @@ article {
 }
 
 header {
-  @apply bg-slate-800 text-white sticky top-0 z-10;
+  @apply bg-slate-700 text-white sticky top-0 z-10;
 }
 
 .header__container {
@@ -47,7 +47,7 @@ li {
 }
 
 footer {
-  @apply fixed bottom-0 w-full text-center bg-slate-300 text-xl;
+  @apply fixed bottom-0 w-full text-center bg-slate-700 text-xl;
 }
 
 .footer__container {
