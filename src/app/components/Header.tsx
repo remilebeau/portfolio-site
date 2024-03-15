@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Header() {
   const links = [
@@ -11,6 +12,7 @@ export default function Header() {
     <header>
       <section className="header__container">
         <h1>Remi Lebeau</h1>
+        
         <nav>
           <ul>
             {links.map((link) => (
@@ -20,6 +22,22 @@ export default function Header() {
             ))}
           </ul>
         </nav>
+        <a
+          className="hover:opacity-90 text-3xl mr-4"
+          href="https://github.com/remilebeau"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
+        <a
+          className="hover:opacity-90 text-3xl ml-4"
+          href="mailto:remilebeau90@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaEnvelope />
+        </a>
       </section>
     </header>
   );
