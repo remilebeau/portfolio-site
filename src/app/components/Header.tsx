@@ -12,32 +12,21 @@ export default function Header() {
     <header>
       <section className="header__container">
         <h1>Remi Lebeau</h1>
-        
-        <nav>
-          <ul>
+        <div>
+          <button
+            id="mobile-open-button"
+            className="text-3xl sm:hidden focus:outline-none"
+          >
+            &#9776;
+          </button>
+          <nav aria-label="main">
             {links.map((link) => (
-              <li key={link.path}>
-                <Link href={link.path}>{link.name}</Link>
-              </li>
+              <Link key={link.path} href={link.path}>
+                {link.name}
+              </Link>
             ))}
-          </ul>
-        </nav>
-        <a
-          className="hover:opacity-90 text-3xl mr-4"
-          href="https://github.com/remilebeau"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a
-          className="hover:opacity-90 text-3xl ml-4"
-          href="mailto:remilebeau90@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaEnvelope />
-        </a>
+          </nav>
+        </div>
       </section>
     </header>
   );
