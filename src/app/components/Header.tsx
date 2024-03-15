@@ -9,8 +9,8 @@ export default function Header() {
   ];
   return (
     <header>
-      <h1>Remi Lebeau</h1>
       <section className="header__container">
+        <h1>Remi Lebeau</h1>
         <nav>
           <ul>
             {links.map((link) => (
