@@ -1,7 +1,16 @@
+"use client";
 import Link from "next/link";
 import { FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Header() {
+  const onMobileOpenButtonClicked = () => {
+    const mobileOpenButton = document.getElementById("mobile-open-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileOpenButton && mobileMenu) {
+      mobileOpenButton.classList.toggle("hidden");
+      mobileMenu.classList.toggle("hidden");
+    }
+  };
   const links = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -10,10 +19,11 @@ export default function Header() {
   ];
   return (
     <header>
-      <section className="header__container">
+      <section className="header-container">
         <h1>Remi Lebeau</h1>
         <div>
           <button
+            onClick={onMobileOpenButtonClicked}
             id="mobile-open-button"
             className="text-3xl sm:hidden focus:outline-none"
           >
