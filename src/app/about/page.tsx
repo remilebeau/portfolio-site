@@ -1,50 +1,32 @@
 import Image from "next/image";
+import lebanon from "../../../public/images/lebanon.svg";
+import canada from "../../../public/images/canada.svg";
+import usa from "../../../public/images/usa.svg";
+import france from "../../../public/images/france.svg";
+import osu from "../../../public/images/osu.svg";
+import nintendo from "../../../public/images/nintendo.svg";
+import ubuntu from "../../../public/images/ubuntu.svg";
 
 export default function AboutPage() {
-  const imageClasses = "mb-6";
   return (
     <main>
       <h2>About</h2>
       <section id="countries">
         <ul>
           <li>
-            <Image
-              src="/images/lebanon.svg"
-              width={400}
-              height={400}
-              alt="Lebanon"
-              className={imageClasses}
-            />
+            <Image src={lebanon} alt="Lebanon" />
             <p>Lebanese ethnicity</p>
           </li>
           <li>
-            <Image
-              src="/images/canada.svg"
-              width={400}
-              height={400}
-              alt="Canada"
-              className={imageClasses}
-            />
+            <Image src={canada} alt="Canada" />
             <p>Born in Canada</p>
           </li>
           <li>
-            <Image
-              src="/images/usa.svg"
-              width={400}
-              height={400}
-              alt="USA"
-              className={imageClasses}
-            />
+            <Image src={usa} alt="USA" />
             <p>Raised and living in Columbus, OH</p>
           </li>
           <li>
-            <Image
-              src="/images/france.svg"
-              width={400}
-              height={400}
-              alt="France"
-              className={imageClasses}
-            />
+            <Image src={france} alt="France" />
             <p>Additional languages: French</p>
           </li>
         </ul>
@@ -55,18 +37,10 @@ export default function AboutPage() {
       <section id="university">
         <ul>
           <li>
-            <Image
-              src="/images/osu.svg"
-              width={400}
-              height={400}
-              alt="Ohio State Buckeyes"
-              className={imageClasses}
-            />
-            <p>
-              BSBA <br />
-              Summa Cum Laude <br />
-              2020
-            </p>
+            <Image src={osu} alt="Ohio State Buckeyes" />
+            <p>Bachelor of Science in Business Administration</p>
+            <p>Summa Cum Laude</p>
+            <p>2020</p>
           </li>
         </ul>
       </section>
@@ -76,16 +50,13 @@ export default function AboutPage() {
       <section id="games">
         <ul>
           <li>
-            <Image
-              src="/images/nintendo.svg"
-              width={400}
-              height={400}
-              alt="Nintendo"
-              className={imageClasses}
-            />
+            <Image src={nintendo} alt="Nintendo" />
+
             <p>
-              Favorite hobby: Gaming <br />
-              Favorite console: Nintendo 64 <br />
+              Favorite console: <br />
+              Nintendo 64
+            </p>
+            <p>
               Favorite game: <br />
               The Legend of Zelda: Ocarina of Time
             </p>
@@ -98,17 +69,9 @@ export default function AboutPage() {
       <section id="linux">
         <ul>
           <li>
-            <Image
-              src="/images/ubuntu.svg"
-              width={400}
-              height={400}
-              alt="Ubuntu"
-              className={imageClasses}
-            />
-            <p>
-              Using Linux desktop since 2021 <br />
-              Advocate of Free and Open Source Software
-            </p>
+            <Image src={ubuntu} alt="Ubuntu" />
+            <p>Linux desktop user since 2021</p>
+            <p> Advocate of Free and Open Source Software</p>
           </li>
         </ul>
       </section>
