@@ -5,6 +5,7 @@
 body {
   @apply bg-slate-800 text-white min-h-screen;
 }
+
 header {
   @apply bg-slate-700 text-white sticky top-0 z-10;
 }
@@ -41,17 +42,8 @@ hr {
   @apply mx-auto bg-white w-1/2;
 }
 
-/* this section class reverses the flex-col */
-/* section {
-  @apply flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12;
-} */
-
 section {
   @apply flex flex-col justify-center sm:flex-row p-6 items-center gap-8 mb-12;
-}
-
-article {
-  @apply sm:w-1/2;
 }
 
 ul {
@@ -59,7 +51,7 @@ ul {
 }
 
 li {
-  @apply w-2/3 sm:w-5/6 flex flex-col items-center py-6 px-2 rounded-3xl shadow-xl;
+  @apply w-2/3 sm:w-5/6 flex flex-col items-center py-6 px-2 rounded-3xl;
 }
 
 footer {
@@ -71,5 +63,21 @@ footer {
 }
 
 .footer__nav {
-  @apply hidden md:flex flex-col gap-2;
+  @apply hidden sm:flex flex-col gap-2;
+}
+
+.mobile-menu {
+  @apply w-screen h-screen;
+}
+
+.mobile-menu__btn {
+  @apply text-6xl text-white fixed top-4 right-4 z-10;
+}
+
+.mobile-menu__ul {
+  @apply w-screen h-screen flex flex-col items-center justify-center gap-4;
+}
+
+.mobile-menu__li {
+  @apply p-4 text-3xl font-bold hover:opacity-90;
 }
