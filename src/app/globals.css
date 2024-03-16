@@ -29,6 +29,10 @@ h2 {
   @apply max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-white;
 }
 
+h3 {
+  @apply text-3xl text-center text-white;
+}
+
 p {
   @apply max-w-md text-2xl mt-4 text-center sm:text-left text-white;
 }
@@ -37,6 +41,7 @@ hr {
   @apply mx-auto bg-white w-1/2;
 }
 
+/* this section reverses the flex-col */
 /* section {
   @apply flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12;
 } */
@@ -54,7 +59,7 @@ ul {
 }
 
 li {
-  @apply w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 py-6 px-2 rounded-3xl shadow-xl;
+  @apply w-2/3 sm:w-5/6 flex flex-col items-center py-6 px-2 rounded-3xl shadow-xl;
 }
 
 footer {
@@ -63,8 +68,4 @@ footer {
 
 .footer-container {
   @apply max-w-4xl mx-auto flex flex-col sm:flex-row sm:justify-between;
-}
-
-Image {
-  @apply w-1/2 mb-6;
 }
