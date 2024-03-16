@@ -23,11 +23,11 @@ main {
 }
 
 h1 {
-  @apply text-3xl font-medium;
+  @apply text-5xl font-bold text-center sm:text-6xl text-white;
 }
 
 h2 {
-  @apply max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-white;
+  @apply max-w-md text-4xl font-bold text-center sm:text-4xl sm:text-left text-white;
 }
 
 h3 {

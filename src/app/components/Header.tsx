@@ -6,6 +6,7 @@ import { useState } from "react";
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
   const onMobileMenuButtonClicked = () => {
+    window.scrollTo(0, 0); // scroll to top of page
     setMobileMenu(!mobileMenu);
   };
   const onLinkClicked = () => {

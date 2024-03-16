@@ -10,7 +10,7 @@ import ubuntu from "../../../public/images/ubuntu.svg";
 export default function AboutPage() {
   return (
     <main>
-      <h2>About</h2>
+      <h1>About</h1>
       <section id="countries">
         <ul>
           <li>

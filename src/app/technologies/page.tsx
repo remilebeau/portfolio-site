@@ -1,100 +1,85 @@
 import Image from "next/image";
+import html from "../../../public/images/html.svg";
+import css from "../../../public/images/css.svg";
+import js from "../../../public/images/js.svg";
+import ts from "../../../public/images/ts.svg";
+import python from "../../../public/images/python.svg";
+import mongodb from "../../../public/images/mongodb.svg";
+import ex from "../../../public/images/ex.svg";
+import react from "../../../public/images/react.svg";
+import nodejs from "../../../public/images/nodejs.svg";
+import nextjs from "../../../public/images/nextjs.svg";
+import redux from "../../../public/images/redux.svg";
+import tailwind from "../../../public/images/tailwind.svg";
+import sass from "../../../public/images/sass.svg";
+import django from "../../../public/images/django.svg";
+import flask from "../../../public/images/flask.svg";
 
 export default function TechnologyPage() {
   return (
     <main>
       <h1>Technologies</h1>
-      {/* || LANGUAGES: HTML, CSS, JS, TS, Python */}
-      <article className="grid grid-cols-5 place-items-center gap-4 m-4 p-4">
-        <Image src="./images/html.svg" width={400} height={400} alt="HTML" />
-        <Image src="./images/css.svg" width={400} height={400} alt="CSS" />
-        <Image
-          className="rounded-xl"
-          src="./images/js.svg"
-          width={400}
-          height={400}
-          alt="JS"
-        />
-        <Image
-          className="rounded-xl"
-          src="./images/ts.svg"
-          width={400}
-          height={400}
-          alt="TS"
-        />
-        <Image
-          src="./images/python.svg"
-          width={400}
-          height={400}
-          alt="Python"
-        />
+      <section>
+        <h2>Languages</h2>
+        <ul>
+          {/* || LANGUAGES: HTML, CSS, JS, TS, Python */}
+          <li>
+            <Image src={html} alt="HTML" />
+          </li>
+          <li>
+            <Image src={css} alt="CSS" />
+          </li>
+          <li>
+            <Image className="rounded-xl" src={js} alt="JS" />
+          </li>
+          <li>
+            <Image className="rounded-xl" src={ts} alt="TS" />
+          </li>
+          <li>
+            <Image src={python} alt="Python" />
+          </li>
+        </ul>
 
-        {/* || TECH STACKS: MERN, Next.js */}
-        <Image
-          src="./images/mongodb.svg"
-          width={400}
-          height={400}
-          alt="MongoDB"
-        />
-        <Image
-          className="invert"
-          src="./images/ex.svg"
-          width={400}
-          height={400}
-          alt="Express"
-        />
-        <Image src="./images/react.svg" width={400} height={400} alt="React" />
-        <Image
-          src="./images/nodejs.svg"
-          width={400}
-          height={400}
-          alt="NodeJS"
-        />
-        <Image
-          className="invert"
-          src="./images/nextjs-logo.svg"
-          width={400}
-          height={400}
-          alt="NextJS"
-        />
+        <h2>Stacks and Frameworks</h2>
+        <ul>
+          {/* || STACKS AND FRAMEWORKS: MERN, Next.js, Django, Flask */}
+          <li>
+            <Image src={mongodb} alt="MongoDB" />
+          </li>
+          <li>
+            <Image src={ex} alt="Express" className="invert" />
+          </li>
+          <li>
+            <Image src={react} alt="React" width={400} />
+          </li>
+          <li>
+            <Image src={nodejs} alt="Node.js" />
+          </li>
+          <li>
+            <Image src={nextjs} alt="Next.js" className="invert" />
+          </li>
+          <li>
+            <Image src={django} alt="Django" />
+          </li>
+          <li>
+            <Image src={flask} alt="Flask" className="invert" />
+          </li>
+        </ul>
 
-        {/* || ADDITIONAL TOOLS: Redux, Tailwind, SASS, Django, Flask */}
-        <Image
-          className="rounded-xl"
-          src="./images/redux.svg"
-          width={400}
-          height={400}
-          alt="Redux"
-        />
-        <Image
-          className="rounded-xl"
-          src="./images/tailwind.svg"
-          width={400}
-          height={400}
-          alt="Tailwind"
-        />
-        <Image
-          className="rounded-xl"
-          src="./images/sass.svg"
-          width={400}
-          height={400}
-          alt="SASS"
-        />
-        <Image
-          className="rounded-xl"
-          src="./images/django.svg"
-          width={400}
-          height={400}
-          alt="Django"
-        />
-        <Image
-          className="invert"
-          src="./images/flask.svg"
-          width={400}
-          height={400}
-          alt="Flask"
-        />
-      </article>
+        <h2>Additional Tools</h2>
+        <ul>
+          {/* || ADDITIONAL TOOLS: Redux, Tailwind, Sass, Django, Flask */}
+          <li>
+            <Image src={redux} alt="Redux" />
+          </li>
+          <li>
+            <Image src={tailwind} alt="Tailwind" width={400} />
+          </li>
+          <li>
+            <Image src={sass} alt="Sass" />
+          </li>
+        </ul>
+      </section>
     </main>
   );
 }
