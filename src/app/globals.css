@@ -54,6 +54,10 @@ li {
   @apply w-2/3 sm:w-5/6 flex flex-col items-center py-6 px-2 rounded-3xl;
 }
 
+a {
+  @apply hover:opacity-90;
+}
+
 footer {
   @apply bg-slate-700 text-xl;
 }
