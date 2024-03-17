@@ -23,7 +23,7 @@ export default function AboutPage() {
           </li>
           <li>
             <Image src={usa} alt="USA" />
-            <p>Raised and living in Columbus, OH</p>
+            <p>Grew up and currently located in Columbus, OH</p>
           </li>
           <li>
             <Image src={france} alt="France" />
