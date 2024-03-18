@@ -85,3 +85,13 @@ footer {
 .mobile-menu__li {
   @apply p-4 text-3xl font-bold hover:opacity-90;
 }
+
+/* || UTILITY CLASSES */
+
+.nowrap {
+  @apply whitespace-nowrap;
+}
+
+.offscreen {
+  @apply absolute -z-10;
+}

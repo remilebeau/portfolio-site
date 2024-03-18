@@ -39,8 +39,7 @@ export default function AboutPage() {
           <li>
             <Image src={osu} alt="Ohio State Buckeyes" />
             <p>Bachelor of Science in Business Administration</p>
-            <p>Summa Cum Laude</p>
-            <p>2020</p>
+            <p className="italic">Summa Cum Laude</p>
           </li>
         </ul>
       </section>
@@ -52,13 +51,12 @@ export default function AboutPage() {
           <li>
             <Image src={nintendo} alt="Nintendo" />
 
-            <p>
-              Favorite console: <br />
-              Nintendo 64
+            <p className="nowrap">
+              Favorite console: <i>Nintendo 64</i>
             </p>
-            <p>
+            <p className="nowrap">
               Favorite game: <br />
-              The Legend of Zelda: Ocarina of Time
+              <i>The Legend of Zelda: Ocarina of Time</i>
             </p>
           </li>
         </ul>
@@ -70,8 +68,8 @@ export default function AboutPage() {
         <ul>
           <li>
             <Image src={ubuntu} alt="Ubuntu" />
-            <p>Linux desktop user since 2021</p>
-            <p> Advocate of Free and Open Source Software</p>
+            <p className="nowrap">Linux desktop user since 2021</p>
+            <p>Advocate of Free and Open Source Software</p>
           </li>
         </ul>
       </section>
