@@ -19,7 +19,7 @@ export default function TechnologyPage() {
   return (
     <main>
       <h1>Technologies</h1>
-      <section>
+      <section id="languages">
         <h2>Languages</h2>
         <ul>
           {/* || LANGUAGES: HTML, CSS, JS, TS, Python */}
@@ -39,7 +39,9 @@ export default function TechnologyPage() {
             <Image src={python} alt="Python" />
           </li>
         </ul>
+      </section>
 
+      <section id="stacks-and-frameworks">
         <h2>Stacks and Frameworks</h2>
         <ul>
           {/* || STACKS AND FRAMEWORKS: MERN, Next.js, Django, Flask */}
@@ -65,10 +67,12 @@ export default function TechnologyPage() {
             <Image src={flask} alt="Flask" className="invert" />
           </li>
         </ul>
+      </section>
 
+      <section id="additional-tools">
         <h2>Additional Tools</h2>
         <ul>
-          {/* || ADDITIONAL TOOLS: Redux, Tailwind, Sass, Django, Flask */}
+          {/* || ADDITIONAL TOOLS: Redux, Tailwind, Sass */}
           <li>
             <Image src={redux} alt="Redux" />
           </li>
