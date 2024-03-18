@@ -55,7 +55,7 @@ li {
 }
 
 a {
-  @apply hover:opacity-90;
+  @apply hover:opacity-90 font-bold;
 }
 
 footer {
