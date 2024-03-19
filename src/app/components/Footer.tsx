@@ -7,12 +7,12 @@ export default function Footer() {
             <p className="font-bold hover:opacity-90">remilebeau90@gmail.com</p>
           </a>
         </nav>
-        <div className="flex flex-col sm:gap-2">
+        {/* <div className="flex flex-col sm:gap-2">
           <p className="text-right">
             Copyright &copy; <span id="year">2024</span>
           </p>
           <p className="text-right">All Rights Reserved</p>
-        </div>
+        </div> */}
       </section>
     </footer>
   );

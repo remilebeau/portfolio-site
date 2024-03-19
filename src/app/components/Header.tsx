@@ -50,23 +50,32 @@ export default function Header() {
   // disabled by clicking a Link or pressing the X button
   else
     content = (
-      <header>
-        <section className="header-container">
-          <h1>Remi Lebeau</h1>
-          <button
-            onClick={onMobileMenuButtonClicked}
-            id="mobile-open-button"
-            className="text-3xl sm:hidden focus:outline-none"
-          >
-            &#9776;
-          </button>
-          <nav aria-label="main">
-            {links.map((link) => (
-              <Link key={link.path} href={link.path}>
-                {link.name}
-              </Link>
-            ))}
-          </nav>
+      <header className="bg-teal-700 text-white sticky top-0 z-10">
+        <section className="max-w-4xl mx-auto p-4 flex justify-between items-center">
+          <h1 className="text-3xl font-medium">Remi Lebeau</h1>
+          <div>
+            <button
+              onClick={onMobileMenuButtonClicked}
+              id="mobile-open-button"
+              className="text-3xl sm:hidden focus:outline-none"
+            >
+              &#9776;
+            </button>
+            <nav
+              className="hidden sm:block space-x-8 text-xl"
+              aria-label="main"
+            >
+              {links.map((link) => (
+                <Link
+                  key={link.path}
+                  href={link.path}
+                  className="hover:opacity-90"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </nav>
+          </div>
         </section>
       </header>
     );

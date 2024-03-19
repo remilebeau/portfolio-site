@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   @apply bg-slate-800 text-white min-h-screen;
 }
 
@@ -71,7 +71,7 @@ footer {
 }
 
 .mobile-menu {
-  @apply w-screen h-screen;
+  @apply w-full h-full;
 }
 
 .mobile-menu__btn {
@@ -79,19 +79,9 @@ footer {
 }
 
 .mobile-menu__ul {
-  @apply w-screen h-screen flex flex-col items-center justify-center gap-4;
+  @apply w-full h-full flex flex-col items-center justify-center gap-4;
 }
 
 .mobile-menu__li {
   @apply p-4 text-3xl font-bold hover:opacity-90;
-}
-
-/* || UTILITY CLASSES */
-
-.nowrap {
-  @apply whitespace-nowrap;
-}
-
-.offscreen {
-  @apply absolute -z-10;
-}
+} */

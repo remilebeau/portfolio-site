@@ -41,10 +41,12 @@ export default function TechnologyPage() {
         </ul>
       </section>
 
-      <section id="stacks-and-frameworks">
-        <h2>Stacks and Frameworks</h2>
+      <hr />
+
+      <section id="libraries-and-frameworks">
+        <h2>Libraries and Frameworks</h2>
         <ul>
-          {/* || STACKS AND FRAMEWORKS: MERN, Next.js, Django, Flask */}
+          {/* || LIBRARIES AND FRAMEWORKS: MERN, Next.js, Django, Flask */}
           <li>
             <Image src={mongodb} alt="MongoDB" />
           </li>
@@ -68,6 +70,8 @@ export default function TechnologyPage() {
           </li>
         </ul>
       </section>
+
+      <hr />
 
       <section id="additional-tools">
         <h2>Additional Tools</h2>

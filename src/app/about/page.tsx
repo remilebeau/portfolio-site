@@ -10,51 +10,63 @@ import ubuntu from "../../../public/images/ubuntu.svg";
 export default function AboutPage() {
   return (
     <main>
-      <h1>About</h1>
-      <section id="countries">
-        <ul>
-          <li>
-            <Image src={lebanon} alt="Lebanon" />
-            <p>Lebanese ethnicity</p>
+      <section id="countries" className="p-6 my-12">
+        <h2 className="text-4xl font-bold text-center sm:text-5xl mb-6 text-white">
+          About
+        </h2>
+        <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
+            <Image src={lebanon} alt="Lebanon" className="w-1/2 mb-6" />
+            <h3 className="text-3xl text-center text-white">
+              Lebanese ethnicity
+            </h3>
           </li>
-          <li>
-            <Image src={canada} alt="Canada" />
-            <p>Born in Canada</p>
+          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
+            <Image src={canada} alt="Canada" className="w-1/2 mb-6" />
+            <h3 className="text-3xl text-center text-white">Born in Canada</h3>
           </li>
-          <li>
-            <Image src={usa} alt="USA" />
-            <p>Grew up and currently located in Columbus, OH</p>
+          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
+            <Image src={usa} alt="USA" className="w-1/2 mb-6" />
+            <h3 className="text-3xl text-center text-white">
+              Grew up and located in Columbus, OH
+            </h3>
           </li>
-          <li>
-            <Image src={france} alt="France" />
-            <p>Additional languages: French</p>
-          </li>
-        </ul>
-      </section>
-
-      <hr />
-
-      <section id="university">
-        <ul>
-          <li>
-            <Image src={osu} alt="Ohio State Buckeyes" />
-            <p>Bachelor of Science in Business Administration</p>
-            <p className="italic">Summa Cum Laude</p>
+          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
+            <Image src={france} alt="France" className="w-1/2 mb-6" />
+            <h3 className="text-3xl text-center text-white">
+              Additional languages: French
+            </h3>
           </li>
         </ul>
       </section>
 
-      <hr />
+      <hr className="mx-auto bg-white w-1/2" />
 
-      <section id="games">
-        <ul>
-          <li>
-            <Image src={nintendo} alt="Nintendo" />
+      <section id="university" className="p-6 my-12">
+        <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
+            <Image src={osu} alt="Ohio State Buckeyes" className="w-1/2 mb-6" />
+            <h3 className="text-3xl text-center text-white">
+              Bachelor of Science in Business Administration
+            </h3>
+            <p className="italic text-3xl text-center text-white">
+              Summa Cum Laude
+            </p>
+            <p className="italic text-3xl text-center text-white">2020</p>
+          </li>
+        </ul>
+      </section>
 
-            <p className="nowrap">
+      <hr className="mx-auto bg-white w-1/2" />
+
+      <section id="games" className="p-6 my-12">
+        <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
+            <Image src={nintendo} alt="Nintendo" className="w-1/2 mb-6" />
+            <p className="text-3xl text-center text-white">
               Favorite console: <i>Nintendo 64</i>
             </p>
-            <p className="nowrap">
+            <p className="text-3xl text-center text-white">
               Favorite game: <br />
               <i>The Legend of Zelda: Ocarina of Time</i>
             </p>
@@ -62,14 +74,18 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <hr />
+      <hr className="mx-auto bg-white w-1/2" />
 
-      <section id="linux">
-        <ul>
-          <li>
-            <Image src={ubuntu} alt="Ubuntu" />
-            <p className="nowrap">Linux desktop user since 2021</p>
-            <p>Advocate of Free and Open Source Software</p>
+      <section id="linux" className="p-6 my-12">
+        <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
+            <Image src={ubuntu} alt="Ubuntu" className="w-1/2 mb-6" />
+            <p className="text-3xl text-center text-white">
+              Linux desktop user since 2021
+            </p>
+            <p className="text-3xl text-center text-white">
+              Advocate of Free and Open Source Software
+            </p>
           </li>
         </ul>
       </section>
