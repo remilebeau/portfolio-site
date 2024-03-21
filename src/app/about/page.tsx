@@ -24,13 +24,13 @@ export default function AboutPage() {
     {
       name: "USA",
       image: usa,
-      caption: ["Grew up and located in Columbus, OH"],
+      caption: ["Raised and located in Columbus, OH"],
       className: "",
     },
     {
       name: "France",
       image: france,
-      caption: ["Additional languages: French"],
+      caption: ["Additional languages: French, Arabic"],
       className: "",
     },
   ];
