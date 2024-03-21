@@ -25,22 +25,22 @@ export default function Header() {
     content = (
       <section
         id="mobile-menu"
-        className="bg-teal-700 absolute top-0 w-full text-5xl flex flex-col justify-center origin-top animate-open-menu"
+        className="absolute top-0 flex w-full origin-top animate-open-menu flex-col justify-center bg-teal-700 text-5xl"
       >
         <button
           onClick={onMobileMenuButtonClicked}
           id="mobile-close-button"
-          className="text-8xl self-end px-6"
+          className="self-end px-6 text-8xl"
         >
           &times;
         </button>
         <nav
-          className="flex flex-col min-h-screen items-center py-8"
+          className="flex min-h-screen flex-col items-center py-8"
           aria-label="mobile"
         >
           {links.map((link) => (
             <Link
-              className="w-full text-center py-6 hover:opacity-90"
+              className="w-full py-6 text-center hover:opacity-90"
               key={link.path}
               onClick={onLinkClicked}
               href={link.path}
@@ -56,8 +56,8 @@ export default function Header() {
   // disabled by clicking a Link or pressing the X button
   else
     content = (
-      <header className="bg-teal-700 text-white sticky top-0 z-10">
-        <section className="max-w-4xl mx-auto p-4 flex justify-between items-center">
+      <header className="sticky top-0 z-10 bg-teal-700 text-white">
+        <section className="mx-auto flex max-w-4xl items-center justify-between p-4">
           <h1 className="text-3xl font-medium">Remi Lebeau</h1>
           <button
             onClick={onMobileMenuButtonClicked}
@@ -66,7 +66,7 @@ export default function Header() {
           >
             &#9776;
           </button>
-          <nav className="hidden md:block space-x-8 text-xl" aria-label="main">
+          <nav className="hidden space-x-8 text-xl md:block" aria-label="main">
             {links.map((link) => (
               <Link
                 key={link.path}

@@ -61,18 +61,18 @@ export default function AboutPage() {
   const images = [...countries, ...school, ...hobbies];
   return (
     <main>
-      <h2 className="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-white m-4">
+      <h2 className="m-4 max-w-md text-center text-4xl font-bold text-white sm:text-left sm:text-5xl">
         About
       </h2>
       <section
         id="about"
-        className="flex flex-col justify-center sm:flex-row p-6 items-center gap-8 mb-12 widescreen:section-min-height tallscreen:section-min-height"
+        className="widescreen:section-min-height tallscreen:section-min-height mb-12 flex flex-col items-center justify-center gap-8 p-6 sm:flex-row"
       >
-        <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8 sm:grid sm:grid-cols-3">
+        <ul className="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:grid sm:grid-cols-3 sm:flex-row">
           {images.map((image) => (
             <li
               key={image.name}
-              className="w-2/3 sm:w-5/6 marker:flex flex-col items-center py-6 px-2 rounded-3xl shadow-xl"
+              className="w-2/3 flex-col items-center rounded-3xl px-2 py-6 shadow-xl marker:flex sm:w-5/6"
             >
               <Image
                 src={image.image}
@@ -84,7 +84,7 @@ export default function AboutPage() {
 
               {image.caption.map((line) => (
                 <figcaption
-                  className="p-2 w-full text-2xl font-bold"
+                  className="w-full p-2 text-2xl font-bold"
                   key={line}
                 >
                   {line}
