@@ -23,25 +23,32 @@ export default function Header() {
   // dropdown mobileMenu enabled
   if (mobileMenu) {
     content = (
-      <section className="bg-teal-700 min-h-screen">
+      <section
+        id="mobile-menu"
+        className="bg-teal-700 absolute top-0 w-full text-5xl flex flex-col justify-center origin-top animate-open-menu"
+      >
         <button
           onClick={onMobileMenuButtonClicked}
           id="mobile-close-button"
-          className="text-6xl sm:hidden"
+          className="text-8xl self-end px-6"
         >
           &times;
         </button>
-        <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8 text-4xl">
+        <nav
+          className="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
           {links.map((link) => (
-            <li
-              className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl font-bold"
+            <Link
+              className="w-full text-center py-6 hover:opacity-90"
               key={link.path}
               onClick={onLinkClicked}
+              href={link.path}
             >
-              <Link href={link.path}>{link.name}</Link>
-            </li>
+              {link.name}
+            </Link>
           ))}
-        </ul>
+        </nav>
       </section>
     );
   }
@@ -55,11 +62,11 @@ export default function Header() {
           <button
             onClick={onMobileMenuButtonClicked}
             id="mobile-open-button"
-            className="text-3xl sm:hidden focus:outline-none"
+            className="text-3xl md:hidden"
           >
             &#9776;
           </button>
-          <nav className="hidden sm:block space-x-8 text-xl" aria-label="main">
+          <nav className="hidden md:block space-x-8 text-xl" aria-label="main">
             {links.map((link) => (
               <Link
                 key={link.path}

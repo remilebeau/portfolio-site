@@ -70,7 +70,10 @@ export default function AboutPage() {
       >
         <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8 sm:grid sm:grid-cols-3">
           {images.map((image) => (
-            <li key={image.name}>
+            <li
+              key={image.name}
+              className="w-2/3 sm:w-5/6 marker:flex flex-col items-center py-6 px-2 rounded-3xl shadow-xl"
+            >
               <Image
                 src={image.image}
                 alt={image.name}
