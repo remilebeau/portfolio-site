@@ -3,7 +3,7 @@ export default function HomePage() {
     <main className="max-w-4xl mx-auto">
       <section
         id="welcome"
-        className="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12"
+        className="flex flex-col justify-center sm:flex-row p-6 items-center gap-8 mb-12 widescreen:section-min-height tallscreen:section-min-height"
       >
         <article className="sm:w-1/2">
           <h2 className="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-white">

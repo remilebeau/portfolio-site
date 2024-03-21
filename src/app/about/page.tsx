@@ -8,85 +8,87 @@ import nintendo from "../../../public/images/nintendo.svg";
 import ubuntu from "../../../public/images/ubuntu.svg";
 
 export default function AboutPage() {
+  const countries = [
+    {
+      name: "Lebanon",
+      image: lebanon,
+      caption: ["Lebanese ethnicity"],
+      className: "",
+    },
+    {
+      name: "Canada",
+      image: canada,
+      caption: ["Born in Canada"],
+      className: "",
+    },
+    {
+      name: "USA",
+      image: usa,
+      caption: ["Grew up and located in Columbus, OH"],
+      className: "",
+    },
+    {
+      name: "France",
+      image: france,
+      caption: ["Additional languages: French"],
+      className: "",
+    },
+  ];
+  const school = [
+    {
+      name: "OSU",
+      image: osu,
+      caption: ["BSBA, Summa Cum Laude, 2020"],
+      className: "",
+    },
+  ];
+
+  const hobbies = [
+    {
+      name: "Nintendo",
+      image: nintendo,
+      caption: ["Favorite consoles: N64, Switch"],
+      className: "",
+    },
+    {
+      name: "Ubuntu",
+      image: ubuntu,
+      caption: ["Favorite operating system: Linux"],
+      className: "",
+    },
+  ];
+
+  const images = [...countries, ...school, ...hobbies];
   return (
     <main>
-      <section id="countries" className="p-6 my-12">
-        <h2 className="text-4xl font-bold text-center sm:text-5xl mb-6 text-white">
-          About
-        </h2>
-        <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
-            <Image src={lebanon} alt="Lebanon" className="w-1/2 mb-6" />
-            <h3 className="text-3xl text-center text-white">
-              Lebanese ethnicity
-            </h3>
-          </li>
-          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
-            <Image src={canada} alt="Canada" className="w-1/2 mb-6" />
-            <h3 className="text-3xl text-center text-white">Born in Canada</h3>
-          </li>
-          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
-            <Image src={usa} alt="USA" className="w-1/2 mb-6" />
-            <h3 className="text-3xl text-center text-white">
-              Grew up and located in Columbus, OH
-            </h3>
-          </li>
-          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
-            <Image src={france} alt="France" className="w-1/2 mb-6" />
-            <h3 className="text-3xl text-center text-white">
-              Additional languages: French
-            </h3>
-          </li>
-        </ul>
-      </section>
+      <h2 className="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-white m-4">
+        About
+      </h2>
+      <section
+        id="about"
+        className="flex flex-col justify-center sm:flex-row p-6 items-center gap-8 mb-12 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8 sm:grid sm:grid-cols-3">
+          {images.map((image) => (
+            <li key={image.name}>
+              <Image
+                src={image.image}
+                alt={image.name}
+                width={400}
+                height={400}
+                className={image.className}
+              />
 
-      <hr className="mx-auto bg-white w-1/2" />
-
-      <section id="university" className="p-6 my-12">
-        <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
-            <Image src={osu} alt="Ohio State Buckeyes" className="w-1/2 mb-6" />
-            <h3 className="text-3xl text-center text-white">
-              Bachelor of Science in Business Administration
-            </h3>
-            <p className="italic text-3xl text-center text-white">
-              Summa Cum Laude
-            </p>
-            <p className="italic text-3xl text-center text-white">2020</p>
-          </li>
-        </ul>
-      </section>
-
-      <hr className="mx-auto bg-white w-1/2" />
-
-      <section id="games" className="p-6 my-12">
-        <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
-            <Image src={nintendo} alt="Nintendo" className="w-1/2 mb-6" />
-            <p className="text-3xl text-center text-white">
-              Favorite console: <i>Nintendo 64</i>
-            </p>
-            <p className="text-3xl text-center text-white">
-              Favorite game: <br />
-              <i>The Legend of Zelda: Ocarina of Time</i>
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <hr className="mx-auto bg-white w-1/2" />
-
-      <section id="linux" className="p-6 my-12">
-        <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-          <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-gray-100 py-6 px-2 rounded-3xl shadow-xl">
-            <Image src={ubuntu} alt="Ubuntu" className="w-1/2 mb-6" />
-            <p className="text-3xl text-center text-white">
-              Linux desktop user since 2021
-            </p>
-            <p className="text-3xl text-center text-white">
-              Advocate of Free and Open Source Software
-            </p>
-          </li>
+              {image.caption.map((line) => (
+                <figcaption
+                  className="p-2 w-full text-2xl font-bold"
+                  key={line}
+                >
+                  {line}
+                </figcaption>
+              ))}
+            </li>
+          ))}
         </ul>
       </section>
     </main>

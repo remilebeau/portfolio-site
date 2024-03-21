@@ -13,10 +13,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      // screens: {
-      //   widescreen: { raw: "(min-aspect-ratio: 3/2)" },
-      //   tallscreen: { raw: "(max-aspect-ratio: 13/20)" },
-      // },
+      screens: {
+        widescreen: { raw: "(min-aspect-ratio: 3/2)" },
+        tallscreen: { raw: "(min-aspect-ratio: 13/20)" },
+      },
       keyframes: {
         "open-menu": {
           "0%": { transform: "scaleY(0)" },

@@ -1,18 +1,27 @@
+import { FaGithub, FaEnvelope } from "react-icons/fa";
 export default function Footer() {
   return (
-    <footer>
-      <section className="footer-container">
-        <nav aria-label="footer">
-          <a href="mailto:remilebeau90@gmail.com">
-            <p className="font-bold hover:opacity-90">remilebeau90@gmail.com</p>
+    <footer id="footer" className="bg-teal-700 text-white p-6">
+      <section className="max-w-4xl mx-auto">
+        <nav
+          className="flex flex-col gap-2 items-center sm:flex-row"
+          aria-label="footer"
+        >
+          <a
+            href="https://github.com/remilebeau"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub className="text-4xl" />
+          </a>
+          <a
+            href="mailto:remilebeau90@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaEnvelope className="text-4xl" />
           </a>
         </nav>
-        {/* <div className="flex flex-col sm:gap-2">
-          <p className="text-right">
-            Copyright &copy; <span id="year">2024</span>
-          </p>
-          <p className="text-right">All Rights Reserved</p>
-        </div> */}
       </section>
     </footer>
   );
