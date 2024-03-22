@@ -58,7 +58,7 @@ export default function Header() {
     content = (
       <header className="sticky top-0 z-10 bg-teal-700 text-white">
         <section className="mx-auto flex max-w-4xl items-center justify-between p-4">
-          <h1 className="text-3xl font-medium">Remi Lebeau</h1>
+          <h1 className="text-3xl font-medium">Wes S</h1>
           <button
             onClick={onMobileMenuButtonClicked}
             id="mobile-open-button"
