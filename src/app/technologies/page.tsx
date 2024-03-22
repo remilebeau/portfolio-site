@@ -15,6 +15,7 @@ import sass from "../../../public/images/sass.svg";
 import django from "../../../public/images/django.svg";
 import flask from "../../../public/images/flask.svg";
 import ubuntu from "../../../public/images/ubuntu.svg";
+import docker from "../../../public/images/docker.svg";
 
 export default function TechnologyPage() {
   const images = [
@@ -96,6 +97,11 @@ export default function TechnologyPage() {
     {
       name: "Ubuntu",
       image: ubuntu,
+      className: "",
+    },
+    {
+      name: "Docker",
+      image: docker,
       className: "",
     },
   ];
