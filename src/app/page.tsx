@@ -11,8 +11,18 @@ export default function HomePage() {
           </h2>
         </article>
         <p className="mt-4 max-w-md text-center text-2xl sm:text-left">
-          I&apos;m an aspiring software developer with a financial background
-          seeking to change careers from finance into web development.
+          I&apos;m an aspiring web developer with a financial background seeking
+          to change careers from finance into web development.
+        </p>
+        <p className="mt-4 max-w-md text-center text-2xl sm:text-left">
+          My web development experience is focused on JavaScript and Python. I
+          have built projects using the MERN Stack (MongoDB, Express, React,
+          Node), Next.js, and Django.
+        </p>
+        <p className="mt-4 max-w-md text-center text-2xl sm:text-left">
+          However, I am open to learning other web development technologies such
+          as Ruby/Rails, Elixir/Phoenix, Go, or anything else required to
+          complete the task.
         </p>
       </section>
     </main>

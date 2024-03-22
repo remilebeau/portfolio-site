@@ -14,6 +14,7 @@ export default function Footer() {
         >
           <FaGithub className="text-4xl hover:opacity-90" />
         </a>
+        <p>Website by Remi Lebeau</p>
         <a
           href="mailto:remilebeau90@gmail.com"
           target="_blank"

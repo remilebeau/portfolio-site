@@ -5,7 +5,6 @@ import usa from "../../../public/images/usa.svg";
 import france from "../../../public/images/france.svg";
 import osu from "../../../public/images/osu.svg";
 import nintendo from "../../../public/images/nintendo.svg";
-import ubuntu from "../../../public/images/ubuntu.svg";
 
 export default function AboutPage() {
   const countries = [
@@ -48,12 +47,6 @@ export default function AboutPage() {
       name: "Nintendo",
       image: nintendo,
       caption: ["Favorite consoles: N64, Switch"],
-      className: "",
-    },
-    {
-      name: "Ubuntu",
-      image: ubuntu,
-      caption: ["Favorite operating system: Linux"],
       className: "",
     },
   ];

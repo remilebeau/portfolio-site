@@ -14,6 +14,7 @@ import tailwind from "../../../public/images/tailwind.svg";
 import sass from "../../../public/images/sass.svg";
 import django from "../../../public/images/django.svg";
 import flask from "../../../public/images/flask.svg";
+import ubuntu from "../../../public/images/ubuntu.svg";
 
 export default function TechnologyPage() {
   const images = [
@@ -91,6 +92,11 @@ export default function TechnologyPage() {
       name: "Flask",
       image: flask,
       className: "invert",
+    },
+    {
+      name: "Ubuntu",
+      image: ubuntu,
+      className: "",
     },
   ];
 
