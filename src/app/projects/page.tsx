@@ -1,8 +1,8 @@
 import Image from "next/image";
-import mernCreateNote from "../../../public/images/mernCreateNote.png";
 import mernLoginPage from "../../../public/images/mernLoginPage.png";
 import studybudHomepage from "../../../public/images/studybudHomepage.png";
 import wikiRocket from "../../../public/images/wikiRocket.png";
+import djangoBlog from "../../../public/images/djangoBlog.png";
 
 export default function ProjectPage() {
   const projects = [
@@ -14,17 +14,23 @@ export default function ProjectPage() {
       link: "https://technotes-op6s.onrender.com",
     },
     {
+      title: "Next.js: WikiRocket",
+      description:
+        "A Next.js app that searches Wikipedia for the given search query",
+      image: wikiRocket,
+      link: "https://nextjs-wikirocket-black.vercel.app/",
+    },
+    {
       title: "Django: Studybud",
       description: "A CRUD app where users create and join study rooms",
       image: studybudHomepage,
       link: "https://studybud-0egb.onrender.com",
     },
     {
-      title: "Next.js: WikiRocket",
-      description:
-        "A Next.js app that searches Wikipedia for the given search query",
-      image: wikiRocket,
-      link: "https://nextjs-wikirocket-black.vercel.app/",
+      title: "Django: Blog",
+      description: "A blog site where users can create and read posts",
+      image: djangoBlog,
+      link: "https://django-blogsite.onrender.com",
     },
   ];
   return (
