@@ -7,7 +7,7 @@ export default function HomePage() {
       >
         <article className="sm:w-1/2">
           <h2 className="max-w-md text-center text-4xl font-bold text-white sm:text-left sm:text-5xl">
-            Hello and welcome. I&apos;m Remi.
+            Hello and welcome. I&apos;m Wes.
           </h2>
         </article>
         <p className="mt-4 max-w-md text-center text-2xl sm:text-left">
