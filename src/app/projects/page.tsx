@@ -35,14 +35,14 @@ export default function ProjectPage() {
   ];
   return (
     <main className="mx-auto max-w-4xl">
-      <h2 className="m-4 max-w-md text-center text-4xl font-bold text-white ">
-        Projects
-      </h2>
       <section
         id="projects"
-        className="widescreen:section-min-height tallscreen:section-min-height mb-12 flex flex-col items-center justify-center gap-8 p-6 sm:flex-row"
+        className="widescreen:section-min-height tallscreen:section-min-height mb-12 flex flex-col items-center justify-center gap-8 p-6"
       >
-        <ul>
+        <h2 className="m-4 max-w-md text-center text-4xl font-bold text-white sm:text-left sm:text-5xl">
+          Projects
+        </h2>
+        <ul className="sm:grid sm:grid-cols-2 sm:gap-8">
           {projects.map((project) => (
             <li
               key={project.title}
@@ -59,9 +59,9 @@ export default function ProjectPage() {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  className="rounded-3xl p-4 shadow-2xl hover:opacity-90 "
-                  width={600}
-                  height={600}
+                  className="rounded-3xl p-4 shadow-2xl hover:opacity-90"
+                  width={400}
+                  height={400}
                 />
               </a>
             </li>
