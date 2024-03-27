@@ -10,18 +10,23 @@ export default function HomePage() {
         </h2>
 
         <p className="mt-4 max-w-md text-center text-2xl sm:text-left">
-          Trained in finance, I am seeking to change careers to software
+          My background is in finance, and I am changing careers to software
           engineering.
         </p>
 
         <p className="mt-4 max-w-md text-center text-2xl sm:text-left">
-          Thus far, my experience is in web development. I&apos;ve built
+          Thus far, my SE experience is in web development. I&apos;ve built
           applications with MERN, Next.js, and Django.
         </p>
 
         <p className="mt-4 max-w-md text-center text-2xl sm:text-left">
           I am also open to other technologies and specializations of software
           engineering.
+        </p>
+
+        <p className="mt-4 max-w-md text-center text-2xl sm:text-left">
+          Please use this site to view my projects, visit my GitHub, or send me
+          an email.
         </p>
       </section>
     </main>
