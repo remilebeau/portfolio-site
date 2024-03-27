@@ -22,13 +22,13 @@ export default function ProjectPage() {
     },
     {
       title: "Django: Studybud",
-      description: "A CRUD app where users create and join study rooms",
+      description: "A Django app where users create and join study rooms",
       image: studybudHomepage,
       link: "https://studybud-0egb.onrender.com",
     },
     {
       title: "Django: Blog",
-      description: "A blog site where users can create and read posts",
+      description: "A Django blog where users create and read posts",
       image: djangoBlog,
       link: "https://django-blogsite.onrender.com",
     },
