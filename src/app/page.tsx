@@ -20,8 +20,8 @@ export default function HomePage() {
         </p>
 
         <p className="mt-4 max-w-md text-center text-2xl sm:text-left">
-          However, I am also open to other technologies and specializations of
-          software engineering.
+          I am also open to other technologies and specializations of software
+          engineering.
         </p>
       </section>
     </main>
