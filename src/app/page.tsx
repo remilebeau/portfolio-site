@@ -15,8 +15,8 @@ export default function HomePage() {
         </p>
 
         <p className="mt-4 max-w-md text-center text-2xl sm:text-left">
-          Thus far, my experience is in web development. I've built applications
-          with MERN, Next.js, and Django.
+          Thus far, my experience is in web development. I&apos;ve built
+          applications with MERN, Next.js, and Django.
         </p>
 
         <p className="mt-4 max-w-md text-center text-2xl sm:text-left">
