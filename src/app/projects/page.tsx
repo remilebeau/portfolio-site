@@ -18,7 +18,7 @@ export default function ProjectPage() {
       description:
         "A Next.js app that searches Wikipedia for the given search query",
       image: wikiRocket,
-      link: "https://nextjs-wikirocket-black.vercel.app/",
+      link: "https://remilebeau-wikirocket.vercel.app/",
     },
     {
       title: "Django: Studybud",
