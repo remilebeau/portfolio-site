@@ -11,7 +11,7 @@ export default function AboutPage() {
     {
       name: "Lebanon",
       image: lebanon,
-      caption: ["Lebanese ethnicity"],
+      caption: ["Lebanese nationality"],
       className: "",
     },
     {
