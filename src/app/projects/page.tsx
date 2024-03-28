@@ -44,10 +44,7 @@ export default function ProjectPage() {
         </h2>
         <ul className="sm:grid sm:grid-cols-2 sm:gap-8">
           {projects.map((project) => (
-            <li
-              key={project.title}
-              className="flex flex-col items-center justify-center sm:items-start"
-            >
+            <li key={project.title} className="flex flex-col  sm:items-start">
               <h3 className="text-2xl font-bold">{project.title}</h3>
               <p className="text-xl">{project.description}</p>
               <a
