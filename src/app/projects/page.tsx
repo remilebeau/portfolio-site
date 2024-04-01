@@ -42,6 +42,12 @@ export default function ProjectPage() {
         <h2 className="m-4 max-w-md text-center text-4xl font-bold text-white sm:text-left sm:text-5xl">
           Projects
         </h2>
+        <h3 className="text-2xl font-bold">
+          The MERN and Django projects are hosted on the free tier of the cloud
+          platform Render. Please allow up to 60 seconds for the server to wake
+          up while testing each app. The testing credentials for the MERN and
+          Django projects are testuser and testpassword.
+        </h3>
         <ul className="sm:grid sm:grid-cols-2 sm:gap-8">
           {projects.map((project) => (
             <li key={project.title} className="flex flex-col  sm:items-start">
