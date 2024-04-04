@@ -18,97 +18,85 @@ import ubuntu from "../../../public/images/ubuntu.svg";
 import docker from "../../../public/images/docker.svg";
 
 type TechnologyImage = {
-  name: string;
-  image: StaticImageData;
-  className: string;
+  title: string;
+  src: StaticImageData;
+  styling?: string;
 };
 
 export default function TechnologyPage() {
   const images: TechnologyImage[] = [
     {
-      name: "HTML",
-      image: html,
-      className: "",
+      title: "HTML",
+      src: html,
     },
     {
-      name: "CSS",
-      image: css,
-      className: "",
+      title: "CSS",
+      src: css,
     },
     {
-      name: "JavaScript",
-      image: js,
-      className: "rounded-3xl",
+      title: "JavaScript",
+      src: js,
+      styling: "rounded-3xl",
     },
     {
-      name: "TypeScript",
-      image: ts,
-      className: "rounded-3xl",
+      title: "TypeScript",
+      src: ts,
+      styling: "rounded-3xl",
     },
     {
-      name: "Python",
-      image: python,
-      className: "",
+      title: "Python",
+      src: python,
     },
     {
-      name: "MongoDB",
-      image: mongodb,
-      className: "",
+      title: "MongoDB",
+      src: mongodb,
     },
     {
-      name: "Express",
-      image: ex,
-      className: "invert",
+      title: "Express",
+      src: ex,
+      styling: "invert",
     },
     {
-      name: "React",
-      image: react,
-      className: "",
+      title: "React",
+      src: react,
     },
     {
-      name: "Node.js",
-      image: nodejs,
-      className: "",
+      title: "Node.js",
+      src: nodejs,
     },
     {
-      name: "Next.js",
-      image: nextjs,
-      className: "invert",
+      title: "Next.js",
+      src: nextjs,
+      styling: "invert",
     },
     {
-      name: "Redux",
-      image: redux,
-      className: "",
+      title: "Redux",
+      src: redux,
     },
     {
-      name: "Tailwind",
-      image: tailwind,
-      className: "",
+      title: "Tailwind",
+      src: tailwind,
     },
     {
-      name: "Sass",
-      image: sass,
-      className: "",
+      title: "Sass",
+      src: sass,
     },
     {
-      name: "Django",
-      image: django,
-      className: "",
+      title: "Django",
+      src: django,
     },
     {
-      name: "Flask",
-      image: flask,
-      className: "invert",
+      title: "Flask",
+      src: flask,
+      styling: "invert",
     },
     {
-      name: "Ubuntu",
-      image: ubuntu,
-      className: "",
+      title: "Ubuntu",
+      src: ubuntu,
     },
     {
-      name: "Docker",
-      image: docker,
-      className: "",
+      title: "Docker",
+      src: docker,
     },
   ];
 
@@ -123,13 +111,13 @@ export default function TechnologyPage() {
         </h2>
         <ul className="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:grid sm:grid-cols-3 sm:flex-row">
           {images.map((image) => (
-            <li className="w-2/3 sm:w-5/6" key={image.name}>
+            <li className="w-2/3 sm:w-5/6" key={image.title}>
               <Image
-                src={image.image}
-                alt={image.name}
+                src={image.src}
+                alt={image.title}
                 width={400}
                 height={400}
-                className={image.className}
+                className={image.styling}
               />
             </li>
           ))}
