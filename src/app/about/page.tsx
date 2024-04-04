@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import lebanon from "../../../public/images/lebanon.svg";
 import canada from "../../../public/images/canada.svg";
 import usa from "../../../public/images/usa.svg";
@@ -6,8 +6,15 @@ import france from "../../../public/images/france.svg";
 import osu from "../../../public/images/osu.svg";
 import nintendo from "../../../public/images/nintendo.svg";
 
+type AboutImage = {
+  name: string;
+  image: StaticImageData;
+  caption: string[];
+  className: string;
+};
+
 export default function AboutPage() {
-  const countries = [
+  const images: AboutImage[] = [
     {
       name: "Lebanon",
       image: lebanon,
@@ -32,17 +39,12 @@ export default function AboutPage() {
       caption: ["Additional languages: French, Arabic"],
       className: "",
     },
-  ];
-  const school = [
     {
       name: "OSU",
       image: osu,
       caption: ["BSBA, Summa Cum Laude, 2020"],
       className: "",
     },
-  ];
-
-  const hobbies = [
     {
       name: "Nintendo",
       image: nintendo,
@@ -51,7 +53,6 @@ export default function AboutPage() {
     },
   ];
 
-  const images = [...countries, ...school, ...hobbies];
   return (
     <main className="mx-auto max-w-4xl">
       <section

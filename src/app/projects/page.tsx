@@ -1,11 +1,18 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import mernLoginPage from "../../../public/images/mernLoginPage.png";
 import studybudHomepage from "../../../public/images/studybudHomepage.png";
 import wikiRocket from "../../../public/images/wikiRocket.png";
 import djangoBlog from "../../../public/images/djangoBlog.png";
 
+type Project = {
+  title: string;
+  description: string;
+  image: StaticImageData;
+  link: string;
+};
+
 export default function ProjectPage() {
-  const projects = [
+  const projects: Project[] = [
     {
       title: "MERN: techNotes",
       description:

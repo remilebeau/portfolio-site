@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import html from "../../../public/images/html.svg";
 import css from "../../../public/images/css.svg";
 import js from "../../../public/images/js.svg";
@@ -17,8 +17,14 @@ import flask from "../../../public/images/flask.svg";
 import ubuntu from "../../../public/images/ubuntu.svg";
 import docker from "../../../public/images/docker.svg";
 
+type TechnologyImage = {
+  name: string;
+  image: StaticImageData;
+  className: string;
+};
+
 export default function TechnologyPage() {
-  const images = [
+  const images: TechnologyImage[] = [
     {
       name: "HTML",
       image: html,
@@ -123,7 +129,7 @@ export default function TechnologyPage() {
                 alt={image.name}
                 width={400}
                 height={400}
-                className={`${image.className}`}
+                className={image.className}
               />
             </li>
           ))}
