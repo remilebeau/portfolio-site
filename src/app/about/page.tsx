@@ -7,49 +7,43 @@ import osu from "../../../public/images/osu.svg";
 import nintendo from "../../../public/images/nintendo.svg";
 
 type AboutImage = {
-  name: string;
-  image: StaticImageData;
-  caption: string[];
-  className: string;
+  title: string;
+  src: StaticImageData;
+  caption: string;
+  styling?: string;
 };
 
 export default function AboutPage() {
   const images: AboutImage[] = [
     {
-      name: "Lebanon",
-      image: lebanon,
-      caption: ["Lebanese nationality"],
-      className: "",
+      title: "Lebanon",
+      src: lebanon,
+      caption: "Lebanese nationality",
     },
     {
-      name: "Canada",
-      image: canada,
-      caption: ["Born in Canada"],
-      className: "",
+      title: "Canada",
+      src: canada,
+      caption: "Born in Canada",
     },
     {
-      name: "USA",
-      image: usa,
-      caption: ["Raised and located in Columbus, OH"],
-      className: "",
+      title: "USA",
+      src: usa,
+      caption: "Raised and located in Columbus, OH",
     },
     {
-      name: "France",
-      image: france,
-      caption: ["Additional languages: French, Arabic"],
-      className: "",
+      title: "France",
+      src: france,
+      caption: "Additional languages: French, Arabic",
     },
     {
-      name: "OSU",
-      image: osu,
-      caption: ["BSBA, Summa Cum Laude, 2020"],
-      className: "",
+      title: "OSU",
+      src: osu,
+      caption: "BSBA, Summa Cum Laude, 2020",
     },
     {
-      name: "Nintendo",
-      image: nintendo,
-      caption: ["Favorite consoles: N64, Switch"],
-      className: "",
+      title: "Nintendo",
+      src: nintendo,
+      caption: "Favorite consoles: N64, Switch",
     },
   ];
 
@@ -65,25 +59,23 @@ export default function AboutPage() {
         <ul className="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:grid sm:grid-cols-3 sm:flex-row">
           {images.map((image) => (
             <li
-              key={image.name}
+              key={image.title}
               className="w-2/3 flex-col items-center rounded-3xl px-2 py-6 shadow-xl marker:flex sm:w-5/6"
             >
               <Image
-                src={image.image}
-                alt={image.name}
+                src={image.src}
+                alt={image.title}
                 width={400}
                 height={400}
-                className={image.className}
+                className={image.styling}
               />
 
-              {image.caption.map((line) => (
-                <figcaption
-                  className="w-full p-2 text-2xl font-bold"
-                  key={line}
-                >
-                  {line}
-                </figcaption>
-              ))}
+              <figcaption
+                className="w-full p-2 text-2xl font-bold"
+                key={image.caption}
+              >
+                {image.caption}
+              </figcaption>
             </li>
           ))}
         </ul>
