@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image, { StaticImageData } from "next/image";
 import lebanon from "../../../public/images/lebanon.svg";
 import canada from "../../../public/images/canada.svg";
@@ -5,6 +6,11 @@ import usa from "../../../public/images/usa.svg";
 import france from "../../../public/images/france.svg";
 import osu from "../../../public/images/osu.svg";
 import nintendo from "../../../public/images/nintendo.svg";
+
+export const metadata: Metadata = {
+  title: "About | Wes S",
+  description: "The about page of Wes S",
+};
 
 type AboutImage = {
   title: string;

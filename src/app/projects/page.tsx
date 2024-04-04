@@ -1,8 +1,14 @@
+import { Metadata } from "next";
 import Image, { StaticImageData } from "next/image";
 import mernLoginPage from "../../../public/images/mernLoginPage.png";
 import studybudHomepage from "../../../public/images/studybudHomepage.png";
 import wikiRocket from "../../../public/images/wikiRocket.png";
 import djangoBlog from "../../../public/images/djangoBlog.png";
+
+export const metadata: Metadata = {
+  title: "Projects | Wes S",
+  description: "The projects page of Wes S",
+};
 
 type Project = {
   title: string;

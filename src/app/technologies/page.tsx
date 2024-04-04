@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image, { StaticImageData } from "next/image";
 import html from "../../../public/images/html.svg";
 import css from "../../../public/images/css.svg";
@@ -16,6 +17,11 @@ import django from "../../../public/images/django.svg";
 import flask from "../../../public/images/flask.svg";
 import ubuntu from "../../../public/images/ubuntu.svg";
 import docker from "../../../public/images/docker.svg";
+
+export const metadata: Metadata = {
+  title: "Technologies | Wes S",
+  description: "The technologies page of Wes S",
+};
 
 type TechnologyImage = {
   title: string;
