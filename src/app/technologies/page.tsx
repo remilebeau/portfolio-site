@@ -17,6 +17,7 @@ import django from "../../../public/images/django.svg";
 import flask from "../../../public/images/flask.svg";
 import ubuntu from "../../../public/images/ubuntu.svg";
 import docker from "../../../public/images/docker.svg";
+import git from "../../../public/images/git.svg";
 
 export const metadata: Metadata = {
   title: "Technologies | Wes S",
@@ -103,6 +104,10 @@ export default function TechnologyPage() {
     {
       title: "Docker",
       src: docker,
+    },
+    {
+      title: "Git",
+      src: git,
     },
   ];
 
