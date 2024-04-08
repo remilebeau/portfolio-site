@@ -46,6 +46,22 @@ export default function ProjectPage() {
       link: "https://django-blogsite.onrender.com",
     },
   ];
+
+  const renderedProjects = projects.map((project) => (
+    <li key={project.title} className="flex flex-col  sm:items-start">
+      <h3 className="text-2xl font-bold">{project.title}</h3>
+      <p className="text-xl">{project.description}</p>
+      <a href={project.link} target="_blank" rel="noreferrer" className="m-4">
+        <Image
+          src={project.image}
+          alt={project.title}
+          className="rounded-3xl p-4 shadow-2xl hover:opacity-90"
+          width={400}
+          height={400}
+        />
+      </a>
+    </li>
+  ));
   return (
     <main className="mx-auto max-w-4xl">
       <section
@@ -61,28 +77,7 @@ export default function ProjectPage() {
           up while testing each app. The testing credentials for the MERN and
           Django projects are testuser and testpassword.
         </h3>
-        <ul className="sm:grid sm:grid-cols-2 sm:gap-8">
-          {projects.map((project) => (
-            <li key={project.title} className="flex flex-col  sm:items-start">
-              <h3 className="text-2xl font-bold">{project.title}</h3>
-              <p className="text-xl">{project.description}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noreferrer"
-                className="m-4"
-              >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  className="rounded-3xl p-4 shadow-2xl hover:opacity-90"
-                  width={400}
-                  height={400}
-                />
-              </a>
-            </li>
-          ))}
-        </ul>
+        <ul className="sm:grid sm:grid-cols-2 sm:gap-8">{renderedProjects}</ul>
       </section>
     </main>
   );

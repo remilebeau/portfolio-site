@@ -111,6 +111,18 @@ export default function TechnologyPage() {
     },
   ];
 
+  const renderedImages = images.map((image) => (
+    <li className="w-2/3 sm:w-5/6" key={image.title}>
+      <Image
+        src={image.src}
+        alt={image.title}
+        width={400}
+        height={400}
+        className={image.styling}
+      />
+    </li>
+  ));
+
   return (
     <main className="mx-auto max-w-4xl">
       <section
@@ -121,17 +133,7 @@ export default function TechnologyPage() {
           Technologies
         </h2>
         <ul className="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:grid sm:grid-cols-3 sm:flex-row">
-          {images.map((image) => (
-            <li className="w-2/3 sm:w-5/6" key={image.title}>
-              <Image
-                src={image.src}
-                alt={image.title}
-                width={400}
-                height={400}
-                className={image.styling}
-              />
-            </li>
-          ))}
+          {renderedImages}
         </ul>
       </section>
     </main>

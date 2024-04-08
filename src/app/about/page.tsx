@@ -53,6 +53,25 @@ export default function AboutPage() {
     },
   ];
 
+  const renderedImages = images.map((image) => (
+    <li
+      key={image.title}
+      className="w-2/3 flex-col items-center rounded-3xl px-2 py-6 shadow-xl marker:flex sm:w-5/6"
+    >
+      <Image
+        src={image.src}
+        alt={image.title}
+        width={400}
+        height={400}
+        className={image.styling}
+      />
+
+      <figcaption className="w-full p-2 text-2xl font-bold" key={image.caption}>
+        {image.caption}
+      </figcaption>
+    </li>
+  ));
+
   return (
     <main className="mx-auto max-w-4xl">
       <section
@@ -63,27 +82,7 @@ export default function AboutPage() {
           About
         </h2>
         <ul className="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:grid sm:grid-cols-3 sm:flex-row">
-          {images.map((image) => (
-            <li
-              key={image.title}
-              className="w-2/3 flex-col items-center rounded-3xl px-2 py-6 shadow-xl marker:flex sm:w-5/6"
-            >
-              <Image
-                src={image.src}
-                alt={image.title}
-                width={400}
-                height={400}
-                className={image.styling}
-              />
-
-              <figcaption
-                className="w-full p-2 text-2xl font-bold"
-                key={image.caption}
-              >
-                {image.caption}
-              </figcaption>
-            </li>
-          ))}
+          {renderedImages}
         </ul>
       </section>
     </main>
