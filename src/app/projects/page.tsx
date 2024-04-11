@@ -4,6 +4,7 @@ import mernLoginPage from "../../../public/images/mernLoginPage.png";
 import studybudHomepage from "../../../public/images/studybudHomepage.png";
 import wikiRocket from "../../../public/images/wikiRocket.png";
 import djangoBlog from "../../../public/images/djangoBlog.png";
+import flashCards from "../../../public/images/flashCards.png";
 
 export const metadata: Metadata = {
   title: "Projects | Wes S",
@@ -44,6 +45,12 @@ export default function ProjectPage() {
       description: "A Django blog where users create and read posts",
       image: djangoBlog,
       link: "https://django-blogsite.onrender.com",
+    },
+    {
+      title: "FlashCards",
+      description: "A React + Redux app for creating and using flashcards",
+      image: flashCards,
+      link: "https://flashcards-44tn.onrender.com",
     },
   ];
 
