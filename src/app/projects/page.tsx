@@ -21,34 +21,34 @@ type Project = {
 export default function ProjectPage() {
   const projects: Project[] = [
     {
-      title: "MERN: techNotes",
+      title: "TechNotes",
       description:
-        "A MERN SPA that replaces the notes system of a ficticious computer repair business",
+        "MERN SPA that replaces the notes system of a ficticious computer repair business",
       image: mernLoginPage,
       link: "https://technotes-op6s.onrender.com",
     },
     {
-      title: "Next.js: WikiRocket",
+      title: "WikiRocket",
       description:
-        "A Next.js app that searches Wikipedia for the given search query",
+        "Next.js app that searches Wikipedia for the given search query",
       image: wikiRocket,
       link: "https://remilebeau-wikirocket.vercel.app/",
     },
     {
-      title: "Django: Studybud",
-      description: "A Django app where users create and join study rooms",
+      title: "Studybud",
+      description: "Django app where users create and join study rooms",
       image: studybudHomepage,
       link: "https://studybud-0egb.onrender.com",
     },
     {
-      title: "Django: Blog",
-      description: "A Django blog where users create and read posts",
+      title: "Blog",
+      description: "Django blog where users create and read posts",
       image: djangoBlog,
       link: "https://django-blogsite.onrender.com",
     },
     {
       title: "FlashCards",
-      description: "A React + Redux app for creating and using flashcards",
+      description: "React + Redux app for creating flashcards",
       image: flashCards,
       link: "https://flashcards-44tn.onrender.com",
     },
