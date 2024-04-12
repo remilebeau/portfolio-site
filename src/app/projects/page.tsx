@@ -55,7 +55,7 @@ export default function ProjectPage() {
   ];
 
   const renderedProjects = projects.map((project) => (
-    <li key={project.title} className="flex flex-col  sm:items-start">
+    <article key={project.title} className="flex flex-col  sm:items-start">
       <h3 className="text-2xl font-bold">{project.title}</h3>
       <p className="text-xl">{project.description}</p>
       <a href={project.link} target="_blank" rel="noreferrer" className="m-4">
@@ -67,7 +67,7 @@ export default function ProjectPage() {
           height={400}
         />
       </a>
-    </li>
+    </article>
   ));
   return (
     <main className="mx-auto max-w-4xl">
@@ -84,7 +84,9 @@ export default function ProjectPage() {
           up while testing each app. The testing credentials for the MERN and
           Django projects are testuser and testpassword.
         </h3>
-        <ul className="sm:grid sm:grid-cols-2 sm:gap-8">{renderedProjects}</ul>
+        <section className="sm:grid sm:grid-cols-2 sm:gap-8">
+          {renderedProjects}
+        </section>
       </section>
     </main>
   );
