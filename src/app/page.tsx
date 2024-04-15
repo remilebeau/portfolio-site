@@ -10,18 +10,12 @@ export default function HomePage() {
         </h2>
 
         <p className="mt-4 max-w-md  text-2xl sm:text-left">
-          My background is in finance, and I am changing careers to software
-          engineering.
+          A software engineer with a financial background that enjoys solving
+          business problems.
         </p>
 
         <p className="mt-4 max-w-md  text-2xl sm:text-left">
-          Thus far, my SE experience is in web development. I&apos;ve built
-          applications with MERN, Next.js, and Django.
-        </p>
-
-        <p className="mt-4 max-w-md  text-2xl sm:text-left">
-          I am also open to other technologies and specializations of software
-          engineering.
+          Most experienced in full-stack web development.
         </p>
 
         <p className="mt-4 max-w-md  text-2xl sm:text-left">
