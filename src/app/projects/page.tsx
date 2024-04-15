@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image, { StaticImageData } from "next/image";
+import mySite from "../../../public/images/mySite.png";
 import mernLoginPage from "../../../public/images/mernLoginPage.png";
 import studybudHomepage from "../../../public/images/studybudHomepage.png";
 import wikiRocket from "../../../public/images/wikiRocket.png";
@@ -20,6 +21,12 @@ type Project = {
 
 export default function ProjectPage() {
   const projects: Project[] = [
+    {
+      title: "My Site",
+      description: "My personal website",
+      image: mySite,
+      link: "https://remilebeau.vercel.app",
+    },
     {
       title: "TechNotes",
       description:
