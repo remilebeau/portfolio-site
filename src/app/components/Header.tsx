@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { ModeToggle } from "./ThemeSwitch";
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -77,6 +78,9 @@ export default function Header() {
               </Link>
             ))}
           </nav>
+        </section>
+        <section>
+          <ModeToggle />
         </section>
       </header>
     );
