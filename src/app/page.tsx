@@ -5,7 +5,7 @@ export default function HomePage() {
         id="welcome"
         className="widescreen:section-min-height tallscreen:section-min-height mb-12 flex flex-col items-center justify-center gap-8 p-6"
       >
-        <h2 className="max-w-md  text-4xl font-bold text-white sm:w-1/2 sm:text-left sm:text-5xl">
+        <h2 className="max-w-md text-4xl font-bold sm:w-1/2 sm:text-left sm:text-5xl">
           Hello and welcome. I&apos;m Wes.
         </h2>
 

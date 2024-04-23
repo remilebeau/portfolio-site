@@ -57,7 +57,7 @@ export default function Header() {
   // disabled by clicking a Link or pressing the X button
   else
     content = (
-      <header className="sticky top-0 z-10 bg-teal-700 text-white">
+      <header className="sticky top-0 z-10 bg-slate-800 text-white dark:bg-teal-700">
         <section className="mx-auto flex max-w-4xl items-center justify-between p-4">
           <h1 className="text-3xl font-medium">Wes S</h1>
           <button
@@ -79,9 +79,8 @@ export default function Header() {
             ))}
           </nav>
         </section>
-        <section>
-          <ModeToggle />
-        </section>
+        {/* TODO: remove this later */}
+        <ModeToggle />
       </header>
     );
 
