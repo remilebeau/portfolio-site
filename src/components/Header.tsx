@@ -4,15 +4,15 @@ import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
 
 export default function Header() {
-  const [mobileMenu, setMobileMenu] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const onMobileMenuButtonClicked = () => {
     window.scrollTo(0, 0); // scroll to top of page
-    setMobileMenu(!mobileMenu);
+    setShowMobileMenu(!showMobileMenu);
   };
 
   const onLinkClicked = () => {
-    setMobileMenu(false);
+    setShowMobileMenu(false);
   };
 
   const links = [
@@ -22,7 +22,7 @@ export default function Header() {
     { name: "Projects", path: "/projects" },
   ];
 
-  return mobileMenu ? (
+  return showMobileMenu ? (
     <MobileMenu
       onMobileMenuButtonClicked={onMobileMenuButtonClicked}
       links={links}
