@@ -6,7 +6,7 @@ export default function Footer() {
       aria-label="footer"
       className="bg-teal-700 text-xl text-white"
     >
-      <nav className="mx-auto flex max-w-4xl flex-row justify-between gap-2 p-4 sm:flex-row">
+      <nav className="mx-auto flex max-w-4xl flex-row justify-evenly gap-2 p-4 sm:flex-row">
         <a
           href="https://github.com/remilebeau"
           target="_blank"
