@@ -14,7 +14,7 @@ export default function DesktopMenu({
   links,
 }: Props) {
   return (
-    <header className="sticky top-0 z-10 bg-slate-800 text-white dark:bg-teal-700">
+    <header className="sticky top-0 z-10 bg-primary text-primary">
       <section className="mx-auto flex max-w-4xl items-center justify-evenly p-4">
         <button
           onClick={onMobileMenuButtonClicked}

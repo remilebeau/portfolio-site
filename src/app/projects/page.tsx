@@ -82,7 +82,7 @@ export default function ProjectPage() {
         id="projects"
         className="widescreen:section-min-height tallscreen:section-min-height mb-12 flex flex-col items-center justify-center gap-8 p-6"
       >
-        <h2 className="m-4 max-w-md text-center text-4xl font-bold text-white sm:text-left sm:text-5xl">
+        <h2 className="m-4 max-w-md text-center text-4xl font-bold text-primary sm:text-left sm:text-5xl">
           Projects
         </h2>
         <h3 className="text-2xl font-bold">

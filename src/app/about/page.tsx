@@ -64,24 +64,9 @@ export default function AboutPage() {
     </Card>
   ));
 
-  // return (
-  //   <main className="mx-auto max-w-4xl">
-  //     <section
-  //       id="about"
-  //       className="widescreen:section-min-height tallscreen:section-min-height mb-12 flex flex-col items-center justify-center gap-8 p-6"
-  //     >
-  //       <h2 className="m-4 max-w-md text-center text-4xl font-bold text-white sm:text-left sm:text-5xl">
-  //         About
-  //       </h2>
-  //       <ul className="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:grid sm:grid-cols-3 sm:flex-row">
-  //         {renderedImages}
-  //       </ul>
-  //     </section>
-  //   </main>
-  // );
   return (
     <main className="mx-auto max-w-4xl">
-      <h2 className="m-4 max-w-md text-center text-4xl font-bold text-white sm:text-left sm:text-5xl">
+      <h2 className="m-4 max-w-md text-center text-4xl font-bold text-primary sm:text-left sm:text-5xl">
         About
       </h2>
       <section

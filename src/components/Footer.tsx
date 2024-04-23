@@ -4,7 +4,7 @@ export default function Footer() {
     <footer
       id="footer"
       aria-label="footer"
-      className="bg-teal-700 text-xl text-white"
+      className="bg-primary text-xl text-primary"
     >
       <nav className="mx-auto flex max-w-4xl flex-row justify-evenly gap-2 p-4 sm:flex-row">
         <a
