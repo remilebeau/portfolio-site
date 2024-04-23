@@ -1,6 +1,4 @@
-"use client";
 import Link from "next/link";
-import { useState } from "react";
 
 type Props = {
   onMobileMenuButtonClicked: () => void;
@@ -16,12 +14,10 @@ export default function MobileMenu({
   links,
   onLinkClicked,
 }: Props) {
-  const [mobileMenu, setMobileMenu] = useState(false);
-
   return (
     <section
       id="mobile-menu"
-      className="absolute top-0 flex w-full origin-top animate-open-menu flex-col justify-center bg-teal-700 text-5xl"
+      className="animate-open-menu absolute top-0 flex w-full origin-top flex-col justify-center bg-teal-700 text-5xl"
     >
       <button
         onClick={onMobileMenuButtonClicked}
