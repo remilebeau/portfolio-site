@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image, { StaticImageData } from "next/image";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import lebanon from "../../../public/images/lebanon.svg";
 import canada from "../../../public/images/canada.svg";
 import usa from "../../../public/images/usa.svg";
@@ -16,7 +17,6 @@ type AboutImage = {
   title: string;
   src: StaticImageData;
   caption: string;
-  styling?: string;
 };
 
 export default function AboutPage() {
@@ -54,36 +54,41 @@ export default function AboutPage() {
   ];
 
   const renderedImages = images.map((image) => (
-    <li
-      key={image.title}
-      className="w-2/3 flex-col items-center rounded-3xl px-2 py-6 shadow-xl marker:flex sm:w-5/6"
-    >
-      <Image
-        src={image.src}
-        alt={image.title}
-        width={400}
-        height={400}
-        className={image.styling}
-      />
-
-      <figcaption className="w-full p-2 text-2xl font-bold" key={image.caption}>
-        {image.caption}
-      </figcaption>
-    </li>
+    <Card key={image.title}>
+      <CardContent>
+        <Image src={image.src} alt={image.title} width={400} height={400} />
+      </CardContent>
+      <CardFooter>
+        <p>{image.caption}</p>
+      </CardFooter>
+    </Card>
   ));
 
+  // return (
+  //   <main className="mx-auto max-w-4xl">
+  //     <section
+  //       id="about"
+  //       className="widescreen:section-min-height tallscreen:section-min-height mb-12 flex flex-col items-center justify-center gap-8 p-6"
+  //     >
+  //       <h2 className="m-4 max-w-md text-center text-4xl font-bold text-white sm:text-left sm:text-5xl">
+  //         About
+  //       </h2>
+  //       <ul className="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:grid sm:grid-cols-3 sm:flex-row">
+  //         {renderedImages}
+  //       </ul>
+  //     </section>
+  //   </main>
+  // );
   return (
     <main className="mx-auto max-w-4xl">
+      <h2 className="m-4 max-w-md text-center text-4xl font-bold text-white sm:text-left sm:text-5xl">
+        About
+      </h2>
       <section
         id="about"
         className="widescreen:section-min-height tallscreen:section-min-height mb-12 flex flex-col items-center justify-center gap-8 p-6"
       >
-        <h2 className="m-4 max-w-md text-center text-4xl font-bold text-white sm:text-left sm:text-5xl">
-          About
-        </h2>
-        <ul className="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:grid sm:grid-cols-3 sm:flex-row">
-          {renderedImages}
-        </ul>
+        {renderedImages}
       </section>
     </main>
   );
