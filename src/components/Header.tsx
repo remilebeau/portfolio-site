@@ -78,9 +78,8 @@ export default function Header() {
               </Link>
             ))}
           </nav>
+          <ModeToggle />
         </section>
-        {/* TODO: remove this later */}
-        <ModeToggle />
       </header>
     );
 
