@@ -10,8 +10,8 @@ export default function HomePage() {
         </h2>
 
         <p className="mt-4 max-w-md  text-2xl sm:text-left">
-          A software engineer with a financial background that enjoys solving
-          business problems.
+          A software engineer with a financial background specializing in
+          creating business solutions.
         </p>
 
         <p className="mt-4 max-w-md  text-2xl sm:text-left">
