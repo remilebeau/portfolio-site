@@ -1,74 +1,30 @@
 "use client";
-import { useState } from "react";
-import DesktopMenu from "./DesktopMenu";
-import MobileMenu from "./MobileMenu";
-import { FaEnvelope, FaGithub } from "react-icons/fa";
-import { ModeToggle } from "./ThemeSwitch";
+import Link from "next/link";
+import DesktopNavbar from "./DesktopNavbar";
+import MobileNavbar from "./MobileNavbar";
+import { useMediaQuery } from "react-responsive";
 
 export default function Header() {
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
-
-  const onMobileMenuButtonClicked = () => {
-    window.scrollTo(0, 0); // scroll to top of page
-    setShowMobileMenu(!showMobileMenu);
-  };
-
-  const onLinkClicked = () => {
-    setShowMobileMenu(false);
-  };
-
   const links = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Technologies", path: "/technologies" },
-    { name: "Projects", path: "/projects" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Technologies", href: "/technologies" },
+    { name: "Projects", href: "/projects" },
   ];
+  const renderedLinks = links.map((link) => (
+    <Link key={link.name} href={link.href}>
+      <p className="hover:opacity-80">{link.name}</p>
+    </Link>
+  ));
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
-  const content = (
+  return (
     <header>
-      {/* parent container for navbar content */}
-      <nav className="flex items-center justify-between p-4">
-        {/* desktop or mobile menu*/}
-        <section className="flex flex-col sm:flex-row">
-          {showMobileMenu ? (
-            <MobileMenu
-              onMobileMenuButtonClicked={onMobileMenuButtonClicked}
-              links={links}
-              onLinkClicked={onLinkClicked}
-            />
-          ) : (
-            <DesktopMenu
-              onMobileMenuButtonClicked={onMobileMenuButtonClicked}
-              links={links}
-            />
-          )}
-        </section>
-        {/* github and email icons */}
-        <section
-          className="flex items-center
-         gap-4 sm:flex-row"
-        >
-          <a
-            href="https://github.com/remilebeau"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaGithub className="text-4xl hover:opacity-90" />
-          </a>
-          <a
-            href="mailto:remilebeau90@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaEnvelope className="text-4xl hover:opacity-90" />
-          </a>
-        </section>
-        {/* light/dark mode toggle */}
-        <section className={`flex ${showMobileMenu ? "hidden" : "block"}`}>
-          <ModeToggle />
-        </section>
-      </nav>
+      {isMobile ? (
+        <MobileNavbar renderedLinks={renderedLinks} />
+      ) : (
+        <DesktopNavbar renderedLinks={renderedLinks} />
+      )}
     </header>
   );
-  return content;
 }
