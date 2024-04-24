@@ -65,16 +65,9 @@ export default function AboutPage() {
   ));
 
   return (
-    <main className="mx-auto max-w-4xl">
-      <h2 className="m-4 max-w-md text-center text-4xl font-bold text-primary sm:text-left sm:text-5xl">
-        About
-      </h2>
-      <section
-        id="about"
-        className="widescreen:section-min-height tallscreen:section-min-height mb-12 flex flex-col items-center justify-center gap-8 p-6"
-      >
-        {renderedImages}
-      </section>
+    <main className="mx-auto mb-12 flex max-w-4xl flex-col items-center justify-center gap-8 p-6">
+      <h2 className="text-5xl font-bold">About</h2>
+      {renderedImages}
     </main>
   );
 }

@@ -1,24 +1,20 @@
 export default function HomePage() {
   return (
-    <main className="mx-auto max-w-4xl">
-      <section
-        id="welcome"
-        className="widescreen:section-min-height tallscreen:section-min-height mb-12 flex flex-col items-center justify-center gap-8 p-6"
-      >
-        <h2 className="max-w-md text-4xl font-bold sm:w-1/2 sm:text-left sm:text-5xl">
-          Hello and welcome. I&apos;m Wes.
-        </h2>
+    <main className="mx-auto">
+      {/* container for page content */}
+      <section className=" flex max-w-4xl flex-col gap-8 p-12">
+        <h2 className="text-4xl font-bold">Hello and welcome. I&apos;m Wes.</h2>
 
-        <p className="mt-4 max-w-md  text-2xl sm:text-left">
+        <p className="text-3xl">
           A software engineer with a financial background specializing in
           creating business solutions.
         </p>
 
-        <p className="mt-4 max-w-md  text-2xl sm:text-left">
+        <p className="text-3xl">
           Most experienced in full-stack web development.
         </p>
 
-        <p className="mt-4 max-w-md  text-2xl sm:text-left">
+        <p className="text-3xl">
           Please use this site to view my projects, visit my GitHub, or send me
           an email.
         </p>

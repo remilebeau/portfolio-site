@@ -4,9 +4,9 @@ export default function Footer() {
     <footer
       id="footer"
       aria-label="footer"
-      className="bg-primary text-xl text-primary"
+      className="bg-background text-xl font-bold text-primary"
     >
-      <nav className="mx-auto flex max-w-4xl flex-row justify-evenly gap-2 p-4 sm:flex-row">
+      {/* <nav className="mx-auto flex max-w-4xl flex-row justify-evenly gap-2 p-4 sm:flex-row">
         <a
           href="https://github.com/remilebeau"
           target="_blank"
@@ -22,7 +22,7 @@ export default function Footer() {
         >
           <FaEnvelope className="text-4xl hover:opacity-90" />
         </a>
-      </nav>
+      </nav> */}
     </footer>
   );
 }

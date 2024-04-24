@@ -17,7 +17,7 @@ export default function MobileMenu({
   return (
     <section
       id="mobile-menu"
-      className="animate-open-menu absolute top-0 flex w-full origin-top flex-col justify-center bg-primary text-5xl"
+      className="animate-open-menu absolute top-0 flex w-full origin-top flex-col justify-center bg-secondary text-5xl"
     >
       <button
         onClick={onMobileMenuButtonClicked}
