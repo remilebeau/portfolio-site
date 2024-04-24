@@ -17,8 +17,9 @@ export default function MobileMenu({
   return (
     <section
       id="mobile-menu"
-      className="animate-open-menu absolute top-0 flex w-full origin-top flex-col justify-center bg-background text-5xl"
+      className="absolute top-0 flex w-full origin-top flex-col justify-center bg-background text-5xl font-bold"
     >
+      {/* close button */}
       <button
         onClick={onMobileMenuButtonClicked}
         id="mobile-close-button"
@@ -26,6 +27,7 @@ export default function MobileMenu({
       >
         &times;
       </button>
+      {/* menu items */}
       <nav
         className="flex min-h-screen flex-col items-center py-8"
         aria-label="mobile"

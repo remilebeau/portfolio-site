@@ -105,7 +105,13 @@ export default function TechnologyPage() {
   const renderedCards = cards.map((card) => (
     <Card key={card.title} className="flex flex-col items-center border-4">
       <CardContent className="p-6">
-        <Image src={card.src} alt={card.title} width={400} height={400} />
+        <Image
+          src={card.src}
+          alt={card.title}
+          className={card.styling}
+          width={400}
+          height={400}
+        />
       </CardContent>
     </Card>
   ));
