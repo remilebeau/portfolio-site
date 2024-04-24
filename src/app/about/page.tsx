@@ -13,14 +13,14 @@ export const metadata: Metadata = {
   description: "The about page of Wes S",
 };
 
-type AboutImage = {
+type AboutCard = {
   title: string;
   src: StaticImageData;
   caption: string;
 };
 
 export default function AboutPage() {
-  const images: AboutImage[] = [
+  const cards: AboutCard[] = [
     {
       title: "Lebanon",
       src: lebanon,
@@ -39,35 +39,36 @@ export default function AboutPage() {
     {
       title: "France",
       src: france,
-      caption: "Additional languages: French, Arabic",
+      caption: "Additional languages: French",
     },
     {
       title: "OSU",
       src: osu,
-      caption: "BSBA, Summa Cum Laude, 2020",
+      caption:
+        "Bachelor of Science in Business Administration, Summa Cum Laude, 2020",
     },
     {
       title: "Nintendo",
       src: nintendo,
-      caption: "Favorite consoles: N64, Switch",
+      caption: "Favorite consoles: Nintendo 64, Nintendo Switch",
     },
   ];
 
-  const renderedImages = images.map((image) => (
-    <Card key={image.title}>
-      <CardContent>
-        <Image src={image.src} alt={image.title} width={400} height={400} />
+  const renderedCards = cards.map((card) => (
+    <Card key={card.title} className="flex flex-col items-center border-4">
+      <CardContent className="p-6">
+        <Image src={card.src} alt={card.title} width={400} height={400} />
       </CardContent>
-      <CardFooter>
-        <p>{image.caption}</p>
+      <CardFooter className="justify-center text-center">
+        <p className="text-2xl font-bold">{card.caption}</p>
       </CardFooter>
     </Card>
   ));
 
   return (
-    <main className="mx-auto mb-12 flex max-w-4xl flex-col items-center justify-center gap-8 p-6">
+    <main className="mx-auto mb-12 flex max-w-4xl flex-col items-center justify-center gap-8 p-12">
       <h2 className="text-5xl font-bold">About</h2>
-      {renderedImages}
+      {renderedCards}
     </main>
   );
 }
