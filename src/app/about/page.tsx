@@ -55,9 +55,18 @@ export default function AboutPage() {
   ];
 
   const renderedCards = cards.map((card) => (
-    <Card key={card.title} className="flex flex-col items-center border-4">
+    <Card
+      key={card.title}
+      className="flex w-1/2 flex-col items-center border-4"
+    >
       <CardContent className="p-6">
-        <Image src={card.src} alt={card.title} width={400} height={400} />
+        <Image
+          src={card.src}
+          alt={card.title}
+          width={400}
+          height={400}
+          className="rounded-lg"
+        />
       </CardContent>
       <CardFooter className="justify-center text-center">
         <p className="text-2xl font-bold">{card.caption}</p>
