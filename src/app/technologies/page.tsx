@@ -13,6 +13,8 @@ import nodejs from "../../../public/images/nodejs.svg";
 import nextjs from "../../../public/images/nextjs.svg";
 import tailwind from "../../../public/images/tailwind.svg";
 import sqlite from "../../../public/images/sqlite.svg";
+import postgresql from "../../../public/images/postgresql.svg";
+import drf from "../../../public/images/drf.svg";
 import django from "../../../public/images/django.svg";
 import ubuntu from "../../../public/images/ubuntu.svg";
 import docker from "../../../public/images/docker.svg";
@@ -53,7 +55,14 @@ export default function TechnologyPage() {
       title: "Python",
       src: python,
     },
-
+    {
+      title: "Sqlite",
+      src: sqlite,
+    },
+    {
+      title: "PostgreSQL",
+      src: postgresql,
+    },
     {
       title: "MongoDB",
       src: mongodb,
@@ -85,8 +94,9 @@ export default function TechnologyPage() {
       src: django,
     },
     {
-      title: "Sqlite",
-      src: sqlite,
+      title: "DRF",
+      src: drf,
+      styling: "dark:invert",
     },
     {
       title: "Ubuntu",

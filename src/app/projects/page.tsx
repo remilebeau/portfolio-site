@@ -28,15 +28,15 @@ type ProjectCard = {
 export default function ProjectPage() {
   const projects: ProjectCard[] = [
     {
-      title: "This Site",
-      description: "My personal website",
+      title: "My Site",
+      description: "Created with Next.js",
       image: mySite,
       link: "https://remilebeau.vercel.app",
     },
     {
       title: "TechNotes",
       description:
-        "MERN SPA that replaces the notes system of a ficticious computer repair business",
+        "MERN SPA to improve the note protocols of a ficticious business",
       image: mernLoginPage,
       link: "https://technotes-op6s.onrender.com",
     },
@@ -61,7 +61,7 @@ export default function ProjectPage() {
     },
     {
       title: "FlashCards",
-      description: "React + Redux app for creating flashcards",
+      description: "React + Redux app for creating and using flashcards",
       image: flashCards,
       link: "https://flashcards-44tn.onrender.com",
     },
