@@ -127,16 +127,13 @@ export default function TechnologyPage() {
   ));
 
   return (
-    <main className="mx-auto max-w-4xl">
-      <section
-        id="technologies"
-        className="mb-12 flex flex-col items-center justify-center gap-8 p-6"
-      >
-        <h2 className="m-4 max-w-md text-center text-4xl font-bold text-primary sm:text-left sm:text-5xl">
-          Technologies
-        </h2>
+    <main className="mx-auto mb-12 flex max-w-4xl flex-col items-center justify-center gap-8 p-6">
+      <h2 className="m-4 max-w-md text-center text-4xl font-bold text-primary sm:text-left sm:text-5xl">
+        Technologies
+      </h2>
+      <article className="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-4">
         {renderedCards}
-      </section>
+      </article>
     </main>
   );
 }

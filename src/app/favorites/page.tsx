@@ -52,17 +52,22 @@ export default function FavoritesPage() {
   ];
   const renderedFavorites = cards.map((card) => (
     <Card key={card.title} className="flex h-full w-full flex-col border-4 p-2">
-      <CardTitle className="mb-2 text-center">{card.title}</CardTitle>
+      <CardTitle className="mb-4 text-center">{card.title}</CardTitle>
       <CardContent className="flex flex-col gap-4">
         {card.content.map((line) => (
-          <p key={line}>{line}</p>
+          <p className="text-center text-2xl" key={line}>
+            {line}
+          </p>
         ))}
       </CardContent>
     </Card>
   ));
   return (
-    <main className="mx-auto mb-12 flex max-w-4xl flex-col items-center justify-center gap-8 p-12 md:grid md:grid-cols-4">
-      {renderedFavorites}
+    <main className="mx-auto max-w-4xl p-6">
+      <h2 className="mb-12 text-center text-5xl font-bold">Favorites</h2>
+      <article className="flex flex-col gap-4 md:grid md:grid-cols-2">
+        {renderedFavorites}
+      </article>
     </main>
   );
 }

@@ -90,22 +90,15 @@ export default function ProjectPage() {
     </Card>
   ));
   return (
-    <main className="mx-auto max-w-4xl">
-      <section
-        id="projects"
-        className="mx-8 flex flex-col items-center justify-center"
-      >
-        <h2 className="m-4 max-w-md text-center text-4xl font-bold text-primary sm:text-left sm:text-5xl">
-          Projects
-        </h2>
-        <h3 className="text-2xl font-bold">
-          Each app&apos;s server may take up to 60 seconds to wake. Credentials
-          are testuser and testpassword.
-        </h3>
-        <section className="m-4 flex flex-col gap-8 sm:grid sm:grid-cols-2">
-          {renderedProjects}
-        </section>
-      </section>
+    <main className="mx-auto mb-12 flex max-w-4xl flex-col items-center justify-center gap-8 p-12">
+      <h2 className="text-center text-5xl font-bold">Projects</h2>
+      <h3 className="text-2xl font-bold">
+        Each app&apos;s server may take up to 60 seconds to wake. Credentials
+        are testuser and testpassword.
+      </h3>
+      <article className="m-4 flex flex-col gap-8 sm:grid sm:grid-cols-2">
+        {renderedProjects}
+      </article>
     </main>
   );
 }

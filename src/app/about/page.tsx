@@ -45,7 +45,7 @@ export default function AboutPage() {
       title: "OSU",
       src: osu,
       caption:
-        "Bachelor of Science in Business Administration, Summa Cum Laude, 2020",
+        "Bachelor of Science in Business Administration, Summa Cum Laude",
     },
     {
       title: "Nintendo",
@@ -68,8 +68,8 @@ export default function AboutPage() {
           className="rounded-lg"
         />
       </CardContent>
-      <CardFooter className="align-center flex flex-col justify-end">
-        <p className="text-2xl font-bold">{card.caption}</p>
+      <CardFooter>
+        <p className="text-center text-2xl font-bold">{card.caption}</p>
       </CardFooter>
     </Card>
   ));
@@ -77,9 +77,9 @@ export default function AboutPage() {
   return (
     <main className="mx-auto mb-12 flex max-w-4xl flex-col items-center justify-center gap-8 p-12">
       <h2 className="text-5xl font-bold">About</h2>
-      <section className="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-4">
+      <article className="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-4">
         {renderedCards}
-      </section>
+      </article>
     </main>
   );
 }
