@@ -28,7 +28,7 @@ type ProjectCard = {
 export default function ProjectPage() {
   const projects: ProjectCard[] = [
     {
-      title: "My Site",
+      title: "This Site",
       description: "My personal website",
       image: mySite,
       link: "https://remilebeau.vercel.app",
@@ -77,11 +77,11 @@ export default function ProjectPage() {
         {project.description}
       </CardDescription>
       <CardContent className="p-6">
-        <a href={project.link} target="_blank" rel="noreferrer" className="m-4">
+        <a href={project.link} target="_blank" rel="noreferrer">
           <Image
             src={project.image}
             alt={project.title}
-            className="rounded-3xl p-4 shadow-2xl hover:opacity-90"
+            className="hover:opacity-90"
             width={400}
             height={400}
           />
