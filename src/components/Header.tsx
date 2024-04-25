@@ -14,7 +14,7 @@ export default function Header() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
-    <header>
+    <header className="mx-auto max-w-4xl">
       {isMobile ? (
         <MobileNavbar links={links} />
       ) : (
