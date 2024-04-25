@@ -57,7 +57,7 @@ export default function AboutPage() {
   const renderedCards = cards.map((card) => (
     <Card
       key={card.title}
-      className="flex w-1/2 flex-col items-center border-4"
+      className="flex flex-col items-center justify-center border-4 md:w-full"
     >
       <CardContent className="p-6">
         <Image
@@ -68,7 +68,7 @@ export default function AboutPage() {
           className="rounded-lg"
         />
       </CardContent>
-      <CardFooter className="justify-center text-center">
+      <CardFooter className="align-center flex flex-col justify-end">
         <p className="text-2xl font-bold">{card.caption}</p>
       </CardFooter>
     </Card>
@@ -77,7 +77,9 @@ export default function AboutPage() {
   return (
     <main className="mx-auto mb-12 flex max-w-4xl flex-col items-center justify-center gap-8 p-12">
       <h2 className="text-5xl font-bold">About</h2>
-      {renderedCards}
+      <section className="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-4">
+        {renderedCards}
+      </section>
     </main>
   );
 }
