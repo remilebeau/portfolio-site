@@ -1,13 +1,32 @@
+import Link from "next/link";
 import { useState } from "react";
 
-type Props = { renderedLinks: JSX.Element[] };
+type Props = { links: { name: string; href: string }[] };
 
-export default function MobileNavbar({ renderedLinks }: Props) {
+export default function MobileNavbar({ links }: Props) {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
   };
+
+  const onMobileMenuLinkClicked = () => {
+    // close mobileMenu
+    setMobileMenu(false);
+    // scroll to top
+    window.scrollTo(0, 0);
+  };
+
+  const renderedLinks = links.map((link) => (
+    <Link
+      key={link.name}
+      href={link.href}
+      onClick={onMobileMenuLinkClicked}
+      className="hover:opacity-80"
+    >
+      <p>{link.name}</p>
+    </Link>
+  ));
   return (
     <nav className="flex flex-col justify-evenly gap-8 p-4 text-3xl font-bold">
       {/* mobile open button */}
