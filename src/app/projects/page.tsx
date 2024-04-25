@@ -99,8 +99,8 @@ export default function ProjectPage() {
           Projects
         </h2>
         <h3 className="text-2xl font-bold">
-          Each app's server may take up to 60 seconds to wake. Credentials are
-          testuser and testpassword.
+          Each app&apos;s server may take up to 60 seconds to wake. Credentials
+          are testuser and testpassword.
         </h3>
         <section className="m-4 flex flex-col gap-8 sm:grid sm:grid-cols-2">
           {renderedProjects}
