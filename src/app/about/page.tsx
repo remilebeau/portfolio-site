@@ -24,7 +24,7 @@ export default function AboutPage() {
     {
       title: "Lebanon",
       src: lebanon,
-      caption: "Lebanese nationality",
+      caption: "Lebanese ethnicity",
     },
     {
       title: "Canada",
@@ -34,7 +34,7 @@ export default function AboutPage() {
     {
       title: "USA",
       src: usa,
-      caption: "Raised and located in Columbus, OH",
+      caption: "Hometown: Columbus, OH",
     },
     {
       title: "France",
@@ -57,15 +57,14 @@ export default function AboutPage() {
   const renderedCards = cards.map((card) => (
     <Card
       key={card.title}
-      className="flex flex-col items-center justify-center border-4 md:w-full"
+      className="flex flex-col items-center justify-center border-4"
     >
-      <CardContent className="p-6">
+      <CardContent className="relative p-6">
         <Image
           src={card.src}
           alt={card.title}
-          width={400}
-          height={400}
           className="rounded-lg"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </CardContent>
       <CardFooter>
