@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardContent, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Favorites | Wes S",
@@ -52,7 +52,9 @@ export default function FavoritesPage() {
   ];
   const renderedFavorites = cards.map((card) => (
     <Card key={card.title} className="flex h-full w-full flex-col border-4 p-2">
-      <CardTitle className="mb-4 text-center">{card.title}</CardTitle>
+      <CardHeader>
+        <CardTitle className="text-center">{card.title}</CardTitle>
+      </CardHeader>
       <CardContent className="flex flex-col gap-4">
         {card.content.map((line) => (
           <p className="text-center text-2xl" key={line}>
