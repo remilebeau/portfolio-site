@@ -37,6 +37,8 @@ export default function FavoritesPage() {
         "A Christmas Carol (1984)",
         "It's a Wonderful Life",
         "Forrest Gump",
+        "The Breakfast Club",
+        "Die Hard",
       ],
     },
     {
@@ -53,11 +55,11 @@ export default function FavoritesPage() {
   const renderedFavorites = cards.map((card) => (
     <Card key={card.title} className="flex h-full w-full flex-col border-4 p-2">
       <CardHeader>
-        <CardTitle className="text-center">{card.title}</CardTitle>
+        <CardTitle className="text-center text-3xl">{card.title}</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         {card.content.map((line) => (
-          <p className="text-center text-2xl" key={line}>
+          <p className="text-left text-2xl" key={line}>
             {line}
           </p>
         ))}
