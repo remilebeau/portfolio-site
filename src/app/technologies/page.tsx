@@ -132,7 +132,7 @@ export default function TechnologyPage() {
   return (
     <main className="mx-auto mb-12 flex max-w-4xl flex-col items-center justify-center gap-8 p-12">
       <h2 className="text-5xl font-bold">Technologies</h2>
-      <article className="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-4">
+      <article className="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-4">
         {renderedCards}
       </article>
     </main>
