@@ -20,6 +20,7 @@ import ubuntu from "../../../public/images/ubuntu.svg";
 import docker from "../../../public/images/docker.svg";
 import git from "../../../public/images/git.svg";
 import nestjs from "../../../public/images/nestjs.svg";
+import flask from "../../../public/images/flask.svg";
 
 export const metadata: Metadata = {
   title: "Technologies | Wes S",
@@ -101,6 +102,11 @@ export default function TechnologyPage() {
     {
       title: "DRF",
       src: drf,
+      styling: "dark:invert",
+    },
+    {
+      title: "Flask",
+      src: flask,
       styling: "dark:invert",
     },
     {
