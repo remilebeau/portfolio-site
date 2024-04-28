@@ -19,7 +19,6 @@ import django from "../../../public/images/django.svg";
 import ubuntu from "../../../public/images/ubuntu.svg";
 import docker from "../../../public/images/docker.svg";
 import git from "../../../public/images/git.svg";
-import nestjs from "../../../public/images/nestjs.svg";
 import flask from "../../../public/images/flask.svg";
 
 export const metadata: Metadata = {
@@ -73,10 +72,6 @@ export default function TechnologyPage() {
       title: "Express",
       src: ex,
       styling: "dark:invert",
-    },
-    {
-      title: "NestJS",
-      src: nestjs,
     },
     {
       title: "React",
