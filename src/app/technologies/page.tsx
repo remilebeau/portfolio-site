@@ -20,6 +20,7 @@ import ubuntu from "../../../public/images/ubuntu.svg";
 import docker from "../../../public/images/docker.svg";
 import git from "../../../public/images/git.svg";
 import flask from "../../../public/images/flask.svg";
+import nestjs from "../../../public/images/nestjs.svg";
 
 export const metadata: Metadata = {
   title: "Technologies | Wes S",
@@ -56,6 +57,17 @@ export default function TechnologyPage() {
       title: "Python",
       src: python,
     },
+
+    {
+      title: "Next.js",
+      src: nextjs,
+      styling: "dark:invert",
+    },
+    {
+      title: "DRF",
+      src: drf,
+      styling: "dark:invert",
+    },
     {
       title: "Sqlite",
       src: sqlite,
@@ -69,41 +81,28 @@ export default function TechnologyPage() {
       src: mongodb,
     },
     {
+      title: "Node.js",
+      src: nodejs,
+    },
+    {
       title: "Express",
       src: ex,
       styling: "dark:invert",
     },
     {
-      title: "React",
-      src: react,
-    },
-    {
-      title: "Node.js",
-      src: nodejs,
-    },
-    {
-      title: "Next.js",
-      src: nextjs,
-      styling: "dark:invert",
-    },
-    {
-      title: "Tailwind",
-      src: tailwind,
-    },
-    {
-      title: "Django",
-      src: django,
-    },
-    {
-      title: "DRF",
-      src: drf,
-      styling: "dark:invert",
+      title: "NestJS",
+      src: nestjs,
     },
     {
       title: "Flask",
       src: flask,
       styling: "dark:invert",
     },
+    {
+      title: "React",
+      src: react,
+    },
+
     {
       title: "Ubuntu",
       src: ubuntu,

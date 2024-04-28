@@ -54,12 +54,6 @@ export default function ProjectPage() {
       link: "https://studybud-0egb.onrender.com",
     },
     {
-      title: "Blog",
-      description: "Django blog where users create and read posts",
-      image: djangoBlog,
-      link: "https://django-blogsite.onrender.com",
-    },
-    {
       title: "FlashCards",
       description: "React + Redux app for creating and using flashcards",
       image: flashCards,
