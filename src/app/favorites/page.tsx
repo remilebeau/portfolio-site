@@ -14,10 +14,6 @@ type FavoriteCard = {
 export default function FavoritesPage() {
   const cards: FavoriteCard[] = [
     {
-      title: "Sports Teams",
-      content: ["Ohio State Buckeyes", "Buffalo Bills", "Toronto Raptors"],
-    },
-    {
       title: "Game Series",
       content: [
         "The Legend of Zelda",
@@ -29,7 +25,13 @@ export default function FavoritesPage() {
     },
     {
       title: "TV Shows",
-      content: ["The Sopranos", "Seinfeld", "Shark Tank", "MasterChef"],
+      content: [
+        "The Sopranos",
+        "Seinfeld",
+        "Married With Children",
+        "MasterChef",
+        "Shark Tank",
+      ],
     },
     {
       title: "Movies",
@@ -42,7 +44,7 @@ export default function FavoritesPage() {
       ],
     },
     {
-      title: "Musicians",
+      title: "Music",
       content: [
         "Michael Jackson",
         "Phil Collins",
@@ -67,11 +69,11 @@ export default function FavoritesPage() {
     </Card>
   ));
   return (
-    <main className="mx-auto mb-12 flex max-w-4xl flex-col items-center justify-center gap-8 p-12">
+    <>
       <h2 className="text-5xl font-bold">Favorites</h2>
       <article className="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-4">
         {renderedFavorites}
       </article>
-    </main>
+    </>
   );
 }

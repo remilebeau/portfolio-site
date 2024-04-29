@@ -30,7 +30,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          {children}
+          <main className="mx-auto mb-12 flex max-w-4xl flex-col items-center justify-center gap-8 p-12">
+            {children}
+          </main>
           <Footer />
         </ThemeProvider>
       </body>

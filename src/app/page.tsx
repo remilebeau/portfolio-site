@@ -1,8 +1,7 @@
 export default function HomePage() {
   return (
-    <main className="mx-auto max-w-4xl">
-      {/* container for page content */}
-      <section className="flex max-w-4xl flex-col gap-16 p-12 text-center sm:text-left">
+    <>
+      <article className="flex flex-col gap-8">
         <h2 className="text-4xl font-bold">Hello and welcome. I&apos;m Wes.</h2>
 
         <p className="text-3xl">
@@ -18,7 +17,7 @@ export default function HomePage() {
           Please use this site to browse and demo my projects, visit my GitHub,
           or send me an email.
         </p>
-      </section>
-    </main>
+      </article>
+    </>
   );
 }

@@ -84,7 +84,7 @@ export default function ProjectPage() {
     </Card>
   ));
   return (
-    <main className="mx-auto mb-12 flex max-w-4xl flex-col items-center justify-center gap-8 p-12">
+    <>
       <h2 className="text-center text-5xl font-bold">Projects</h2>
       <h3 className="text-2xl font-bold">
         Each app&apos;s server may take up to 60 seconds to wake. Credentials
@@ -93,6 +93,6 @@ export default function ProjectPage() {
       <article className="m-4 flex flex-col gap-8 sm:grid sm:grid-cols-2">
         {renderedProjects}
       </article>
-    </main>
+    </>
   );
 }
