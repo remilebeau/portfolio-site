@@ -57,7 +57,6 @@ export default function TechnologyPage() {
       title: "Python",
       src: python,
     },
-
     {
       title: "Next.js",
       src: nextjs,
@@ -69,25 +68,17 @@ export default function TechnologyPage() {
       styling: "dark:invert",
     },
     {
-      title: "Sqlite",
-      src: sqlite,
+      title: "Express",
+      src: ex,
+      styling: "dark:invert",
     },
     {
-      title: "PostgreSQL",
-      src: postgresql,
-    },
-    {
-      title: "MongoDB",
-      src: mongodb,
+      title: "React",
+      src: react,
     },
     {
       title: "Node.js",
       src: nodejs,
-    },
-    {
-      title: "Express",
-      src: ex,
-      styling: "dark:invert",
     },
     {
       title: "NestJS",
@@ -98,11 +89,6 @@ export default function TechnologyPage() {
       src: flask,
       styling: "dark:invert",
     },
-    {
-      title: "React",
-      src: react,
-    },
-
     {
       title: "Ubuntu",
       src: ubuntu,

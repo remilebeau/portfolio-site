@@ -16,8 +16,8 @@ export default function FavoritesPage() {
     {
       title: "Game Series",
       content: [
-        "The Legend of Zelda",
         "Super Mario",
+        "The Legend of Zelda",
         "Super Smash Bros.",
         "Mario Kart",
         "Mario Party",
@@ -38,9 +38,9 @@ export default function FavoritesPage() {
       content: [
         "A Christmas Carol (1984)",
         "It's a Wonderful Life",
-        "Forrest Gump",
-        "The Breakfast Club",
-        "Die Hard",
+        "Nacho Libre",
+        "Gran Torino",
+        "Dirty Harry",
       ],
     },
     {
