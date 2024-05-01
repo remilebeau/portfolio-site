@@ -73,21 +73,8 @@ export default function TechnologyPage() {
       styling: "dark:invert",
     },
     {
-      title: "React",
-      src: react,
-    },
-    {
       title: "Node.js",
       src: nodejs,
-    },
-    {
-      title: "NestJS",
-      src: nestjs,
-    },
-    {
-      title: "Flask",
-      src: flask,
-      styling: "dark:invert",
     },
     {
       title: "Ubuntu",
