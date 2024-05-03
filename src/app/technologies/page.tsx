@@ -58,14 +58,17 @@ export default function TechnologyPage() {
       src: python,
     },
     {
+      title: "React",
+      src: react,
+    },
+    {
       title: "Next.js",
       src: nextjs,
       styling: "dark:invert",
     },
     {
-      title: "DRF",
-      src: drf,
-      styling: "dark:invert",
+      title: "Node.js",
+      src: nodejs,
     },
     {
       title: "Express",
@@ -73,8 +76,17 @@ export default function TechnologyPage() {
       styling: "dark:invert",
     },
     {
-      title: "Node.js",
-      src: nodejs,
+      title: "NestJS",
+      src: nestjs,
+    },
+    {
+      title: "Django",
+      src: django,
+    },
+    {
+      title: "DRF",
+      src: drf,
+      styling: "dark:invert",
     },
     {
       title: "Ubuntu",
