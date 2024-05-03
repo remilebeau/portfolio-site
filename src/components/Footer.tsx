@@ -7,7 +7,7 @@ export default function Footer() {
       <a href="https://github.com/remilebeau">
         <FaGithub />
       </a>
-      <a href="remilebeau90@gmail.com">
+      <a href="mailto:remilebeau90@gmail.com">
         <FaEnvelope />
       </a>
       <ModeToggle />
