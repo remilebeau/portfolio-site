@@ -14,8 +14,8 @@ export default function HomePage() {
         </p>
 
         <p className="text-3xl">
-          Please use this site to browse and demo my projects, visit my GitHub,
-          or send me an email.
+          Please use this site to demo my projects, visit my GitHub, or send me
+          an email.
         </p>
       </article>
     </>
