@@ -29,8 +29,8 @@ export default function FavoritesPage() {
         "The Sopranos",
         "Seinfeld",
         "Married With Children",
-        "MasterChef",
-        "Shark Tank",
+        "Dragon Ball Z",
+        "The Price Is Right",
       ],
     },
     {
@@ -40,7 +40,7 @@ export default function FavoritesPage() {
         "It's a Wonderful Life",
         "Nacho Libre",
         "Gran Torino",
-        "Dirty Harry",
+        "Forrest Gump",
       ],
     },
     {
