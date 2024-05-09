@@ -12,6 +12,7 @@ import studybudHomepage from "../../../public/images/studybudHomepage.png";
 import wikiRocket from "../../../public/images/wikiRocket.png";
 import djangoBlog from "../../../public/images/djangoBlog.png";
 import flashCards from "../../../public/images/flashCards.png";
+import wordle from "../../../public/images/wordle.png";
 
 export const metadata: Metadata = {
   title: "Projects | Wes S",
@@ -58,6 +59,12 @@ export default function ProjectPage() {
       description: "React + Redux app for creating and using flashcards",
       image: flashCards,
       link: "https://flashcards-44tn.onrender.com",
+    },
+    {
+      title: "Wordle",
+      description: "Wordle clone with React",
+      image: wordle,
+      link: "https://wordle-866i.onrender.com/",
     },
   ];
 
