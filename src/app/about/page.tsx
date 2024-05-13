@@ -88,8 +88,8 @@ export default function AboutPage() {
         </p>
         <p className="text-2xl">
           Unsure what I wanted to do as a career, I took a Java class in my
-          junior year of high school. While often frustrating, I did enjoy the
-          concept of solving problems using software. After high school, I
+          junior year of high school. While often frustrating, I was drawn to
+          the concept of solving problems using software. After high school, I
           enrolled at the Ohio State University, majoring in Computer Science.
         </p>
         <p className="text-2xl">
@@ -103,16 +103,19 @@ export default function AboutPage() {
           and operations management for small businesses here in Columbus.
         </p>
         <p className="text-2xl">
-          In 2021, my brother introduced me to Linux desktop as a hobby. After
-          using it alongside Windows 10 for over a year, I grew to like it more
-          than Windows. I switched full-time to Linux in 2022.
+          In 2021, my brother introduced me to Linux desktop as a hobby. In my
+          tinkering with Linux, I learned about the GNU Project, the Free
+          Software Movement, and Linux's overwhelming popularity on servers. I
+          also discovered that much of my previous frustration in programming
+          could be attributed to the quirks of programming on Windows, not
+          necessarily to programming in general. It wasn't long before I
+          switched to Linux full-time for my personal computing, but when I
+          learned about its professional applications, I thought back to my
+          original career path.
         </p>
         <p className="text-2xl">
-          Among other things, Linux desktop gives me a lot of practice with
-          using a terminal and getting unstuck - two skills I later learned are
-          very useful for software engineers. Thus, in 2023, I began changing
-          careers back toward software engineering. But this time with computers
-          - Linux ones preferably.
+          Thus, in 2023, I began changing careers back toward software
+          engineering. But this time with computers.
         </p>
       </article>
     </>
