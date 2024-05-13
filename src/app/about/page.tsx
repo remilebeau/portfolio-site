@@ -84,20 +84,20 @@ export default function AboutPage() {
         <p className="text-2xl">
           Growing up in the 2000s, two of my hobbies were video games and
           tinkering on my PC. Video games are still my favorite. Mostly
-          Nintendo, with a period of PC gaming.
+          Nintendo, with a period of PC gaming during the Wii and Wii U eras.
         </p>
         <p className="text-2xl">
-          Fast forward to 2016, where I entered university with the intention of
-          becoming a software engineer. The second semester, I walked into my
-          first computer science class that morning, and saw there were no
-          computers in the room. Then the professor took a dry-erase marker and
-          wrote mathematical proofs on the whiteboard. The next day, I switched
-          to the business school.
+          Fast forward to 2016, where I entered university majoring in computer
+          science. The second semester, I walked into my first computer science
+          class that morning, and saw there were no computers in the room.
+          Instead, the professor took a dry-erase marker and wrote mathematical
+          proofs on the whiteboard. The next day, I switched to the business
+          school.
         </p>
         <p className="text-2xl">
-          I received my BSBA from The Ohio State University in 2020, and
-          continued working in financial and operations management for small
-          businesses here in Columbus.
+          I received my Bachelor of Science in Business Administration from The
+          Ohio State University in 2020, and continued working in financial and
+          operations management for small businesses here in Columbus.
         </p>
         <p className="text-2xl">
           In 2021, my brother introduced me to Linux desktop. After using it

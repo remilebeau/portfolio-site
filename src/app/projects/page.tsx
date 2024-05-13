@@ -42,6 +42,18 @@ export default function ProjectPage() {
       link: "https://technotes-op6s.onrender.com",
     },
     {
+      title: "FlashCards",
+      description: "React + Redux app for creating and using flashcards",
+      image: flashCards,
+      link: "https://flashcards-44tn.onrender.com",
+    },
+    {
+      title: "Wordle",
+      description: "Wordle clone with React",
+      image: wordle,
+      link: "https://wordle-866i.onrender.com/",
+    },
+    {
       title: "WikiRocket",
       description:
         "Next.js app that searches Wikipedia for the given search query",
@@ -53,18 +65,6 @@ export default function ProjectPage() {
       description: "Django app where users create and join study rooms",
       image: studybudHomepage,
       link: "https://studybud-0egb.onrender.com",
-    },
-    {
-      title: "FlashCards",
-      description: "React + Redux app for creating and using flashcards",
-      image: flashCards,
-      link: "https://flashcards-44tn.onrender.com",
-    },
-    {
-      title: "Wordle",
-      description: "Wordle clone with React",
-      image: wordle,
-      link: "https://wordle-866i.onrender.com/",
     },
   ];
 
