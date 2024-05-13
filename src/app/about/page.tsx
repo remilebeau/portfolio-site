@@ -87,30 +87,32 @@ export default function AboutPage() {
           Nintendo, with a period of PC gaming during the Wii and Wii U eras.
         </p>
         <p className="text-2xl">
-          Fast forward to 2016, where I entered university majoring in computer
-          science. The second semester, I walked into my first computer science
-          class that morning, and saw there were no computers in the room.
-          Instead, the professor took a dry-erase marker and wrote mathematical
-          proofs on the whiteboard. The next day, I switched to the business
-          school.
+          Unsure what I wanted to do as a career, I took a Java class in my
+          junior year of high school. While often frustrating, I did enjoy the
+          concept of solving problems using software. After high school, I
+          enrolled at the Ohio State University, majoring in Computer Science.
         </p>
         <p className="text-2xl">
-          I received my Bachelor of Science in Business Administration from The
-          Ohio State University in 2020, and continued working in financial and
-          operations management for small businesses here in Columbus.
+          I walked into my first computer science class, and saw no computers in
+          the room. Instead, the professor grabbed a dry-erase marker and wrote
+          mathematical proofs on the whiteboard. The next day, I switched to the
+          business school.
         </p>
         <p className="text-2xl">
-          In 2021, my brother introduced me to Linux desktop. After using it
-          alongside Windows 10 for over a year, I switched full-time to Linux in
-          2022.
+          I received my BSBA from OSU in 2020, and began working in financial
+          and operations management for small businesses here in Columbus.
         </p>
         <p className="text-2xl">
-          Among other things, Linux desktop gave me a lot of practice with using
-          a terminal and getting unstuck - two skills I later learned are very
-          useful for software engineers. It also reignited my interest in
-          software engineering. Thus, in 2023, I began changing careers back
-          toward software engineering. But this time with computers - Linux ones
-          preferably.
+          In 2021, my brother introduced me to Linux desktop as a hobby. After
+          using it alongside Windows 10 for over a year, I grew to like it more
+          than Windows. I switched full-time to Linux in 2022.
+        </p>
+        <p className="text-2xl">
+          Among other things, Linux desktop gives me a lot of practice with
+          using a terminal and getting unstuck - two skills I later learned are
+          very useful for software engineers. Thus, in 2023, I began changing
+          careers back toward software engineering. But this time with computers
+          - Linux ones preferably.
         </p>
       </article>
     </>
