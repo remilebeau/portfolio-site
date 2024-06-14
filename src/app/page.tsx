@@ -20,11 +20,11 @@ export default function HomePage() {
         email.
       </p>
       <h2 className="text-center text-5xl font-bold">About</h2>
-      <section className="gap-4 sm:grid sm:grid-cols-2">
+      <section className="flex flex-col gap-4 sm:grid sm:grid-cols-2">
         <AboutCards />
       </section>
       <h2 className="text-center text-5xl font-bold">Favorites</h2>
-      <section className="gap-4 sm:grid sm:grid-cols-2">
+      <section className="flex flex-col gap-4 sm:grid sm:grid-cols-2">
         <FavoriteCards />
       </section>
     </main>
