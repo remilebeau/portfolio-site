@@ -19,15 +19,8 @@ export const metadata: Metadata = {
   description: "The projects page of Wes S",
 };
 
-type ProjectCard = {
-  title: string;
-  description: string;
-  image: StaticImageData;
-  link: string;
-};
-
 export default function ProjectPage() {
-  const projects: ProjectCard[] = [
+  const projects = [
     {
       title: "My Site",
       description: "Created with Next.js",

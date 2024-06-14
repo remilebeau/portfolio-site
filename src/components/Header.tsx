@@ -9,7 +9,6 @@ export default function Header() {
     { name: "About", href: "/about" },
     { name: "Technologies", href: "/technologies" },
     { name: "Projects", href: "/projects" },
-    { name: "Favorites", href: "/favorites" },
   ];
 
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });

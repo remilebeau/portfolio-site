@@ -1,18 +1,7 @@
-import { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-export const metadata: Metadata = {
-  title: "Favorites | Wes S",
-  description: "Hobbies of Wes S",
-};
-
-type FavoriteCard = {
-  title: string;
-  content: string[];
-};
-
-export default function FavoritesPage() {
-  const cards: FavoriteCard[] = [
+export default function FavoriteCards() {
+  const cards = [
     {
       title: "Game Series",
       content: [
@@ -68,12 +57,5 @@ export default function FavoritesPage() {
       </CardContent>
     </Card>
   ));
-  return (
-    <>
-      <h2 className="text-5xl font-bold">Favorites</h2>
-      <article className="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-4">
-        {renderedFavorites}
-      </article>
-    </>
-  );
+  return <>{renderedFavorites}</>;
 }

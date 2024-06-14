@@ -27,14 +27,8 @@ export const metadata: Metadata = {
   description: "The technologies page of Wes S",
 };
 
-type TechnologyCard = {
-  title: string;
-  src: StaticImageData;
-  styling?: string;
-};
-
 export default function TechnologyPage() {
-  const cards: TechnologyCard[] = [
+  const cards = [
     {
       title: "HTML",
       src: html,
