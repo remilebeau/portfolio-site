@@ -73,19 +73,21 @@ export default function ProjectsCarousel() {
         <CarouselContent>
           {projects.map((project) => (
             <CarouselItem key={project.title}>
-              <a href={project.live} target="_blank" rel="noreferrer">
-                <FaExternalLinkSquareAlt className="text-3xl" />
-              </a>
-              <a href={project.sourceCode} target="_blank" rel="noreferrer">
-                <FaGithub className="text-3xl" />
-              </a>
+              <section className="flex flex-row justify-end gap-8">
+                <a href={project.live} target="_blank" rel="noreferrer">
+                  <FaExternalLinkSquareAlt className="text-3xl sm:text-5xl" />
+                </a>
+                <a href={project.sourceCode} target="_blank" rel="noreferrer">
+                  <FaGithub className="text-3xl sm:text-5xl" />
+                </a>
+              </section>
               <Image
                 className="row-start-2"
                 src={project.image}
                 alt={project.title}
-                width={500}
-                height={500}
               />
+              <p>{project.title}</p>
+              <p>{project.description}</p>
             </CarouselItem>
           ))}
         </CarouselContent>
