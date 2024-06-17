@@ -27,8 +27,7 @@ export default function AboutCards() {
     {
       title: "OSU",
       src: osu,
-      caption:
-        "Bachelor of Science in Business Administration, Summa Cum Laude",
+      caption: "BSBA, Finance Specialization, Summa Cum Laude",
     },
   ];
 

@@ -1,7 +1,9 @@
 export default function ContactPage() {
   return (
     <main className="mx-auto flex max-w-4xl flex-col gap-8 p-4">
-      <h1 className="text-center text-5xl font-bold">Want To...</h1>
+      <h1 className="text-center text-5xl font-bold text-primary">
+        Want To...
+      </h1>
       <section>
         <h2 className="text-3xl font-bold text-primary">
           Offer a Job Opportunity?
@@ -18,8 +20,7 @@ export default function ContactPage() {
           Networking is key in the tech industry, and I&apos;m always looking to
           meet new people and expand my professional circle. Whether you&apos;re
           a fellow developer, designer, or entrepeneur, I&apos;d love to chat
-          and learn more about your work. Let&apos;s grab a virtual coffee and
-          see where the conversation takes us!
+          and learn more about your work.
         </p>
       </section>
       <section>

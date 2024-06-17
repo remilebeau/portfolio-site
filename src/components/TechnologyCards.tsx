@@ -55,6 +55,10 @@ export default function TechnologyCards() {
       styling: "dark:invert",
     },
     {
+      title: "Tailwind",
+      src: tailwind,
+    },
+    {
       title: "Node.js",
       src: nodejs,
     },
@@ -64,8 +68,9 @@ export default function TechnologyCards() {
       styling: "dark:invert",
     },
     {
-      title: "NestJS",
-      src: nestjs,
+      title: "Flask",
+      src: flask,
+      styling: "dark:invert",
     },
     {
       title: "Django",
@@ -75,6 +80,14 @@ export default function TechnologyCards() {
       title: "DRF",
       src: drf,
       styling: "dark:invert",
+    },
+    {
+      title: "MongoDB",
+      src: mongodb,
+    },
+    {
+      title: "SQLite",
+      src: sqlite,
     },
     {
       title: "Ubuntu",
