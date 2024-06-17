@@ -27,10 +27,9 @@ export default function ContactPage() {
         <h2 className="text-3xl font-bold text-primary">Build Something?</h2>
         <p className="text-2xl">
           I have a passion for using technology to solve business problems.
-          Whether it&apos;s building and analyzing a Monte Carlo simulation in a
-          marketing, financial, or operational context, automating a repetitive
-          task, or streamlining a workflow, I&apos;m excited to be part of your
-          team.
+          Whether it&apos;s using a Monte Carlo simulation to forecast profit,
+          automating a repetitive task, or streamlining a workflow, I&apos;m
+          excited to be part of your team.
         </p>
       </section>
     </main>
