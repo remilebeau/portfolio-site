@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import html from "../../public/images/html.svg";
 import css from "../../public/images/css.svg";

@@ -8,6 +8,7 @@ export default function Header() {
     { name: "Wes S", href: "/" },
     { name: "Technologies", href: "/technologies" },
     { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });

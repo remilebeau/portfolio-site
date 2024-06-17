@@ -16,6 +16,18 @@ export default function HomePage() {
         </p>
       </section>
 
+      <h2>My business background</h2>
+
+      <section className="flex flex-col gap-4">
+        <p className="text-2xl">
+          I am a full-stack web developer with a background in finance and
+          business analytics. I have a passion for using technology to solve
+          business problems. Whether it&apos;s building and analyzing a Monte
+          Carlo simulation in a marketing, financial, or operational context, I
+          am excited to be part of your team.
+        </p>
+      </section>
+
       <h2 className="text-center text-4xl font-bold">About</h2>
       <section className="flex flex-col gap-4 sm:grid sm:grid-cols-2">
         <AboutCards />
