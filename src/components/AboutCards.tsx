@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import lebanon from "../../public/images/lebanon.svg";
 import canada from "../../public/images/canada.svg";
@@ -35,7 +35,7 @@ export default function AboutCards() {
   const renderedCards = cards.map((card) => (
     <Card
       key={card.title}
-      className="flex flex-col items-center justify-center border-4"
+      className="flex flex-col items-center justify-center border-4 border-border"
     >
       <CardContent className="relative p-6">
         <Image src={card.src} alt={card.title} className="rounded-lg" />

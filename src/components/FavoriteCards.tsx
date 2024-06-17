@@ -44,9 +44,14 @@ export default function FavoriteCards() {
     },
   ];
   const renderedFavorites = cards.map((card) => (
-    <Card key={card.title} className="flex h-full w-full flex-col border-4 p-2">
+    <Card
+      key={card.title}
+      className="flex h-full w-full flex-col border-4 border-border p-2"
+    >
       <CardHeader>
-        <CardTitle className="text-center text-3xl">{card.title}</CardTitle>
+        <CardTitle className="text-center text-3xl text-primary">
+          {card.title}
+        </CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         {card.content.map((line) => (

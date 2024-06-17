@@ -3,7 +3,7 @@ export default function ContactPage() {
     <main className="mx-auto flex max-w-4xl flex-col gap-8 p-4">
       <h1 className="text-center text-5xl font-bold">Want To...</h1>
       <section>
-        <h2 className="text-3xl font-bold text-orange-500">
+        <h2 className="text-3xl font-bold text-primary">
           Offer a Job Opportunity?
         </h2>
         <p className="text-2xl">
@@ -13,7 +13,7 @@ export default function ContactPage() {
         </p>
       </section>
       <section>
-        <h2 className="text-3xl font-bold text-orange-500">Connect?</h2>
+        <h2 className="text-3xl font-bold text-primary">Connect?</h2>
         <p className="text-2xl">
           Networking is key in the tech industry, and I&apos;m always looking to
           meet new people and expand my professional circle. Whether you&apos;re
@@ -23,7 +23,7 @@ export default function ContactPage() {
         </p>
       </section>
       <section>
-        <h2 className="text-3xl font-bold text-orange-500">Build Something?</h2>
+        <h2 className="text-3xl font-bold text-primary">Build Something?</h2>
         <p className="text-2xl">
           I have a passion for using technology to solve business problems.
           Whether it&apos;s building and analyzing a Monte Carlo simulation in a
