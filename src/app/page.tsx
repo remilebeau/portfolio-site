@@ -31,7 +31,7 @@ export default function HomePage() {
           Business Analytics:
           <ul className="list-inside list-disc">
             <li>Optimize production quantity with linear programming</li>
-            <li>Forecast profit with Monte Carlo simulation</li>
+            <li>Simulate demand to forecast profit</li>
             <li>Define and measure Key Performance Indicators over time</li>
           </ul>
         </p>

@@ -10,7 +10,7 @@ export default function ContactPage() {
         </h2>
         <p className="text-2xl">
           I am open to discussing potential job opportunities or collaborations.
-          With a financial background, I am interested in projects that allow me
+          With a business background, I am interested in projects that allow me
           to combine my technical skills with my business acumen.
         </p>
       </section>
@@ -27,9 +27,9 @@ export default function ContactPage() {
         <h2 className="text-3xl font-bold text-primary">Build Something?</h2>
         <p className="text-2xl">
           I have a passion for using technology to solve business problems.
-          Whether it&apos;s using a Monte Carlo simulation to forecast profit,
-          automating a repetitive task, or streamlining a workflow, I&apos;m
-          excited to be part of your team.
+          Whether it&apos;s optimizing production quantity, forecasting profit,
+          eliminating unnecessary expenses, automating a repetitive task, or
+          streamlining a workflow, I&apos;m excited to be part of your team.
         </p>
       </section>
     </main>
