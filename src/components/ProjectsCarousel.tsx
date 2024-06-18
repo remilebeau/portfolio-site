@@ -66,7 +66,6 @@ export default function ProjectsCarousel() {
     <>
       <Carousel
         opts={{
-          align: "start",
           loop: true,
         }}
       >
