@@ -18,25 +18,20 @@ export default function HomePage() {
         <h2 className="text-center text-4xl font-bold text-primary">
           My Business Background
         </h2>
-        <p className="text-3xl">
-          My formal training is in finance, with experience in business
-          analytics and operations management.
-        </p>
-        <h3 className="text-3xl font-bold text-primary">Business Analytics:</h3>
+        <h3 className="text-3xl font-bold text-primary">Finance</h3>
         <ul className="list-inside list-disc text-2xl">
-          <li>Optimize production quantity with linear programming</li>
-          <li>
-            Simulate demand with Monte Carlo simulation to forecast profit
-          </li>
-          <li>Define and measure Key Performance Indicators over time</li>
+          <li>Financial planning</li>
+          <li>Risk management</li>
+          <li>Financial statement analysis</li>
+          <li>Budget analysis</li>
         </ul>
-        <h3 className="text-3xl font-bold text-primary">
-          Operations Management
-        </h3>
+        <h3 className="text-3xl font-bold text-primary">Business Analytics</h3>
         <ul className="list-inside list-disc text-2xl">
-          <li>Create and analyze financial statements</li>
-          <li>Expense analysis and reduction</li>
+          <li>Profit/demand forecasting</li>
+          <li>Define and measure KPIs over time</li>
+          <li>Resource optimization</li>
           <li>Pareto analysis</li>
+          <li>Data-driven decision-making</li>
         </ul>
       </article>
 

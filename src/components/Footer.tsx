@@ -25,7 +25,7 @@ export default function Footer() {
               </a>
             </TooltipTrigger>
             <TooltipContent>
-              <p>GitHub</p>
+              <p>Visit My GitHub</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
@@ -42,7 +42,7 @@ export default function Footer() {
               </a>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Email</p>
+              <p>Send Me an Email</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
@@ -55,7 +55,7 @@ export default function Footer() {
               </a>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Download Resume</p>
+              <p>Download My Resume</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
