@@ -12,6 +12,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+
 import Image from "next/image";
 import mySite from "../../public/images/mySite.png";
 import mernLoginPage from "../../public/images/mernLoginPage.png";
@@ -90,20 +97,44 @@ export default function ProjectsCarousel() {
                 <CardHeader>
                   <CardTitle className="text-3xl">{project.title}</CardTitle>
                   <CardDescription className="flex justify-between gap-4">
+                    {/* project description */}
                     <section className="flex items-center">
                       <p className="text-2xl">{project.description}</p>
                     </section>
-                    <section className="flex gap-8">
-                      <a href={project.live} target="_blank" rel="noreferrer">
-                        <FaExternalLinkSquareAlt className="text-3xl sm:text-5xl" />
-                      </a>
-                      <a
-                        href={project.sourceCode}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaGithub className="text-3xl sm:text-5xl" />
-                      </a>
+                    {/* live and github links */}
+                    <section className="mr-4 flex gap-8">
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger>
+                            <a
+                              href={project.live}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaExternalLinkSquareAlt className="text-2xl sm:text-5xl" />
+                            </a>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p className="font-bold">View Live</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger>
+                            <a
+                              href={project.sourceCode}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaGithub className="text-2xl sm:text-5xl" />
+                            </a>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p className="font-bold">Source Code</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
                     </section>
                   </CardDescription>
                 </CardHeader>
