@@ -10,8 +10,6 @@ export default function ContactPage() {
         </h2>
         <p className="text-2xl">
           I am open to discussing potential job opportunities or collaborations.
-          Given my business background, I am most interested in projects that
-          allow me to combine my technical skills with my business acumen.
         </p>
       </article>
       <article>
