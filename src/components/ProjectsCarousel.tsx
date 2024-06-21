@@ -28,7 +28,8 @@ import djangoBlog from "../../public/images/djangoBlog.png";
 import flashCards from "../../public/images/flashCards.png";
 import wordle from "../../public/images/wordle.png";
 import dashboard from "../../public/images/dashboard.png";
-import { FaExternalLinkSquareAlt, FaGithub } from "react-icons/fa";
+import simulation from "../../public/images/simulation.png";
+import { FaExternalLinkSquareAlt, FaGithub, FaServer } from "react-icons/fa";
 
 export default function ProjectsCarousel() {
   const projects = [
@@ -40,11 +41,42 @@ export default function ProjectsCarousel() {
       sourceCode: "https://github.com/remilebeau/portfolio-site",
     },
     {
+      title: "Dashboard",
+      description: "Next.js admin dashboard",
+      image: dashboard,
+      live: "https://remilebeau-dashboard.vercel.app/",
+      sourceCode: "https://github.com/remilebeau/dashboard",
+    },
+    {
+      title: "Simulation",
+      description: "Forecast annual cash flow with Monte Carlo simulation",
+      image: simulation,
+      live: "https://remilebeau-simulation.vercel.app/",
+      sourceCode: "https://github.com/remilebeau/simulation",
+      apiSourceCode: "https://github.com/remilebeau/simulation-api",
+    },
+    {
       title: "TechNotes",
       description: "MERN CRUD app for customer tickets",
       image: mernLoginPage,
       live: "https://technotes-op6s.onrender.com",
       sourceCode: "https://github.com/remilebeau/techNotes",
+      apiSourceCode: "https://github.com/remilebeau/techNotes-api",
+    },
+    {
+      title: "Studybud",
+      description: "Django app where users create and join study rooms",
+      image: studybudHomepage,
+      live: "https://studybud-0egb.onrender.com",
+      sourceCode: "https://github.com/remilebeau/studybud",
+    },
+    {
+      title: "WikiRocket",
+      description:
+        "Next.js app that searches Wikipedia with the provided query",
+      image: wikiRocket,
+      live: "https://remilebeau-wikirocket.vercel.app/",
+      sourceCode: "https://github.com/remilebeau/wikiRocket",
     },
     {
       title: "FlashCards",
@@ -59,28 +91,6 @@ export default function ProjectsCarousel() {
       image: wordle,
       live: "https://wordle-866i.onrender.com/",
       sourceCode: "https://github.com/remilebeau/wordle",
-    },
-    {
-      title: "WikiRocket",
-      description:
-        "Next.js app that searches Wikipedia with the provided query",
-      image: wikiRocket,
-      live: "https://remilebeau-wikirocket.vercel.app/",
-      sourceCode: "https://github.com/remilebeau/wikiRocket",
-    },
-    {
-      title: "Studybud",
-      description: "Django app where users create and join study rooms",
-      image: studybudHomepage,
-      live: "https://studybud-0egb.onrender.com",
-      sourceCode: "https://github.com/remilebeau/studybud",
-    },
-    {
-      title: "Dashboard",
-      description: "Next.js admin dashboard",
-      image: dashboard,
-      live: "https://remilebeau-dashboard.vercel.app/",
-      sourceCode: "https://github.com/remilebeau/dashboard",
     },
   ];
   return (
@@ -135,6 +145,24 @@ export default function ProjectsCarousel() {
                           </TooltipContent>
                         </Tooltip>
                       </TooltipProvider>
+                      {project.apiSourceCode && (
+                        <TooltipProvider>
+                          <Tooltip>
+                            <TooltipTrigger>
+                              <a
+                                href={project.apiSourceCode}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <FaServer className="text-2xl sm:text-5xl" />
+                              </a>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="font-bold">API Source Code</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      )}
                     </section>
                   </CardDescription>
                 </CardHeader>
