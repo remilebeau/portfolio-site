@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function ProjectPage() {
   return (
     <main className="mx-auto flex max-w-4xl flex-col gap-8 p-8">
+      <h2 className="text-center text-5xl font-bold text-primary">Projects</h2>
       <ProjectsCarousel />
     </main>
   );

@@ -34,8 +34,7 @@ export default function ProjectsCarousel() {
     },
     {
       title: "TechNotes",
-      description:
-        "MERN SPA to improve the note protocols of a ficticious business",
+      description: "MERN CRUD app for customer tickets",
       image: mernLoginPage,
       live: "https://technotes-op6s.onrender.com",
       sourceCode: "https://github.com/remilebeau/techNotes",
@@ -57,7 +56,7 @@ export default function ProjectsCarousel() {
     {
       title: "WikiRocket",
       description:
-        "Next.js app that searches Wikipedia for the given search query",
+        "Next.js app that searches Wikipedia with the provided query",
       image: wikiRocket,
       live: "https://remilebeau-wikirocket.vercel.app/",
       sourceCode: "https://github.com/remilebeau/wikiRocket",
@@ -71,7 +70,7 @@ export default function ProjectsCarousel() {
     },
     {
       title: "Dashboard",
-      description: "React app that displays data from an API",
+      description: "Next.js admin dashboard",
       image: dashboard,
       live: "https://remilebeau-dashboard.vercel.app/",
       sourceCode: "https://github.com/remilebeau/dashboard",
@@ -90,11 +89,11 @@ export default function ProjectsCarousel() {
               <Card className="rounded-3xl border-2 border-border">
                 <CardHeader>
                   <CardTitle className="text-3xl">{project.title}</CardTitle>
-                  <CardDescription className="flex justify-between">
-                    <div className="flex items-center">
+                  <CardDescription className="flex justify-between gap-4">
+                    <section className="flex items-center">
                       <p className="text-2xl">{project.description}</p>
-                    </div>
-                    <div className="flex gap-8">
+                    </section>
+                    <section className="flex gap-8">
                       <a href={project.live} target="_blank" rel="noreferrer">
                         <FaExternalLinkSquareAlt className="text-3xl sm:text-5xl" />
                       </a>
@@ -105,7 +104,7 @@ export default function ProjectsCarousel() {
                       >
                         <FaGithub className="text-3xl sm:text-5xl" />
                       </a>
-                    </div>
+                    </section>
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
