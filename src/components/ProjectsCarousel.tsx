@@ -5,6 +5,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import Image from "next/image";
 import mySite from "../../public/images/mySite.png";
 import mernLoginPage from "../../public/images/mernLoginPage.png";
@@ -13,6 +20,7 @@ import wikiRocket from "../../public/images/wikiRocket.png";
 import djangoBlog from "../../public/images/djangoBlog.png";
 import flashCards from "../../public/images/flashCards.png";
 import wordle from "../../public/images/wordle.png";
+import dashboard from "../../public/images/dashboard.png";
 import { FaExternalLinkSquareAlt, FaGithub } from "react-icons/fa";
 
 export default function ProjectsCarousel() {
@@ -61,6 +69,13 @@ export default function ProjectsCarousel() {
       live: "https://studybud-0egb.onrender.com",
       sourceCode: "https://github.com/remilebeau/studybud",
     },
+    {
+      title: "Dashboard",
+      description: "React app that displays data from an API",
+      image: dashboard,
+      live: "https://remilebeau-dashboard.vercel.app/",
+      sourceCode: "https://github.com/remilebeau/dashboard",
+    },
   ];
   return (
     <>
@@ -72,21 +87,35 @@ export default function ProjectsCarousel() {
         <CarouselContent>
           {projects.map((project) => (
             <CarouselItem key={project.title}>
-              <section className="flex flex-row justify-end gap-8">
-                <a href={project.live} target="_blank" rel="noreferrer">
-                  <FaExternalLinkSquareAlt className="text-3xl sm:text-5xl" />
-                </a>
-                <a href={project.sourceCode} target="_blank" rel="noreferrer">
-                  <FaGithub className="text-3xl sm:text-5xl" />
-                </a>
-              </section>
-              <Image
-                className="row-start-2"
-                src={project.image}
-                alt={project.title}
-              />
-              <p>{project.title}</p>
-              <p>{project.description}</p>
+              <Card className="rounded-3xl border-2 border-border">
+                <CardHeader>
+                  <CardTitle className="text-3xl">{project.title}</CardTitle>
+                  <CardDescription className="flex justify-between">
+                    <div className="flex items-center">
+                      <p className="text-2xl">{project.description}</p>
+                    </div>
+                    <div className="flex gap-8">
+                      <a href={project.live} target="_blank" rel="noreferrer">
+                        <FaExternalLinkSquareAlt className="text-3xl sm:text-5xl" />
+                      </a>
+                      <a
+                        href={project.sourceCode}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaGithub className="text-3xl sm:text-5xl" />
+                      </a>
+                    </div>
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    className="rounded-3xl"
+                    src={project.image}
+                    alt={project.title}
+                  />
+                </CardContent>
+              </Card>
             </CarouselItem>
           ))}
         </CarouselContent>
