@@ -28,7 +28,7 @@ export default function HomePage() {
         <h3 className="text-3xl font-bold text-primary">Business Analytics</h3>
         <ul className="list-inside list-disc text-2xl">
           <li>Profit/demand forecasting</li>
-          <li>Define and measure KPIs over time</li>
+          <li>KPI analysis</li>
           <li>Resource optimization</li>
           <li>Pareto analysis</li>
           <li>Data-driven decision-making</li>
