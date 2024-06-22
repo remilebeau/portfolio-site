@@ -21,8 +21,8 @@ import {
 
 import Image from "next/image";
 import mySite from "../../public/images/mySite.png";
-import mernLoginPage from "../../public/images/mernLoginPage.png";
-import studybudHomepage from "../../public/images/studybudHomepage.png";
+import techNotes from "../../public/images/techNotes.png";
+import studyBud from "../../public/images/studyBud.png";
 import wikiRocket from "../../public/images/wikiRocket.png";
 import djangoBlog from "../../public/images/djangoBlog.png";
 import flashCards from "../../public/images/flashCards.png";
@@ -57,8 +57,8 @@ export default function ProjectsCarousel() {
     },
     {
       title: "TechNotes",
-      description: "MERN CRUD app for customer tickets",
-      image: mernLoginPage,
+      description: "MERN CRUD app with auth for customer tickets",
+      image: techNotes,
       live: "https://technotes-op6s.onrender.com",
       sourceCode: "https://github.com/remilebeau/techNotes",
       apiSourceCode: "https://github.com/remilebeau/techNotes-api",
@@ -66,7 +66,7 @@ export default function ProjectsCarousel() {
     {
       title: "Studybud",
       description: "Django app where users create and join study rooms",
-      image: studybudHomepage,
+      image: studyBud,
       live: "https://studybud-0egb.onrender.com",
       sourceCode: "https://github.com/remilebeau/studybud",
     },
