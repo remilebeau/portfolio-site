@@ -24,7 +24,6 @@ import mySite from "../../public/images/mySite.png";
 import techNotes from "../../public/images/techNotes.png";
 import studyBud from "../../public/images/studyBud.png";
 import wikiRocket from "../../public/images/wikiRocket.png";
-import djangoBlog from "../../public/images/djangoBlog.png";
 import flashCards from "../../public/images/flashCards.png";
 import wordle from "../../public/images/wordle.png";
 import dashboard from "../../public/images/dashboard.png";
@@ -48,8 +47,9 @@ export default function ProjectsCarousel() {
       sourceCode: "https://github.com/remilebeau/dashboard",
     },
     {
-      title: "Simulation",
-      description: "Forecast annual cash flow with Monte Carlo simulation",
+      title: "Demand/Cash Flow Forecasting",
+      description:
+        "Forecast annual demand or cash flow with Monte Carlo simulation",
       image: simulation,
       live: "https://remilebeau-simulation.vercel.app/",
       sourceCode: "https://github.com/remilebeau/simulation",
