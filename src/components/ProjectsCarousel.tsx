@@ -40,6 +40,15 @@ export default function ProjectsCarousel() {
       sourceCode: "https://github.com/remilebeau/portfolio-site",
     },
     {
+      title: "Demand/Cash Flow Forecasting",
+      description:
+        "Forecast annual demand or cash flow with Monte Carlo simulation",
+      image: simulation,
+      live: "https://remilebeau-simulation.vercel.app/",
+      sourceCode: "https://github.com/remilebeau/simulation",
+      apiURL: "https://simulation-api-t28w.onrender.com/docs",
+    },
+    {
       title: "Dashboard",
       description: "Next.js admin dashboard",
       image: dashboard,
@@ -47,21 +56,12 @@ export default function ProjectsCarousel() {
       sourceCode: "https://github.com/remilebeau/dashboard",
     },
     {
-      title: "Demand/Cash Flow Forecasting",
-      description:
-        "Forecast annual demand or cash flow with Monte Carlo simulation",
-      image: simulation,
-      live: "https://remilebeau-simulation.vercel.app/",
-      sourceCode: "https://github.com/remilebeau/simulation",
-      apiSourceCode: "https://github.com/remilebeau/simulation-api",
-    },
-    {
       title: "TechNotes",
       description: "MERN CRUD app with auth for customer tickets",
       image: techNotes,
       live: "https://technotes-op6s.onrender.com",
       sourceCode: "https://github.com/remilebeau/techNotes",
-      apiSourceCode: "https://github.com/remilebeau/techNotes-api",
+      apiURL: "https://github.com/remilebeau/techNotes-api",
     },
     {
       title: "Studybud",
@@ -145,12 +145,12 @@ export default function ProjectsCarousel() {
                           </TooltipContent>
                         </Tooltip>
                       </TooltipProvider>
-                      {project.apiSourceCode && (
+                      {project.apiURL && (
                         <TooltipProvider>
                           <Tooltip>
                             <TooltipTrigger>
                               <a
-                                href={project.apiSourceCode}
+                                href={project.apiURL}
                                 target="_blank"
                                 rel="noreferrer"
                               >
@@ -158,7 +158,7 @@ export default function ProjectsCarousel() {
                               </a>
                             </TooltipTrigger>
                             <TooltipContent>
-                              <p className="font-bold">API Source Code</p>
+                              <p className="font-bold">View API</p>
                             </TooltipContent>
                           </Tooltip>
                         </TooltipProvider>
