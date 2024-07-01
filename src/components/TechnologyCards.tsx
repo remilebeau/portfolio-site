@@ -12,14 +12,12 @@ import nodejs from "../../public/images/nodejs.svg";
 import nextjs from "../../public/images/nextjs.svg";
 import tailwind from "../../public/images/tailwind.svg";
 import sqlite from "../../public/images/sqlite.svg";
-import postgresql from "../../public/images/postgresql.svg";
 import drf from "../../public/images/drf.svg";
 import django from "../../public/images/django.svg";
 import ubuntu from "../../public/images/ubuntu.svg";
 import docker from "../../public/images/docker.svg";
 import git from "../../public/images/git.svg";
-import flask from "../../public/images/flask.svg";
-import nestjs from "../../public/images/nestjs.svg";
+import fastapi from "../../public/images/fastapi.svg";
 
 export default function TechnologyCards() {
   const cards = [
@@ -68,18 +66,13 @@ export default function TechnologyCards() {
       styling: "dark:invert",
     },
     {
-      title: "Flask",
-      src: flask,
+      title: "Fastapi",
+      src: fastapi,
       styling: "dark:invert",
     },
     {
       title: "Django",
       src: django,
-    },
-    {
-      title: "DRF",
-      src: drf,
-      styling: "dark:invert",
     },
     {
       title: "MongoDB",
