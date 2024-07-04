@@ -22,10 +22,6 @@ import {
 import Image from "next/image";
 import mySite from "../../public/images/mySite.png";
 import techNotes from "../../public/images/techNotes.png";
-import studyBud from "../../public/images/studyBud.png";
-import wikiRocket from "../../public/images/wikiRocket.png";
-import flashCards from "../../public/images/flashCards.png";
-import wordle from "../../public/images/wordle.png";
 import dashboard from "../../public/images/dashboard.png";
 import simulation from "../../public/images/simulation.png";
 import { FaExternalLinkSquareAlt, FaGithub, FaServer } from "react-icons/fa";
@@ -62,35 +58,6 @@ export default function ProjectsCarousel() {
       live: "https://technotes-op6s.onrender.com",
       sourceCode: "https://github.com/remilebeau/techNotes",
       apiURL: "https://github.com/remilebeau/techNotes-api",
-    },
-    {
-      title: "Studybud",
-      description: "Django app where users create and join study rooms",
-      image: studyBud,
-      live: "https://studybud-0egb.onrender.com",
-      sourceCode: "https://github.com/remilebeau/studybud",
-    },
-    {
-      title: "WikiRocket",
-      description:
-        "Next.js app that searches Wikipedia with the provided query",
-      image: wikiRocket,
-      live: "https://remilebeau-wikirocket.vercel.app/",
-      sourceCode: "https://github.com/remilebeau/wikiRocket",
-    },
-    {
-      title: "FlashCards",
-      description: "React + Redux app for creating and using flashcards",
-      image: flashCards,
-      live: "https://flashcards-44tn.onrender.com",
-      sourceCode: "https://github.com/remilebeau/flashcards",
-    },
-    {
-      title: "Wordle",
-      description: "Wordle clone with React",
-      image: wordle,
-      live: "https://wordle-866i.onrender.com/",
-      sourceCode: "https://github.com/remilebeau/wordle",
     },
   ];
   return (
