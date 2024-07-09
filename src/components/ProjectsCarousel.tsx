@@ -36,9 +36,8 @@ export default function ProjectsCarousel() {
       sourceCode: "https://github.com/remilebeau/portfolio-site",
     },
     {
-      title: "Demand/Cash Flow Forecasting",
-      description:
-        "Forecast annual demand or cash flow with Monte Carlo simulation",
+      title: "Simulation",
+      description: "Monte Carlo Simulation for production planning",
       image: simulation,
       live: "https://remilebeau-simulation.vercel.app/",
       sourceCode: "https://github.com/remilebeau/simulation",
