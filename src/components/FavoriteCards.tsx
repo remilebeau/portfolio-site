@@ -62,5 +62,9 @@ export default function FavoriteCards() {
       </CardContent>
     </Card>
   ));
-  return <>{renderedFavorites}</>;
+  return (
+    <section className="flex flex-col gap-4 sm:grid sm:grid-cols-2">
+      {renderedFavorites}
+    </section>
+  );
 }

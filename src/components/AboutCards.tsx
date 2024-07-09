@@ -1,11 +1,9 @@
 import Image from "next/image";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import lebanon from "../../public/images/lebanon.svg";
-import canada from "../../public/images/canada.svg";
 import usa from "../../public/images/usa.svg";
 import france from "../../public/images/france.svg";
 import osu from "../../public/images/osu.svg";
-import nintendo from "../../public/images/nintendo.svg";
 
 export default function AboutCards() {
   const cards = [
@@ -45,5 +43,9 @@ export default function AboutCards() {
     </Card>
   ));
 
-  return <>{renderedCards}</>;
+  return (
+    <section className="flex flex-col gap-4 sm:grid sm:grid-cols-2">
+      {renderedCards}
+    </section>
+  );
 }
