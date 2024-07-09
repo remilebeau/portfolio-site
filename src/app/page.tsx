@@ -33,7 +33,7 @@ export default function HomePage() {
         <li>KPI analysis</li>
         <li>Resource optimization</li>
         <li>Pareto analysis</li>
-        <li>Monte Carlo simulation</li>
+        <li>Exploratory data analysis</li>
         <li>Data-driven decision-making</li>
       </ul>
 
