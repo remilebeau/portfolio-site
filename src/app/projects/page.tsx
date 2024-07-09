@@ -15,7 +15,7 @@ export default function ProjectPage() {
         Because the APIs of the full-stack projects are hosted on the free tier
         of{" "}
         <a
-          className="font-bold text-primary underline"
+          className="font-bold text-primary hover:underline"
           href="https://render.com"
         >
           Render
