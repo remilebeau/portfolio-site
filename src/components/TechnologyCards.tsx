@@ -12,7 +12,6 @@ import nodejs from "../../public/images/nodejs.svg";
 import nextjs from "../../public/images/nextjs.svg";
 import tailwind from "../../public/images/tailwind.svg";
 import sqlite from "../../public/images/sqlite.svg";
-import drf from "../../public/images/drf.svg";
 import django from "../../public/images/django.svg";
 import ubuntu from "../../public/images/ubuntu.svg";
 import docker from "../../public/images/docker.svg";
@@ -113,5 +112,9 @@ export default function TechnologyCards() {
     </Card>
   ));
 
-  return <>{renderedCards}</>;
+  return (
+    <section className="mx-auto flex max-w-4xl flex-col gap-4 p-4 sm:grid sm:grid-cols-3">
+      {renderedCards}
+    </section>
+  );
 }
