@@ -27,11 +27,10 @@ export default function HomePage() {
         Business Analytics
       </h3>
       <ul className="list-inside list-disc text-2xl sm:columns-2">
-        <li>Data management</li>
         <li>Data visualization</li>
         <li>Predictive modeling</li>
         <li>Data mining</li>
-        <li>Forecasting simulation</li>
+        <li>Simulation</li>
         <li>Optimization</li>
       </ul>
 
