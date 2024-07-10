@@ -18,22 +18,21 @@ export default function HomePage() {
       <h3 className="text-center text-3xl font-bold text-primary sm:text-left">
         Finance
       </h3>
-      <ul className="list-inside list-disc gap-4 text-2xl sm:columns-2">
+      <ul className="list-inside list-disc gap-4 text-2xl ">
         <li>Wealth management</li>
         <li>Financial planning</li>
         <li>Risk management</li>
-        <li>Financial statement analysis</li>
-        <li>Budget analysis</li>
       </ul>
       <h3 className="text-center text-3xl font-bold text-primary sm:text-left">
         Business Analytics
       </h3>
       <ul className="list-inside list-disc text-2xl sm:columns-2">
-        <li>Demand forecasting</li>
-        <li>KPI analysis</li>
-        <li>Resource optimization</li>
-        <li>Pareto analysis</li>
-        <li>Exploratory data analysis</li>
+        <li>Data management</li>
+        <li>Data visualization</li>
+        <li>Predictive modeling</li>
+        <li>Data mining</li>
+        <li>Forecasting simulation</li>
+        <li>Optimization</li>
       </ul>
 
       <h2 className="text-center text-4xl font-bold text-primary">About</h2>
