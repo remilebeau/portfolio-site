@@ -13,9 +13,9 @@ export default function ContactPage() {
       <h2 className="text-3xl font-bold text-primary">Connect?</h2>
       <p className="text-2xl">
         I&apos;m always looking to meet new people and expand my professional
-        circle. Whatever your background - software engineering, finance, or
-        business analytics - I&apos;d love to chat and learn more about your
-        work.
+        circle. Whatever your industry &mdash; web development, web design,
+        finance, or business analytics &mdash; I&apos;d love to chat and learn
+        more about your work.
       </p>
     </main>
   );

@@ -36,18 +36,15 @@ export default function FavoriteCards() {
       title: "Music",
       content: [
         "Michael Jackson",
-        "Phil Collins",
         "Def Leppard",
+        "Queen",
         "Metallica",
         "Van Halen",
       ],
     },
   ];
   const renderedFavorites = cards.map((card) => (
-    <Card
-      key={card.title}
-      className="flex h-full w-full flex-col border-4 border-border p-2"
-    >
+    <Card key={card.title} className="flex flex-col border-4 border-border ">
       <CardHeader>
         <CardTitle className="text-center text-3xl text-primary">
           {card.title}
