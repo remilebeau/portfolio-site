@@ -1,17 +1,12 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import html from "../../public/images/html.svg";
-import css from "../../public/images/css.svg";
 import js from "../../public/images/js.svg";
 import ts from "../../public/images/ts.svg";
 import python from "../../public/images/python.svg";
-import mongodb from "../../public/images/mongodb.svg";
 import ex from "../../public/images/ex.svg";
 import react from "../../public/images/react.svg";
-import nodejs from "../../public/images/nodejs.svg";
 import nextjs from "../../public/images/nextjs.svg";
 import tailwind from "../../public/images/tailwind.svg";
-import sqlite from "../../public/images/sqlite.svg";
 import django from "../../public/images/django.svg";
 import ubuntu from "../../public/images/ubuntu.svg";
 import docker from "../../public/images/docker.svg";
@@ -20,14 +15,6 @@ import fastapi from "../../public/images/fastapi.svg";
 
 export default function TechnologyCards() {
   const cards = [
-    {
-      title: "HTML",
-      src: html,
-    },
-    {
-      title: "CSS",
-      src: css,
-    },
     {
       title: "JavaScript",
       src: js,
@@ -56,10 +43,6 @@ export default function TechnologyCards() {
       src: tailwind,
     },
     {
-      title: "Node.js",
-      src: nodejs,
-    },
-    {
       title: "Express",
       src: ex,
       styling: "dark:invert",
@@ -72,14 +55,6 @@ export default function TechnologyCards() {
     {
       title: "Django",
       src: django,
-    },
-    {
-      title: "MongoDB",
-      src: mongodb,
-    },
-    {
-      title: "SQLite",
-      src: sqlite,
     },
     {
       title: "Ubuntu",
@@ -113,7 +88,7 @@ export default function TechnologyCards() {
   ));
 
   return (
-    <section className="mx-auto flex max-w-4xl flex-col gap-4 p-4 sm:grid sm:grid-cols-3">
+    <section className="flex flex-col gap-4 sm:grid sm:grid-cols-3">
       {renderedCards}
     </section>
   );

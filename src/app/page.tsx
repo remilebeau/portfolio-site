@@ -34,7 +34,6 @@ export default function HomePage() {
         <li>Resource optimization</li>
         <li>Pareto analysis</li>
         <li>Exploratory data analysis</li>
-        <li>Data-driven decision-making</li>
       </ul>
 
       <h2 className="text-center text-4xl font-bold text-primary">About</h2>

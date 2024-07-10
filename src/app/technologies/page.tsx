@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function TechnologyPage() {
   return (
-    <main className="mx-auto flex max-w-4xl flex-col gap-8 p-8">
+    <main className="mx-auto flex max-w-4xl flex-col gap-4 p-4">
       <h2 className="text-center text-5xl font-bold text-primary">
         Technologies
       </h2>
