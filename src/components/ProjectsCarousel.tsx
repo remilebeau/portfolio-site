@@ -41,7 +41,7 @@ export default function ProjectsCarousel() {
       image: simulation,
       live: "https://remilebeau-simulation.vercel.app/",
       sourceCode: "https://github.com/remilebeau/simulation",
-      apiURL: "https://simulation-api-t28w.onrender.com/docs",
+      apiURL: "https://remilebeau-simulation-api.vercel.app/docs",
     },
     {
       title: "Dashboard",
