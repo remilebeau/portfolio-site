@@ -1,1 +1,9 @@
-My portfolio site. Created with Next.js and Tailwind CSS.
+# Portfolio site
+
+My portfolio site
+
+## Created with:
+
+- Next.js
+- Tailwind CSS
+- ShadCN
