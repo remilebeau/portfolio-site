@@ -73,7 +73,7 @@ export default function TechnologyCards() {
   const renderedCards = cards.map((card) => (
     <Card
       key={card.title}
-      className="flex flex-col items-center justify-center border-4"
+      className="flex flex-col items-center justify-center border-4 border-ring"
     >
       <CardContent className="p-6">
         <Image

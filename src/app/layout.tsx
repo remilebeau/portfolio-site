@@ -32,7 +32,7 @@ export default function RootLayout({
         >
           <TooltipProvider>
             <Header />
-            {children}
+            <section className="bg-background">{children}</section>
             <Footer />
           </TooltipProvider>
         </ThemeProvider>

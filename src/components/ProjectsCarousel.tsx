@@ -69,7 +69,7 @@ export default function ProjectsCarousel() {
         <CarouselContent>
           {projects.map((project) => (
             <CarouselItem key={project.title}>
-              <Card className="rounded-3xl border-2 border-border">
+              <Card className="rounded-3xl border-4 border-ring">
                 <CardHeader>
                   <CardTitle className="text-3xl">{project.title}</CardTitle>
                   <CardDescription className="flex justify-between gap-4">
