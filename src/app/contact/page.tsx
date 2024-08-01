@@ -1,10 +1,11 @@
 import ButtonWithLink from "@/components/ButtonWithLink";
-import { Button } from "@/components/ui/button";
 
 export default function ContactPage() {
   return (
     <main className="mx-auto flex max-w-4xl flex-col gap-4 p-4">
-      <h1 className="text-center text-5xl font-bold text-primary">Contact</h1>
+      <h1 className="rounded-xl bg-primary p-2 text-center text-5xl font-bold text-secondary">
+        Contact
+      </h1>
       {/* flexbox for GitHub, Email, and Resume buttons */}
       <section className="flex flex-row justify-evenly gap-4 p-4">
         <ButtonWithLink href="https://github.com/remilebeau" text="GitHub" />
@@ -12,7 +13,7 @@ export default function ContactPage() {
           href="mailto:remilebeau90@gmail.com"
           text="remilebeau90@gmail.com"
         />
-        <ButtonWithLink href="/wes-s-resume.pdf" text="Resume" />
+        <ButtonWithLink href="/wes_s_resume.pdf" text="Resume" />
       </section>
 
       <hr className="mx-auto my-8 w-1/2 border-4 border-primary" />
