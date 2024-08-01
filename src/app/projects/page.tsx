@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function ProjectPage() {
   return (
-    <main className="mx-auto flex max-w-4xl flex-col gap-8 p-8">
+    <main className="mx-auto flex max-w-4xl flex-col gap-4 p-4">
       <h2 className="rounded-xl bg-primary p-2 text-center text-5xl font-bold text-secondary">
         Projects
       </h2>
