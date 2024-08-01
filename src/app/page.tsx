@@ -17,26 +17,35 @@ export default function HomePage() {
       <h2 className="rounded-xl bg-primary p-2 text-center text-4xl font-bold text-secondary">
         My Business Background
       </h2>
-      {/* finance list */}
-      <h3 className="text-center text-3xl font-bold text-primary sm:text-left">
-        Finance
-      </h3>
-      <ul className="list-inside list-disc gap-4 text-2xl ">
-        <li>Wealth management</li>
-        <li>Financial planning</li>
-        <li>Risk management</li>
-      </ul>
-      {/* business analytics list */}
-      <h3 className="text-center text-3xl font-bold text-primary sm:text-left">
-        Business Analytics
-      </h3>
-      <ul className="list-inside list-disc text-2xl sm:columns-2">
-        <li>Data visualization</li>
-        <li>Predictive modeling</li>
-        <li>Data mining</li>
-        <li>Simulation</li>
-        <li>Optimization</li>
-      </ul>
+      {/* container for finance and business analytics lists */}
+      <div className="flex flex-col justify-evenly gap-4 sm:flex-row">
+        {/* finance list */}
+        <div className="flex flex-col">
+          <h3 className="text-center text-3xl font-bold text-primary sm:text-left">
+            Finance
+          </h3>
+          <ul className="text-2xl">
+            <li>Financial accounting</li>
+            <li>Managerial accounting</li>
+            <li>Risk management</li>
+            <li>Personal finance</li>
+            <li>Corporate finance</li>
+          </ul>
+        </div>
+        {/* business analytics list */}
+        <div className="flex flex-col">
+          <h3 className="text-center text-3xl font-bold text-primary sm:text-left">
+            Business Analytics
+          </h3>
+          <ul className="text-2xl">
+            <li>Data visualization</li>
+            <li>Predictive modeling</li>
+            <li>Data mining</li>
+            <li>Simulation</li>
+            <li>Optimization</li>
+          </ul>
+        </div>
+      </div>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
       {/* about section */}
       <h2 className="rounded-xl bg-primary p-2 text-center text-4xl font-bold text-secondary">
