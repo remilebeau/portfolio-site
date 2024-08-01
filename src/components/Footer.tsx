@@ -25,7 +25,7 @@ export default function Footer() {
           <FaEnvelope className="text-5xl hover:opacity-80" />
         </a>
         {/* Resume */}
-        <a className="text-secondary" href="/wes-s-resume.pdf" download>
+        <a className="text-secondary" href="/wes_s_resume.pdf" download>
           <FiFileText className="text-5xl hover:opacity-80" />
         </a>
         {/* Dark Mode Toggle */}
