@@ -52,7 +52,7 @@ export default function FavoriteCards() {
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         {card.content.map((line) => (
-          <p className="text-left text-2xl" key={line}>
+          <p className="text-left text-2xl font-bold" key={line}>
             {line}
           </p>
         ))}

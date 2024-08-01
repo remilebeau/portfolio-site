@@ -34,7 +34,7 @@ export default function AboutCards() {
       key={card.title}
       className="flex flex-col items-center justify-center border-4 border-ring"
     >
-      <CardContent className="relative p-6">
+      <CardContent className="p-6">
         <Image src={card.src} alt={card.title} className="rounded-lg" />
       </CardContent>
       <CardFooter>
