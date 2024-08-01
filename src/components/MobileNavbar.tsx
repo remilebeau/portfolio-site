@@ -28,9 +28,7 @@ export default function MobileNavbar({ links }: Props) {
     </Link>
   ));
   return (
-    <nav
-      className={`flex flex-col justify-evenly gap-8 p-4 text-5xl font-bold ${hamburgerMenu ? "bg-popover" : "bg-primary"}`}
-    >
+    <nav className="flex flex-col justify-evenly gap-8 p-4 text-5xl font-bold text-secondary">
       {/* hamburger open button */}
       <button onClick={toggleHamburgerMenu}>&#9776;</button>
       {/* hamburgerMenu */}
@@ -43,6 +41,7 @@ export default function MobileNavbar({ links }: Props) {
           >
             &times;
           </button>
+          {/* mobile links */}
           <nav className="top-0 mt-8 flex min-h-screen flex-col items-center gap-12">
             {renderedLinks}
           </nav>

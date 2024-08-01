@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import ProjectsCarousel from "@/components/ProjectsCarousel";
+import ProjectCards from "@/components/ProjectCards";
 
 export const metadata: Metadata = {
   title: "Projects | Wes S",
@@ -22,7 +22,7 @@ export default function ProjectPage() {
         </a>
         , please allow up to 60 seconds for the first server request.
       </p>
-      <ProjectsCarousel />
+      <ProjectCards />
     </main>
   );
 }
