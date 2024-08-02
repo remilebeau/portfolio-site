@@ -1,17 +1,9 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
 import Image from "next/image";
 import mySite from "../../public/images/mySite.png";
 import techNotes from "../../public/images/techNotes.png";
 import dashboard from "../../public/images/dashboard.png";
 import simulation from "../../public/images/simulation.png";
-import { Button } from "@/components/ui/button";
+import ButtonWithLink from "./ButtonWithLink";
 
 export default function ProjectCards() {
   const projects = [
@@ -48,49 +40,25 @@ export default function ProjectCards() {
     },
   ];
   const renderedProjects = projects.map((project) => (
-    <Card key={project.title}>
-      <CardHeader className="m-2 flex flex-col gap-4 p-2">
-        <CardTitle className="text-3xl font-bold">{project.title}</CardTitle>
-        <CardDescription className="text-xl">
-          {project.description}
-        </CardDescription>
-        {/* flexbox for buttons */}
-        <section className="flex flex-row justify-evenly">
-          {/* live button */}
-          <Button>
-            <a
-              className="text-2xl font-bold text-secondary"
-              href={project.live}
-            >
-              Live Demo
-            </a>
-          </Button>
-          {/* source code button */}
-          <Button>
-            <a
-              className="text-2xl font-bold text-secondary"
-              href={project.sourceCode}
-            >
-              Source Code
-            </a>
-          </Button>
-          {/* apiURL button, if it exists */}
-          {project.apiURL && (
-            <Button>
-              <a
-                className="text-2xl font-bold text-secondary"
-                href={project.apiURL}
-              >
-                API Documentation
-              </a>
-            </Button>
-          )}
-        </section>
-      </CardHeader>
-      <CardContent>
-        <Image className="rounded-xl" src={project.image} alt={project.title} />
-      </CardContent>
-    </Card>
+    <section
+      key={project.title}
+      className="flex flex-col gap-4 rounded-xl border-4 border-ring p-4 font-bold"
+    >
+      <h2 className="text-3xl">{project.title}</h2>
+      <p className="text-xl">{project.description}</p>
+      {/* flexbox for buttons */}
+      <section className="flex flex-row justify-evenly">
+        {/* live button */}
+        <ButtonWithLink href={project.live} text="Live Demo" />
+        {/* source code button */}
+        <ButtonWithLink href={project.sourceCode} text="Source Code" />
+        {/* apiURL button, if it exists */}
+        {project.apiURL && (
+          <ButtonWithLink href={project.apiURL} text="API Documentation" />
+        )}
+      </section>
+      <Image className="rounded-xl" src={project.image} alt={project.title} />
+    </section>
   ));
   return <section className="flex flex-col gap-4">{renderedProjects}</section>;
 }
