@@ -17,14 +17,25 @@
   }
 
   .dark {
+    /* background color, pure black */
     --background: 0 0% 0%;
+    /* bg color for cards, dark charcoal */
     --card: 0 0% 5%;
+    /* primary color of site, medium green */
     --primary: 120 100% 20%;
+    /* secondary color of site, white */
     --secondary: 60 4.8% 95.9%;
+    /* bg color for popovers such as dropdown, medium green */
+    --popover: var(--primary);
+    /* bg color for muted, medium gray */
     --muted: 12 6.5% 15.1%;
+    /* bg color for accents such as hover, medium gray */
     --accent: 12 6.5% 15.1%;
+    /* border color, medium gray */
     --border: 12 6.5% 15.1%;
+    /* border color for inputs, medium gray */
     --input: 12 6.5% 15.1%;
+    /* color of focus ring, dark green  */
     --ring: 120 100% 10%;
   }
 }
