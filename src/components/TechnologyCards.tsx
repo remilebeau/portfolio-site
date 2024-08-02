@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
 import js from "../../public/images/js.svg";
 import ts from "../../public/images/ts.svg";
 import python from "../../public/images/python.svg";
@@ -71,20 +70,18 @@ export default function TechnologyCards() {
   ];
 
   const renderedCards = cards.map((card) => (
-    <Card
+    <section
       key={card.title}
-      className="flex flex-col items-center justify-center border-4 border-ring"
+      className="flex flex-col items-center justify-center rounded-xl border-4 border-ring p-4"
     >
-      <CardContent className="p-6">
-        <Image
-          src={card.src}
-          alt={card.title}
-          className={card.styling}
-          width={400}
-          height={400}
-        />
-      </CardContent>
-    </Card>
+      <Image
+        src={card.src}
+        alt={card.title}
+        className={card.styling}
+        width={400}
+        height={400}
+      />
+    </section>
   ));
 
   return (
