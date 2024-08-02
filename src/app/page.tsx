@@ -18,9 +18,9 @@ export default function HomePage() {
         My Business Background
       </h2>
       {/* container for finance and business analytics lists */}
-      <div className="flex flex-col justify-evenly gap-4 sm:flex-row">
+      <section className="flex flex-col justify-evenly gap-4 sm:flex-row">
         {/* finance list */}
-        <div className="flex flex-col">
+        <section className="flex flex-col">
           <h3 className="text-center text-3xl font-bold text-primary sm:text-left">
             Finance
           </h3>
@@ -31,9 +31,9 @@ export default function HomePage() {
             <li>Personal finance</li>
             <li>Corporate finance</li>
           </ul>
-        </div>
+        </section>
         {/* business analytics list */}
-        <div className="flex flex-col">
+        <section className="flex flex-col">
           <h3 className="text-center text-3xl font-bold text-primary sm:text-left">
             Business Analytics
           </h3>
@@ -44,8 +44,8 @@ export default function HomePage() {
             <li>Simulation</li>
             <li>Optimization</li>
           </ul>
-        </div>
-      </div>
+        </section>
+      </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
       {/* about section */}
       <h2 className="rounded-xl bg-primary p-2 text-center text-4xl font-bold text-secondary">
