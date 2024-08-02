@@ -47,14 +47,14 @@ export default function ProjectCards() {
       <h2 className="text-3xl">{project.title}</h2>
       <p className="text-xl">{project.description}</p>
       {/* flexbox for buttons */}
-      <section className="flex flex-row justify-evenly">
+      <section className="flex flex-row justify-evenly gap-8">
         {/* live button */}
         <ButtonWithLink href={project.live} text="Live Demo" />
         {/* source code button */}
         <ButtonWithLink href={project.sourceCode} text="Source Code" />
         {/* apiURL button, if it exists */}
         {project.apiURL && (
-          <ButtonWithLink href={project.apiURL} text="API Documentation" />
+          <ButtonWithLink href={project.apiURL} text="API Docs" />
         )}
       </section>
       <Image className="rounded-xl" src={project.image} alt={project.title} />
