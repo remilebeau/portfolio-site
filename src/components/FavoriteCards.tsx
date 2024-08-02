@@ -1,5 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
 export default function FavoriteCards() {
   const cards = [
     {
@@ -44,20 +42,21 @@ export default function FavoriteCards() {
     },
   ];
   const renderedFavorites = cards.map((card) => (
-    <Card key={card.title} className="flex flex-col border-4 border-ring">
-      <CardHeader>
-        <CardTitle className="text-center text-3xl text-primary">
-          {card.title}
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="flex flex-col gap-4">
+    <section
+      key={card.title}
+      className="flex flex-col rounded-xl border-4 border-ring p-4"
+    >
+      <header>
+        <h2 className="mb-2 text-center text-3xl text-primary">{card.title}</h2>
+      </header>
+      <section className="flex flex-col gap-4">
         {card.content.map((line) => (
           <p className="text-left text-2xl font-bold" key={line}>
             {line}
           </p>
         ))}
-      </CardContent>
-    </Card>
+      </section>
+    </section>
   ));
   return (
     <section className="flex flex-col gap-4 sm:grid sm:grid-cols-2">
