@@ -3,7 +3,7 @@ import FavoriteCards from "@/components/FavoriteCards";
 
 export default function HomePage() {
   return (
-    <main className="mx-auto flex max-w-4xl flex-col gap-4 p-4">
+    <main className="mx-auto flex max-w-4xl flex-col gap-4 p-4 font-bold">
       {/* hero section */}
       <h1 className="rounded-xl bg-primary p-2 text-center text-5xl font-bold text-secondary">
         Hello and welcome. I&apos;m Wes.
