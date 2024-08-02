@@ -20,17 +20,17 @@ export default function ContactPage() {
 
       <h2 className="text-center text-4xl  text-primary">Want To...</h2>
 
-      <h2 className="text-3xl  text-primary">Collaborate?</h2>
-      <p className="text-2xl">
-        I am open to discussing potential job opportunities or collaborations.
-      </p>
-
       <h2 className="text-3xl  text-primary">Connect?</h2>
       <p className="text-2xl">
         I&apos;m always looking to meet new people and expand my professional
         circle. Whatever your industry &mdash; web development, web design,
         finance, or business analytics &mdash; I&apos;d love to chat and learn
         more about your work.
+      </p>
+
+      <h2 className="text-3xl  text-primary">Collaborate?</h2>
+      <p className="text-2xl">
+        I am open to discussing potential job opportunities or collaborations.
       </p>
     </main>
   );
