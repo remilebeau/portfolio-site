@@ -7,7 +7,7 @@ export default function ContactPage() {
         Contact
       </h1>
       {/* flexbox for GitHub, Email, and Resume buttons */}
-      <section className="flex flex-row justify-evenly gap-4 p-4">
+      <section className="flex flex-col justify-evenly gap-4 p-4 sm:flex-row">
         <ButtonWithLink href="https://github.com/remilebeau" text="GitHub" />
         <ButtonWithLink
           href="mailto:remilebeau90@gmail.com"
