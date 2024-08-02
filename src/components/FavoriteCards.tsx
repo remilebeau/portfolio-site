@@ -44,7 +44,7 @@ export default function FavoriteCards() {
   const renderedFavorites = cards.map((card) => (
     <section
       key={card.title}
-      className="flex flex-col rounded-xl border-4 border-ring p-4"
+      className="flex flex-col rounded-xl border-4 border-ring bg-card p-4"
     >
       <header>
         <h2 className="mb-2 text-center text-3xl text-primary">{card.title}</h2>

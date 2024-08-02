@@ -72,7 +72,7 @@ export default function TechnologyCards() {
   const renderedCards = cards.map((card) => (
     <section
       key={card.title}
-      className="flex flex-col items-center justify-center rounded-xl border-4 border-ring p-4"
+      className="flex flex-col items-center justify-center rounded-xl border-4 border-ring bg-card p-4"
     >
       <Image
         src={card.src}

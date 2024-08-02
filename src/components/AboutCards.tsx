@@ -39,7 +39,7 @@ export default function AboutCards() {
   ));
 
   return (
-    <section className="flex flex-col gap-4 sm:grid sm:grid-cols-2">
+    <section className="flex flex-col gap-4 bg-card sm:grid sm:grid-cols-2">
       {renderedCards}
     </section>
   );
