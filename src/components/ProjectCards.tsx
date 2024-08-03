@@ -42,7 +42,7 @@ export default function ProjectCards() {
   const renderedProjects = projects.map((project) => (
     <section
       key={project.title}
-      className="flex flex-col gap-4 rounded-xl border-4 border-ring bg-card p-4 font-bold"
+      className="flex flex-col gap-4 rounded-xl border-4 border-border bg-card p-4 font-bold"
     >
       <h2 className="text-3xl">{project.title}</h2>
       <p className="text-xl">{project.description}</p>
