@@ -1,24 +1,18 @@
 export default function FavoriteCards() {
   const cards = [
     {
-      title: "Game Series",
+      title: "Video Games",
       content: [
-        "Super Mario",
-        "The Legend of Zelda",
-        "Super Smash Bros.",
-        "Mario Kart",
-        "Mario Party",
+        "Legend of Zelda: Ocarina of Time",
+        "Witcher 3: Wild Hunt",
+        "Legend of Zelda: Majora's Mask",
+        "Legend of Zelda: Twilight Princess",
+        "Super Mario 64",
       ],
     },
     {
-      title: "TV Shows",
-      content: [
-        "The Sopranos",
-        "Seinfeld",
-        "Married With Children",
-        "Pawn Stars",
-        "The Price Is Right",
-      ],
+      title: "Video Game Publishers",
+      content: ["Nintendo", "Capcom", "Sony", "Square Enix", "CD Projekt Red"],
     },
     {
       title: "Movies",
