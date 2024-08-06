@@ -2,7 +2,7 @@ import ButtonWithLink from "@/components/ButtonWithLink";
 
 export default function ContactPage() {
   return (
-    <main className="mx-auto flex max-w-4xl flex-col gap-4 p-4 font-bold">
+    <main className="mx-auto flex min-h-screen max-w-4xl flex-col gap-4 p-4 font-bold">
       <h1 className="rounded-xl bg-primary p-2 text-center text-5xl  text-secondary">
         Contact
       </h1>
