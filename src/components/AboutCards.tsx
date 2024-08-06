@@ -31,7 +31,7 @@ export default function AboutCards() {
   const renderedCards = cards.map((card) => (
     <section
       key={card.title}
-      className="flex flex-col items-center justify-center rounded-xl border-4 border-border p-4"
+      className="flex flex-col items-center justify-center rounded-xl border-4 border-border bg-card p-4"
     >
       <Image src={card.src} alt={card.title} className="rounded-lg" />
       <p className="p-4 text-center text-2xl font-bold">{card.caption}</p>
@@ -39,7 +39,7 @@ export default function AboutCards() {
   ));
 
   return (
-    <section className="flex flex-col gap-4 bg-card sm:grid sm:grid-cols-2">
+    <section className="flex flex-col gap-4 sm:grid sm:grid-cols-2">
       {renderedCards}
     </section>
   );
