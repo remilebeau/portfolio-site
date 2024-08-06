@@ -16,7 +16,7 @@ export default function FavoriteCards() {
         "The Sopranos",
         "Seinfeld",
         "Married With Children",
-        "Dragon Ball Z",
+        "Pawn Stars",
         "The Price Is Right",
       ],
     },
