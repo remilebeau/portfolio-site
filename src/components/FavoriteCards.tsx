@@ -12,7 +12,7 @@ export default function FavoriteCards() {
     },
     {
       title: "Video Game Publishers",
-      content: ["Nintendo", "Capcom", "Sony", "Square Enix", "CD Projekt Red"],
+      content: ["Nintendo", "Capcom", "CD Projekt Red", "Sony", "Square Enix"],
     },
     {
       title: "Movies",
@@ -45,7 +45,7 @@ export default function FavoriteCards() {
       </header>
       <section className="flex flex-col gap-4">
         {card.content.map((line) => (
-          <p className="text-left text-2xl font-bold" key={line}>
+          <p className="text-2xl font-bold" key={line}>
             {line}
           </p>
         ))}
