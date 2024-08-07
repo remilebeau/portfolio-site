@@ -18,7 +18,8 @@ export default function ProjectCards() {
     },
     {
       title: "TechNotes",
-      description: "MERN CRUD app with auth for customer tickets",
+      description:
+        "Ticket management system with auth. username: testuser password: testpassword",
       image: techNotes,
       live: "https://technotes-op6s.onrender.com",
       sourceCode: "https://github.com/remilebeau/techNotes",
