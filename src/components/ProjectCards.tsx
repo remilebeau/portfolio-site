@@ -10,7 +10,7 @@ export default function ProjectCards() {
     {
       title: "Simulation",
       description:
-        "Monte Carlo Simulations for cash flows, production, and finance",
+        "Monte Carlo simulations for production, finance, and cash flow",
       image: simulation,
       live: "https://remilebeau-simulation.vercel.app/",
       sourceCode: "https://github.com/remilebeau/simulation",
@@ -27,14 +27,13 @@ export default function ProjectCards() {
     },
     {
       title: "My Site",
-      description: "Created with Next.js",
       image: mySite,
       live: "https://remilebeau.vercel.app",
       sourceCode: "https://github.com/remilebeau/portfolio-site",
     },
     {
       title: "Dashboard",
-      description: "Next.js admin dashboard",
+      description: "Mock admin dashboard",
       image: dashboard,
       live: "https://remilebeau-dashboard.vercel.app/",
       sourceCode: "https://github.com/remilebeau/dashboard",
