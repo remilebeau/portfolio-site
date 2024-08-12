@@ -16,7 +16,7 @@ export default function ContactPage() {
         <ButtonWithLink href="/wes_s_resume.pdf" text="Resume" />
       </section>
 
-      <hr className="mx-auto my-8 w-1/2 border-4 border-primary" />
+      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
 
       <h2 className="text-center text-4xl  text-primary">Want To...</h2>
 
@@ -30,6 +30,7 @@ export default function ContactPage() {
       <p className="text-2xl">
         I am open to discussing potential job opportunities or collaborations.
       </p>
+      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
     </main>
   );
 }

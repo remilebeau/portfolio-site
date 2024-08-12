@@ -27,6 +27,7 @@ export default function ProjectCards() {
     },
     {
       title: "My Site",
+      description: "Created with Next.js",
       image: mySite,
       live: "https://remilebeau.vercel.app",
       sourceCode: "https://github.com/remilebeau/portfolio-site",
@@ -40,25 +41,35 @@ export default function ProjectCards() {
     },
   ];
   const renderedProjects = projects.map((project) => (
-    <section
-      key={project.title}
-      className="flex flex-col gap-4 rounded-xl border-4 border-border bg-card p-4 font-bold"
-    >
-      <h2 className="text-3xl">{project.title}</h2>
-      <p className="text-xl">{project.description}</p>
-      {/* flexbox for buttons */}
-      <section className="flex flex-row justify-evenly gap-8">
-        {/* live button */}
-        <ButtonWithLink href={project.live} text="Live Demo" />
-        {/* source code button */}
-        <ButtonWithLink href={project.sourceCode} text="Source Code" />
-        {/* apiURL button, if it exists */}
-        {project.apiURL && (
-          <ButtonWithLink href={project.apiURL} text="API Docs" />
-        )}
+    <>
+      <section
+        key={project.title}
+        className="flex flex-col gap-4 rounded-xl border-4 border-border bg-card p-4 font-bold"
+      >
+        <h2 className="rounded-xl bg-primary p-2 text-3xl text-secondary">
+          {project.title}
+        </h2>
+        <p className="text-xl">{project.description}</p>
+        {/* flexbox for buttons */}
+        <section className="flex flex-row justify-evenly gap-8">
+          {/* live button */}
+          <ButtonWithLink href={project.live} text="Live Demo" />
+          {/* source code button */}
+          <ButtonWithLink href={project.sourceCode} text="Source Code" />
+          {/* apiURL button, if it exists */}
+          {project.apiURL && (
+            <ButtonWithLink href={project.apiURL} text="API Docs" />
+          )}
+        </section>
+        <Image className="rounded-xl" src={project.image} alt={project.title} />
       </section>
-      <Image className="rounded-xl" src={project.image} alt={project.title} />
-    </section>
+      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
+    </>
   ));
-  return <section className="flex flex-col gap-4">{renderedProjects}</section>;
+  return (
+    <>
+      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
+      <section className="flex flex-col gap-4">{renderedProjects}</section>
+    </>
+  );
 }

@@ -31,6 +31,7 @@ export default function HomePage() {
         Favorites
       </h2>
       <FavoriteCards />
+      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
     </main>
   );
 }
