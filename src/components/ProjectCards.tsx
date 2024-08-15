@@ -19,8 +19,7 @@ export default function ProjectCards() {
     },
     {
       title: "CityData",
-      description:
-        "Fetch data from City-Data API and display common stats for any U.S. city",
+      description: "Fetch common stats for any U.S. city",
       image: cityData,
       live: "https://remilebeau-citydata.vercel.app/",
       sourceCode: "https://github.com/remilebeau/citydata",
