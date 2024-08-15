@@ -3,6 +3,7 @@ import mySite from "../../public/images/mySite.png";
 import techNotes from "../../public/images/techNotes.png";
 import dashboard from "../../public/images/dashboard.png";
 import simulation from "../../public/images/simulation.png";
+import cityData from "../../public/images/cityData.png";
 import ButtonWithLink from "./ButtonWithLink";
 
 export default function ProjectCards() {
@@ -15,6 +16,15 @@ export default function ProjectCards() {
       live: "https://remilebeau-simulation.vercel.app/",
       sourceCode: "https://github.com/remilebeau/simulation",
       apiURL: "https://simulation-api-rsaw.onrender.com/docs",
+    },
+    {
+      title: "CityData",
+      description:
+        "Fetch data from City-Data API and display common stats for any U.S. city",
+      image: cityData,
+      live: "https://remilebeau-citydata.vercel.app/",
+      sourceCode: "https://github.com/remilebeau/citydata",
+      apiURL: "https://citydata-api.onrender.com/docs",
     },
     {
       title: "TechNotes",
