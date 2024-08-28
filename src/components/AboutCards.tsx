@@ -14,15 +14,25 @@ export default function AboutCards() {
       caption: "Lebanese ethnicity",
     },
     {
+      title: "OSU",
+      src: osu,
+      caption:
+        "Bachelor of Science in Business Administration, Summa Cum Laude",
+    },
+    {
       title: "OH",
       src: oh,
       caption: "Hometown: Columbus, OH",
     },
     {
-      title: "OSU",
-      src: osu,
-      caption:
-        "Bachelor of Science in Business Administration, Summa Cum Laude",
+      title: "NY",
+      src: ny,
+      caption: "Available relocations: New York",
+    },
+    {
+      title: "TX",
+      src: tx,
+      caption: "Available relocations: Texas",
     },
     {
       title: "France",
@@ -44,14 +54,6 @@ export default function AboutCards() {
   return (
     <section className="flex flex-col gap-4 sm:grid sm:grid-cols-2">
       {renderedCards}
-      {/* custom card for NY and TX svg's */}
-      <section className="flex flex-col items-center justify-center gap-4 rounded-xl border-4 border-border bg-card p-4">
-        <Image src={ny} alt="NY" className="rounded-lg" />
-        <Image src={tx} alt="TX" className="rounded-lg" />
-        <p className="p-4 text-center text-2xl font-bold">
-          Additional locations: New York, Texas
-        </p>
-      </section>
     </section>
   );
 }
