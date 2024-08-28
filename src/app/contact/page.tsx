@@ -30,7 +30,7 @@ export default function ContactPage() {
       <p className="text-2xl">
         I am open to discussing job opportunities in finance, business
         analytics, or software development &mdash; in-person or remote &mdash;
-        in New York, Ohio, or Texas.
+        that are located in New York, Ohio, or Texas.
       </p>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
     </main>
