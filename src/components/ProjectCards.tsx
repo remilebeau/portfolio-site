@@ -8,9 +8,9 @@ import ButtonWithLink from "./ButtonWithLink";
 export default function ProjectCards() {
   const projects: ProjectCard[] = [
     {
-      title: "Simulation",
+      title: "Monte Carlo Simulation",
       description:
-        "Monte Carlo simulations for production, finance, and cash flow",
+        "Monte Carlo simulations for production planning, marketing, and cash flow",
       image: simulation,
       live: "https://remilebeau-simulation.vercel.app/",
       sourceCode: "https://github.com/remilebeau/simulation",
@@ -18,7 +18,7 @@ export default function ProjectCards() {
     },
     {
       title: "CityData",
-      description: "Fetch common stats for any U.S. city",
+      description: "Aggregate common stats from City-Data for any U.S. city",
       image: cityData,
       live: "https://remilebeau-citydata.vercel.app/",
       sourceCode: "https://github.com/remilebeau/citydata",
