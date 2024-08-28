@@ -1,7 +1,6 @@
 import Image from "next/image";
 import mySite from "../../public/images/mySite.png";
 import techNotes from "../../public/images/techNotes.png";
-import dashboard from "../../public/images/dashboard.png";
 import simulation from "../../public/images/simulation.png";
 import cityData from "../../public/images/cityData.png";
 import ButtonWithLink from "./ButtonWithLink";
@@ -40,13 +39,6 @@ export default function ProjectCards() {
       image: mySite,
       live: "https://remilebeau.vercel.app",
       sourceCode: "https://github.com/remilebeau/portfolio-site",
-    },
-    {
-      title: "Dashboard",
-      description: "Mock admin dashboard",
-      image: dashboard,
-      live: "https://remilebeau-dashboard.vercel.app/",
-      sourceCode: "https://github.com/remilebeau/dashboard",
     },
   ];
   const renderedProjects = projects.map((project) => (
