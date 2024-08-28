@@ -1,33 +1,15 @@
-import { FaEnvelope, FaGithub } from "react-icons/fa";
-import { FiFileText } from "react-icons/fi";
 import { ModeToggle } from "./ThemeSwitch";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="rounded-t-xl bg-primary">
       <section className="mx-auto flex max-w-4xl flex-row items-center justify-evenly p-4 font-bold">
-        {/* GitHub */}
-        <a
-          className="text-secondary"
-          href="https://github.com/remilebeau"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaGithub className="text-5xl hover:opacity-80" />
-        </a>
-        {/* Email */}
-        <a
-          className="text-secondary"
-          href="mailto:remilebeau90@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaEnvelope className="text-5xl hover:opacity-80" />
-        </a>
-        {/* Resume */}
-        <a className="text-secondary" href="/wes_s_resume.pdf" download>
-          <FiFileText className="text-5xl hover:opacity-80" />
-        </a>
+        {/* Contact button */}
+        <button className="rounded-xl bg-orange-500 p-2 text-center text-4xl font-bold text-secondary hover:opacity-90">
+          <Link href="/contact">Contact</Link>
+        </button>
+
         {/* Dark Mode Toggle */}
         <ModeToggle />
       </section>

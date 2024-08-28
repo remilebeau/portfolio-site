@@ -1,7 +1,6 @@
 import AboutCards from "@/components/AboutCards";
 import FavoriteCards from "@/components/FavoriteCards";
 import BackgroundCards from "@/components/BackgroundCards";
-import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -33,12 +32,6 @@ export default function HomePage() {
       </h2>
       <FavoriteCards />
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
-      <Link
-        href="/contact"
-        className="rounded-xl bg-primary p-2 text-center text-4xl font-bold text-secondary"
-      >
-        Contact
-      </Link>
     </main>
   );
 }
