@@ -50,7 +50,7 @@ export default function ProjectCards() {
     },
   ];
   const renderedProjects = projects.map((project) => (
-    <>
+    <section key={project.title}>
       <section
         key={project.title}
         className="flex flex-col gap-4 rounded-xl border-4 border-border bg-card p-4 font-bold"
@@ -73,7 +73,7 @@ export default function ProjectCards() {
         <Image className="rounded-xl" src={project.image} alt={project.title} />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
-    </>
+    </section>
   ));
   return (
     <>
