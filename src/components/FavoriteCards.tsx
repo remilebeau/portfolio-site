@@ -1,5 +1,5 @@
 export default function FavoriteCards() {
-  const cards = [
+  const cards: FavoriteCard[] = [
     {
       title: "Video Games",
       content: [

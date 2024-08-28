@@ -1,31 +1,31 @@
 import Image from "next/image";
 import lebanon from "../../public/images/lebanon.svg";
-import usa from "../../public/images/usa.svg";
 import france from "../../public/images/france.svg";
 import osu from "../../public/images/osu.svg";
+import oh from "../../public/images/oh.svg";
 
 export default function AboutCards() {
-  const cards = [
+  const cards: AboutCard[] = [
     {
       title: "Lebanon",
       src: lebanon,
       caption: "Lebanese ethnicity",
     },
     {
-      title: "USA",
-      src: usa,
+      title: "OH",
+      src: oh,
       caption: "Hometown: Columbus, OH",
-    },
-    {
-      title: "France",
-      src: france,
-      caption: "Additional languages: French",
     },
     {
       title: "OSU",
       src: osu,
       caption:
         "Bachelor of Science in Business Administration, Summa Cum Laude",
+    },
+    {
+      title: "France",
+      src: france,
+      caption: "Additional languages: French",
     },
   ];
 

@@ -1,5 +1,5 @@
 export default function BackgroundCards() {
-  const cards = [
+  const cards: BackgroundCard[] = [
     {
       title: "Finance",
       content: [

@@ -2,7 +2,7 @@ import Image from "next/image";
 import js from "../../public/images/js.svg";
 import ts from "../../public/images/ts.svg";
 import python from "../../public/images/python.svg";
-import ex from "../../public/images/ex.svg";
+import nodejs from "../../public/images/nodejs.svg";
 import react from "../../public/images/react.svg";
 import nextjs from "../../public/images/nextjs.svg";
 import tailwind from "../../public/images/tailwind.svg";
@@ -42,9 +42,8 @@ export default function TechnologyCards() {
       src: tailwind,
     },
     {
-      title: "Express",
-      src: ex,
-      styling: "dark:invert",
+      title: "Node.js",
+      src: nodejs,
     },
     {
       title: "Fastapi",

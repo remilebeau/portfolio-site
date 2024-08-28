@@ -7,7 +7,7 @@ import cityData from "../../public/images/cityData.png";
 import ButtonWithLink from "./ButtonWithLink";
 
 export default function ProjectCards() {
-  const projects = [
+  const projects: ProjectCard[] = [
     {
       title: "Simulation",
       description:
