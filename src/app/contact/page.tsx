@@ -22,13 +22,15 @@ export default function ContactPage() {
 
       <h2 className="text-3xl  text-primary">Connect?</h2>
       <p className="text-2xl">
-        I&apos;m always interested in meeting new people and expanding my
-        personal and professional circles.
+        I am always interested in meeting new people and expanding my personal
+        and professional circles.
       </p>
 
       <h2 className="text-3xl  text-primary">Collaborate?</h2>
       <p className="text-2xl">
-        I am open to discussing potential job opportunities or collaborations.
+        I am open to discussing job opportunities in finance, business
+        analytics, or software development &mdash; in-person or remote &mdash;
+        in New York, Ohio, or Texas.
       </p>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
     </main>
