@@ -2,9 +2,6 @@ import Image from "next/image";
 import lebanon from "../../public/images/lebanon.svg";
 import france from "../../public/images/france.svg";
 import osu from "../../public/images/osu.svg";
-import oh from "../../public/images/oh.svg";
-import ny from "../../public/images/ny.svg";
-import tx from "../../public/images/tx.svg";
 
 export default function AboutCards() {
   const cards: AboutCard[] = [
