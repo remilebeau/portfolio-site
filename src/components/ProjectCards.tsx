@@ -1,5 +1,4 @@
 import Image from "next/image";
-import mySite from "../../public/images/mySite.png";
 import techNotes from "../../public/images/techNotes.png";
 import simulation from "../../public/images/simulation.png";
 import cityData from "../../public/images/cityData.png";
@@ -32,13 +31,6 @@ export default function ProjectCards() {
       live: "https://technotes-op6s.onrender.com",
       sourceCode: "https://github.com/remilebeau/techNotes",
       apiURL: "https://github.com/remilebeau/techNotes-api",
-    },
-    {
-      title: "My Site",
-      description: "Created with Next.js",
-      image: mySite,
-      live: "https://remilebeau.vercel.app",
-      sourceCode: "https://github.com/remilebeau/portfolio-site",
     },
   ];
   const renderedProjects = projects.map((project) => (
