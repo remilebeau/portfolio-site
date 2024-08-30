@@ -20,21 +20,6 @@ export default function AboutCards() {
         "Bachelor of Science in Business Administration, Summa Cum Laude",
     },
     {
-      title: "OH",
-      src: oh,
-      caption: "Hometown: Columbus, OH",
-    },
-    {
-      title: "NY",
-      src: ny,
-      caption: "Available relocations: New York",
-    },
-    {
-      title: "TX",
-      src: tx,
-      caption: "Available relocations: Texas",
-    },
-    {
       title: "France",
       src: france,
       caption: "Additional languages: French",
