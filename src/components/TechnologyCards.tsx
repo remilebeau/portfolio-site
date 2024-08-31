@@ -13,7 +13,7 @@ import git from "../../public/images/git.svg";
 import fastapi from "../../public/images/fastapi.svg";
 import numpy from "../../public/images/numpy.svg";
 import pandas from "../../public/images/pandas.svg";
-import scipy from "../../public/images/scipy.svg";
+import plotnine from "../../public/images/plotnine.png";
 
 export default function TechnologyCards() {
   const cards = [
@@ -67,8 +67,8 @@ export default function TechnologyCards() {
       src: numpy,
     },
     {
-      title: "Scipy",
-      src: scipy,
+      title: "Plotnine",
+      src: plotnine,
     },
     {
       title: "Ubuntu",
