@@ -1,14 +1,15 @@
 import Image from "next/image";
-import lebanon from "../../public/images/lebanon.svg";
-import france from "../../public/images/france.svg";
 import osu from "../../public/images/osu.svg";
+import oh from "../../public/images/oh.svg";
+import ny from "../../public/images/ny.svg";
+import tx from "../../public/images/tx.svg";
 
 export default function AboutCards() {
   const cards: AboutCard[] = [
     {
-      title: "Lebanon",
-      src: lebanon,
-      caption: "Lebanese ethnicity",
+      title: "OH",
+      src: oh,
+      caption: "Hometown: Columbus, OH",
     },
     {
       title: "OSU",
@@ -17,9 +18,14 @@ export default function AboutCards() {
         "Bachelor of Science in Business Administration, Summa Cum Laude",
     },
     {
-      title: "France",
-      src: france,
-      caption: "Additional languages: French",
+      title: "NY",
+      src: ny,
+      caption: "Available relocations: New York",
+    },
+    {
+      title: "TX",
+      src: tx,
+      caption: "Available relocations: Texas",
     },
   ];
 
@@ -29,7 +35,7 @@ export default function AboutCards() {
       className="flex flex-col items-center justify-center rounded-xl border-4 border-border bg-card p-4"
     >
       <Image src={card.src} alt={card.title} className="rounded-lg" />
-      <p className="p-4 text-center text-2xl font-bold">{card.caption}</p>
+      <p className="p-4 text-center text-xl">{card.caption}</p>
     </section>
   ));
 

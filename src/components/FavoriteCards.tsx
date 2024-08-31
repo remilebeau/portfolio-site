@@ -1,17 +1,7 @@
 export default function FavoriteCards() {
   const cards: FavoriteCard[] = [
     {
-      title: "Video Games",
-      content: [
-        "Legend of Zelda: Ocarina of Time",
-        "Witcher 3: Wild Hunt",
-        "Legend of Zelda: Majora's Mask",
-        "Legend of Zelda: Twilight Princess",
-        "Super Mario 64",
-      ],
-    },
-    {
-      title: "Video Game Publishers",
+      title: "Game Developers",
       content: ["Nintendo", "Capcom", "CD Projekt Red", "Sony", "Square Enix"],
     },
     {
@@ -29,9 +19,9 @@ export default function FavoriteCards() {
       content: [
         "Michael Jackson",
         "Def Leppard",
-        "Queen",
         "Metallica",
         "Van Halen",
+        "Queen",
       ],
     },
   ];
@@ -40,12 +30,10 @@ export default function FavoriteCards() {
       key={card.title}
       className="flex flex-col rounded-xl border-4 border-border bg-card p-4"
     >
-      <header>
-        <h2 className="mb-2 text-center text-3xl text-primary">{card.title}</h2>
-      </header>
+      <h2 className="mb-2 text-center text-3xl text-primary">{card.title}</h2>
       <section className="flex flex-col gap-4">
         {card.content.map((line) => (
-          <p className="text-2xl font-bold" key={line}>
+          <p className="text-xl" key={line}>
             {line}
           </p>
         ))}

@@ -7,16 +7,14 @@ export default function BackgroundCards() {
         "Managerial accounting",
         "Risk management",
         "Personal finance",
-        "Corporate finance",
       ],
     },
     {
       title: "Business Analytics",
       content: [
-        "Simulation modeling",
+        "Stochastic modeling",
         "Optimization modeling",
         "Predictive modeling",
-        "Data mining",
         "Data analysis",
       ],
     },
@@ -26,12 +24,11 @@ export default function BackgroundCards() {
       key={card.title}
       className="flex flex-col rounded-xl border-4 border-border bg-card p-4"
     >
-      <header>
-        <h2 className="mb-2 text-center text-3xl text-primary">{card.title}</h2>
-      </header>
+      <h2 className="mb-2 text-center text-3xl text-primary">{card.title}</h2>
+
       <section className="flex flex-col gap-4">
         {card.content.map((line) => (
-          <p className="text-2xl font-bold" key={line}>
+          <p className="text-2xl" key={line}>
             {line}
           </p>
         ))}
