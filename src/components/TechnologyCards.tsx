@@ -14,6 +14,7 @@ import fastapi from "../../public/images/fastapi.svg";
 import numpy from "../../public/images/numpy.svg";
 import pandas from "../../public/images/pandas.svg";
 import plotnine from "../../public/images/plotnine.png";
+import jupyter from "../../public/images/jupyter.svg";
 
 export default function TechnologyCards() {
   const cards = [
@@ -55,6 +56,11 @@ export default function TechnologyCards() {
     {
       title: "Fastapi",
       src: fastapi,
+      styling: "dark:invert",
+    },
+    {
+      title: "Jupyter",
+      src: jupyter,
       styling: "dark:invert",
     },
     {
