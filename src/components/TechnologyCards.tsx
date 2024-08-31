@@ -11,6 +11,9 @@ import ubuntu from "../../public/images/ubuntu.svg";
 import docker from "../../public/images/docker.svg";
 import git from "../../public/images/git.svg";
 import fastapi from "../../public/images/fastapi.svg";
+import numpy from "../../public/images/numpy.svg";
+import pandas from "../../public/images/pandas.svg";
+import scipy from "../../public/images/scipy.svg";
 
 export default function TechnologyCards() {
   const cards = [
@@ -54,7 +57,19 @@ export default function TechnologyCards() {
       src: fastapi,
       styling: "dark:invert",
     },
-
+    {
+      title: "Pandas",
+      src: pandas,
+      styling: "dark:invert",
+    },
+    {
+      title: "Numpy",
+      src: numpy,
+    },
+    {
+      title: "Scipy",
+      src: scipy,
+    },
     {
       title: "Ubuntu",
       src: ubuntu,
