@@ -39,30 +39,24 @@ export default function ProjectCards() {
         key={project.title}
         className="flex flex-col gap-4 rounded-xl border-4 border-border bg-card p-4 font-bold"
       >
-        <h2 className="rounded-xl bg-primary p-2 text-3xl text-secondary">
+        <h2 className="rounded-xl bg-primary p-2 text-2xl text-secondary">
           {project.title}
         </h2>
         <p className="text-xl">{project.description}</p>
-        {/* flexbox for buttons */}
-        <section className="flex flex-row justify-evenly gap-8">
-          {/* live button */}
+        {/* flex row for buttons */}
+        <section className="flex flex-row justify-evenly gap-4">
+          {/* live demo button */}
           <ButtonWithLink href={project.live} text="Live Demo" />
           {/* source code button */}
           <ButtonWithLink href={project.sourceCode} text="Source Code" />
-          {/* apiURL button, if it exists */}
-          {project.apiURL && (
-            <ButtonWithLink href={project.apiURL} text="API Docs" />
-          )}
+          {/* apiURL button*/}
+          <ButtonWithLink href={project.apiURL} text="API Docs" />
+          {/* end flexbox */}
         </section>
         <Image className="rounded-xl" src={project.image} alt={project.title} />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
     </section>
   ));
-  return (
-    <>
-      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
-      <section className="flex flex-col gap-4">{renderedProjects}</section>
-    </>
-  );
+  return <section className="flex flex-col gap-4">{renderedProjects}</section>;
 }

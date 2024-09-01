@@ -20,7 +20,7 @@ type ProjectCard = {
   image: any;
   live: string;
   sourceCode: string;
-  apiURL?: string;
+  apiURL: string;
 };
 
 type TechnologyCard = {

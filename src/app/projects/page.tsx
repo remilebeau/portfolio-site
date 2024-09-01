@@ -19,6 +19,7 @@ export default function ProjectPage() {
         </a>
         . Please allow up to 60 seconds for the first server request.
       </p>
+      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
       <ProjectCards />
     </main>
   );
