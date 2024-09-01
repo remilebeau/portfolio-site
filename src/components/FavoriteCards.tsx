@@ -15,6 +15,16 @@ export default function FavoriteCards() {
       ],
     },
     {
+      title: "TV Shows",
+      content: [
+        "The Sopranos",
+        "Seinfeld",
+        "Married With Children",
+        "Batman: The Animated Series",
+        "Dragon Ball Z",
+      ],
+    },
+    {
       title: "Music",
       content: [
         "Michael Jackson",
