@@ -95,7 +95,13 @@ export default function TechnologyCards() {
       key={card.title}
       className="flex flex-col items-center justify-center rounded-xl border-4 border-border bg-card p-4"
     >
-      <Image src={card.src} alt={card.title} className={card.styling} />
+      <Image
+        src={card.src}
+        alt={card.title}
+        className={card.styling}
+        width={400}
+        height={400}
+      />
     </section>
   ));
 

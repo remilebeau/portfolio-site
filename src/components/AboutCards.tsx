@@ -34,7 +34,13 @@ export default function AboutCards() {
       key={card.title}
       className="flex flex-col items-center justify-center rounded-xl border-4 border-border bg-card p-4"
     >
-      <Image src={card.src} alt={card.title} className="rounded-lg" />
+      <Image
+        src={card.src}
+        alt={card.title}
+        className="rounded-lg"
+        width={400}
+        height={400}
+      />
       <p className="p-4 text-center text-xl">{card.caption}</p>
     </section>
   ));
