@@ -3,6 +3,8 @@ import js from "../../public/images/js.svg";
 import ts from "../../public/images/ts.svg";
 import python from "../../public/images/python.svg";
 import nodejs from "../../public/images/nodejs.svg";
+import nestjs from "../../public/images/nestjs.svg";
+import mongodb from "../../public/images/mongodb.svg";
 import react from "../../public/images/react.svg";
 import nextjs from "../../public/images/nextjs.svg";
 import tailwind from "../../public/images/tailwind.svg";
@@ -49,6 +51,15 @@ export default function TechnologyCards() {
       title: "Node.js",
       src: nodejs,
     },
+    {
+      title: "NestJS",
+      src: nestjs,
+    },
+    {
+      title: "MongoDB",
+      src: mongodb,
+    },
+
     {
       title: "Django",
       src: django,
