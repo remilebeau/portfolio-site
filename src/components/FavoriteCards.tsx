@@ -44,12 +44,14 @@ export default function FavoriteCards() {
   const renderedFavorites = cards.map((card) => (
     <section
       key={card.title}
-      className="flex flex-col rounded-xl border-4 border-border bg-card p-4"
+      className="flex flex-col rounded-xl border-4 border-border bg-card"
     >
-      <h2 className="mb-2 text-center text-3xl text-accent">{card.title}</h2>
-      <section className="flex flex-col gap-4">
+      <h2 className="rounded-t-lg bg-primary py-1 text-center text-3xl text-secondary">
+        {card.title}
+      </h2>
+      <section className="flex flex-col">
         {card.content.map((line) => (
-          <p className="text-xl" key={line}>
+          <p className="p-2 text-xl" key={line}>
             {line}
           </p>
         ))}
