@@ -1,8 +1,8 @@
 import Image from "next/image";
 import osu from "../../public/images/osu.svg";
 import oh from "../../public/images/oh.svg";
-import ny from "../../public/images/ny.svg";
-import tx from "../../public/images/tx.svg";
+// import ny from "../../public/images/ny.svg";
+// import tx from "../../public/images/tx.svg";
 
 export default function AboutCards() {
   const cards: AboutCard[] = [
@@ -17,16 +17,16 @@ export default function AboutCards() {
       caption:
         "Bachelor of Science in Business Administration, Summa Cum Laude",
     },
-    {
-      title: "NY",
-      src: ny,
-      caption: "Available relocations: New York",
-    },
-    {
-      title: "TX",
-      src: tx,
-      caption: "Available relocations: Texas",
-    },
+    // {
+    //   title: "NY",
+    //   src: ny,
+    //   caption: "Available relocations: New York",
+    // },
+    // {
+    //   title: "TX",
+    //   src: tx,
+    //   caption: "Available relocations: Texas",
+    // },
   ];
 
   const renderedCards = cards.map((card) => (

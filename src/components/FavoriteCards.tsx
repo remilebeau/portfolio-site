@@ -2,7 +2,13 @@ export default function FavoriteCards() {
   const cards: FavoriteCard[] = [
     {
       title: "Game Developers",
-      content: ["Nintendo", "Capcom", "CD Projekt Red", "Sony", "Square Enix"],
+      content: [
+        "Nintendo",
+        "Capcom",
+        "CD Projekt Red",
+        "Blizzard Entertainment",
+        "Ubisoft",
+      ],
     },
     {
       title: "Movies",

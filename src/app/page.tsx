@@ -10,13 +10,12 @@ export default function HomePage() {
         Hello and welcome. I&apos;m Wes.
       </h1>
       <p className="text-3xl">
-        A full-stack web developer with a background in finance and business
-        analytics.
+        A software engineer with a background in finance and business analytics.
       </p>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
       {/* business background section */}
       <h2 className="rounded-xl bg-primary p-2 text-center text-4xl font-bold text-secondary">
-        My Business Background
+        Business Background
       </h2>
       <BackgroundCards />
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />

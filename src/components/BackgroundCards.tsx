@@ -5,8 +5,8 @@ export default function BackgroundCards() {
       content: [
         "Financial accounting",
         "Managerial accounting",
-        "Risk management",
         "Personal finance",
+        "Financial planning",
       ],
     },
     {
@@ -15,7 +15,7 @@ export default function BackgroundCards() {
         "Stochastic modeling",
         "Optimization modeling",
         "Predictive modeling",
-        "Data analysis",
+        "Risk management",
       ],
     },
   ];
