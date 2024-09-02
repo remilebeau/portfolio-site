@@ -1,6 +1,6 @@
 import AboutCards from "@/components/AboutCards";
 import FavoriteCards from "@/components/FavoriteCards";
-import BackgroundCards from "@/components/BackgroundCards";
+// import BackgroundCards from "@/components/BackgroundCards";
 
 export default function HomePage() {
   return (
@@ -10,15 +10,16 @@ export default function HomePage() {
         Hello and welcome. I&apos;m Wes.
       </h1>
       <p className="text-3xl">
-        A software engineer with a background in finance and business analytics.
+        A software engineer with a experience in financial planning, healthcare,
+        and business analytics.
       </p>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
       {/* business background section */}
-      <h2 className="rounded-xl bg-primary p-2 text-center text-4xl font-bold text-secondary">
+      {/* <h2 className="rounded-xl bg-primary p-2 text-center text-4xl font-bold text-secondary">
         Business Background
       </h2>
       <BackgroundCards />
-      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
+      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" /> */}
       {/* about section */}
       <h2 className="rounded-xl bg-primary p-2 text-center text-4xl font-bold text-secondary">
         About
