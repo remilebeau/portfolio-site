@@ -10,8 +10,8 @@ export default function HomePage() {
         Hello and welcome. I&apos;m Wes.
       </h1>
       <p className="text-3xl">
-        A software engineer with a experience in financial planning, healthcare,
-        and business analytics.
+        A software engineer experienced in financial planning, healthcare, and
+        business analytics.
       </p>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
       {/* business background section */}
