@@ -22,8 +22,10 @@ export default function HomePage() {
         <p className="text-3xl">
           The full-stack projects are hosted on the free tier of{" "}
           <a
-            className=" text-primary hover:underline"
+            className="font-bold text-blue-500 hover:opacity-90"
             href="https://render.com"
+            rel="noreferrer"
+            target="_blank"
           >
             Render
           </a>
