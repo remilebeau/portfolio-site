@@ -17,6 +17,14 @@ import numpy from "../../public/images/numpy.svg";
 import pandas from "../../public/images/pandas.svg";
 import plotnine from "../../public/images/plotnine.png";
 import jupyter from "../../public/images/jupyter.svg";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function TechnologyCards() {
   const cards: TechnologyCard[] = [
@@ -44,7 +52,7 @@ export default function TechnologyCards() {
       styling: "dark:invert",
     },
     {
-      title: "Tailwind",
+      title: "Tailwind CSS",
       src: tailwind,
     },
     {
@@ -65,7 +73,7 @@ export default function TechnologyCards() {
       src: django,
     },
     {
-      title: "Fastapi",
+      title: "FastAPI",
       src: fastapi,
       styling: "dark:invert",
     },
@@ -102,18 +110,23 @@ export default function TechnologyCards() {
   ];
 
   const renderedCards = cards.map((card) => (
-    <section
+    <Card
       key={card.title}
-      className="flex flex-col items-center justify-center rounded-xl border-4 border-border bg-card p-4"
+      className="flex flex-col items-center justify-evenly"
     >
-      <Image
-        src={card.src}
-        alt={card.title}
-        className={card.styling}
-        width={400}
-        height={400}
-      />
-    </section>
+      <CardHeader>
+        <Image
+          src={card.src}
+          alt={card.title}
+          width={400}
+          height={400}
+          className={card.styling}
+        />
+      </CardHeader>
+      <CardContent>
+        <CardTitle>{card.title}</CardTitle>
+      </CardContent>
+    </Card>
   ));
 
   return (
