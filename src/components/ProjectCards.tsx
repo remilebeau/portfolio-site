@@ -55,7 +55,6 @@ export default function ProjectCards() {
         </section>
         <Image className="rounded-xl" src={project.image} alt={project.title} />
       </section>
-      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
     </section>
   ));
   return <section className="flex flex-col gap-4">{renderedProjects}</section>;

@@ -5,10 +5,10 @@ import { useMediaQuery } from "react-responsive";
 
 export default function Header() {
   const links = [
-    { name: "Wes S", href: "/" },
-    { name: "Technologies", href: "/technologies" },
-    { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
+    { name: "Wes S", href: "#hero" },
+    { name: "Projects", href: "#projects" },
+    { name: "Technologies", href: "#technologies" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
