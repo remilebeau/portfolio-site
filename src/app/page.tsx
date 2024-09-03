@@ -11,8 +11,8 @@ export default function HomePage() {
           Hello and welcome. I&apos;m Wes.
         </h1>
         <p className="text-3xl">
-          A software engineer experienced in financial planning, healthcare, and
-          business analytics.
+          A full-stack web developer with experience in business analytics,
+          financial planning, and healthcare.
         </p>
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
@@ -20,7 +20,7 @@ export default function HomePage() {
       <section id="projects" className="flex scroll-mt-32 flex-col gap-4">
         <h1 className="text-center text-5xl font-bold">Projects</h1>
         <p className="text-3xl">
-          The full-stack projects are hosted on the free tier of{" "}
+          The APIs for these projects are hosted on the free tier of{" "}
           <a
             className="font-bold text-blue-500 hover:opacity-90"
             href="https://render.com"
@@ -29,7 +29,8 @@ export default function HomePage() {
           >
             Render
           </a>
-          . Please allow up to 60 seconds for the first server request.
+          . Therefore, please allow up to 60 seconds for the first server
+          request.
         </p>
         <ProjectCards />
       </section>
