@@ -3,6 +3,14 @@ import techNotes from "../../public/images/techNotes.png";
 import simulation from "../../public/images/simulation.png";
 import cityData from "../../public/images/cityData.png";
 import ButtonWithLink from "./ButtonWithLink";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function ProjectCards() {
   const projects: ProjectCard[] = [
@@ -34,28 +42,20 @@ export default function ProjectCards() {
     },
   ];
   const renderedProjects = projects.map((project) => (
-    <section key={project.title}>
-      <section
-        key={project.title}
-        className="flex flex-col gap-4 rounded-xl border-4 border-border bg-card p-4 font-bold"
-      >
-        <h2 className="rounded-xl bg-primary p-2 text-2xl text-secondary">
-          {project.title}
-        </h2>
-        <p className="text-xl">{project.description}</p>
-        {/* flex row for buttons */}
-        <section className="flex flex-row justify-evenly gap-4">
-          {/* live demo button */}
-          <ButtonWithLink href={project.live} text="Live Demo" />
-          {/* source code button */}
-          <ButtonWithLink href={project.sourceCode} text="Source Code" />
-          {/* apiURL button*/}
-          <ButtonWithLink href={project.apiURL} text="API Docs" />
-          {/* end flexbox */}
-        </section>
+    <Card key={project.title}>
+      <CardHeader>
+        <CardTitle>{project.title}</CardTitle>
+        <CardDescription>{project.description}</CardDescription>
+      </CardHeader>
+      <CardContent>
         <Image className="rounded-xl" src={project.image} alt={project.title} />
-      </section>
-    </section>
+      </CardContent>
+      <CardFooter className="flex flex-row justify-evenly gap-4">
+        <ButtonWithLink href={project.live} text="Live Demo" />
+        <ButtonWithLink href={project.sourceCode} text="Source Code" />
+        <ButtonWithLink href={project.apiURL} text="API Docs" />
+      </CardFooter>
+    </Card>
   ));
   return <section className="flex flex-col gap-4">{renderedProjects}</section>;
 }
