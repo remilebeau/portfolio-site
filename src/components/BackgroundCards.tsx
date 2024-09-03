@@ -35,9 +35,5 @@ export default function BackgroundCards() {
       </section>
     </section>
   ));
-  return (
-    <section className="flex flex-col gap-4 sm:grid sm:grid-cols-2">
-      {renderedCards}
-    </section>
-  );
+  return renderedCards;
 }
