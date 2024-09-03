@@ -7,7 +7,9 @@ export default function HomePage() {
     <main className="mx-auto mt-6 flex max-w-4xl flex-col gap-4 p-4">
       {/* Hero section */}
       <section id="hero" className="flex scroll-mt-32 flex-col gap-4">
-        <h1 className="text-4xl font-bold">Hello and welcome. I&apos;m Wes.</h1>
+        <h1 className="text-center text-5xl font-bold">
+          Hello and welcome. I&apos;m Wes.
+        </h1>
         <p className="text-3xl">
           A software engineer experienced in financial planning, healthcare, and
           business analytics.
@@ -37,7 +39,10 @@ export default function HomePage() {
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
       {/* Contact section */}
-      <section id="contact" className="flex scroll-mt-32 flex-col gap-4">
+      <section
+        id="contact"
+        className="flex min-h-screen scroll-mt-32 flex-col gap-4"
+      >
         <h1 className="text-center text-5xl font-bold">Contact</h1>
         {/* flexbox for GitHub, Email, and Resume buttons */}
         <div className="flex flex-col justify-evenly gap-4 p-4 sm:flex-row">
