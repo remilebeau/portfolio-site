@@ -47,13 +47,13 @@ export default function ProjectCards() {
         <CardTitle>{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>
       </CardHeader>
-      <CardContent>
-        <Image className="rounded-xl" src={project.image} alt={project.title} />
-      </CardContent>
-      <CardFooter className="flex flex-row justify-evenly gap-4">
+      <CardContent className="flex flex-row justify-evenly gap-4">
         <ButtonWithLink href={project.live} text="Live Demo" />
         <ButtonWithLink href={project.sourceCode} text="Source Code" />
         <ButtonWithLink href={project.apiURL} text="API Docs" />
+      </CardContent>
+      <CardFooter>
+        <Image className="rounded-xl" src={project.image} alt={project.title} />
       </CardFooter>
     </Card>
   ));
