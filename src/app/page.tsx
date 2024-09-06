@@ -14,6 +14,7 @@ export default function HomePage() {
           A full-stack web developer with experience in business analytics,
           financial planning, and healthcare.
         </p>
+        <p className="text-3xl">Located in Columbus, Ohio.</p>
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
       {/* PROJECTS SECTION */}
