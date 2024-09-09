@@ -3,6 +3,7 @@ import js from "../../public/images/js.svg";
 import ts from "../../public/images/ts.svg";
 import python from "../../public/images/python.svg";
 import nodejs from "../../public/images/nodejs.svg";
+import ex from "../../public/images/ex.svg";
 import nestjs from "../../public/images/nestjs.svg";
 import mongodb from "../../public/images/mongodb.svg";
 import react from "../../public/images/react.svg";
@@ -47,6 +48,11 @@ export default function TechnologyCards() {
     {
       title: "Node.js",
       src: nodejs,
+    },
+    {
+      title: "Express.js",
+      src: ex,
+      styling: "dark:invert",
     },
     {
       title: "NestJS",
