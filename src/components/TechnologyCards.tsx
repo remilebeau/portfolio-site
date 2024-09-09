@@ -17,7 +17,7 @@ import numpy from "../../public/images/numpy.svg";
 import pandas from "../../public/images/pandas.svg";
 import plotnine from "../../public/images/plotnine.png";
 import jupyter from "../../public/images/jupyter.svg";
-import { Card, CardHeader } from "@/components/ui/card";
+import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 
 export default function TechnologyCards() {
   const cards: TechnologyCard[] = [
@@ -116,6 +116,7 @@ export default function TechnologyCards() {
           className={card.styling}
         />
       </CardHeader>
+      <CardFooter className="text-2xl font-bold">{card.title}</CardFooter>
     </Card>
   ));
 
