@@ -69,11 +69,10 @@ export default function HomePage() {
 
         <h2 className="text-3xl  font-bold">Collaborate?</h2>
         <p className="text-2xl">
-          I am open to discussing job opportunities in software development,
-          finance, or business analytics located in New York, Ohio, or Texas.
+          I am open to discussing job opportunities in web development, finance,
+          or business analytics located in New York, Ohio, or Texas.
         </p>
       </section>
-      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
     </main>
   );
 }

@@ -60,7 +60,6 @@ export default function TechnologyCards() {
       title: "MongoDB",
       src: mongodb,
     },
-
     {
       title: "Django",
       src: django,
