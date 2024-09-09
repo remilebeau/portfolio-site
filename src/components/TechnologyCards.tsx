@@ -88,7 +88,7 @@ export default function TechnologyCards() {
       src: plotnine,
     },
     {
-      title: "Ubuntu",
+      title: "Linux",
       src: ubuntu,
     },
     {
