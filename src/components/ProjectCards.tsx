@@ -17,7 +17,7 @@ export default function ProjectCards() {
     {
       title: "Monte Carlo Simulation",
       description:
-        "Monte Carlo simulations for production planning, marketing, and cash flow",
+        "Monte Carlo simulations for production planning, marketing, and cash flow. Built with Next.js and FastAPI.",
       image: simulation,
       live: "https://remilebeau-simulation.vercel.app/",
       sourceCode: "https://github.com/remilebeau/simulation",
@@ -25,7 +25,8 @@ export default function ProjectCards() {
     },
     {
       title: "CityData",
-      description: "Aggregate common stats from City-Data for any U.S. city",
+      description:
+        "Aggregate common stats from City-Data for any U.S. city. Built with Next.js and FastAPI.",
       image: cityData,
       live: "https://remilebeau-citydata.vercel.app/",
       sourceCode: "https://github.com/remilebeau/citydata",
@@ -34,7 +35,7 @@ export default function ProjectCards() {
     {
       title: "TechNotes",
       description:
-        "Ticket management system with auth. username: testuser password: testpassword",
+        "Ticket management system with auth. Test username: 'testuser'. Test password: 'testpassword'. Built with MongoDB, Express.js, React, and Node.js.",
       image: techNotes,
       live: "https://technotes-op6s.onrender.com",
       sourceCode: "https://github.com/remilebeau/techNotes",
