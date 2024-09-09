@@ -13,10 +13,6 @@ import ubuntu from "../../public/images/ubuntu.svg";
 import docker from "../../public/images/docker.svg";
 import git from "../../public/images/git.svg";
 import fastapi from "../../public/images/fastapi.svg";
-import numpy from "../../public/images/numpy.svg";
-import pandas from "../../public/images/pandas.svg";
-import plotnine from "../../public/images/plotnine.png";
-import jupyter from "../../public/images/jupyter.svg";
 import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 
 export default function TechnologyCards() {
@@ -68,24 +64,6 @@ export default function TechnologyCards() {
       title: "FastAPI",
       src: fastapi,
       styling: "dark:invert",
-    },
-    {
-      title: "Jupyter",
-      src: jupyter,
-      styling: "dark:invert",
-    },
-    {
-      title: "Pandas",
-      src: pandas,
-      styling: "dark:invert",
-    },
-    {
-      title: "Numpy",
-      src: numpy,
-    },
-    {
-      title: "Plotnine",
-      src: plotnine,
     },
     {
       title: "Linux",
