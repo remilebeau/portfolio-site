@@ -44,8 +44,10 @@ export default function ProjectCards() {
   const renderedProjects = projects.map((project) => (
     <Card key={project.title}>
       <CardHeader>
-        <CardTitle>{project.title}</CardTitle>
-        <CardDescription>{project.description}</CardDescription>
+        <CardTitle className="text-2xl">{project.title}</CardTitle>
+        <CardDescription className="text-md">
+          {project.description}
+        </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-row justify-evenly gap-4">
         <ButtonWithLink href={project.live} text="Live Demo" />
