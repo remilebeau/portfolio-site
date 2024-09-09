@@ -15,6 +15,14 @@ export default function HomePage() {
           financial planning, and healthcare.
         </p>
         <p className="text-3xl">Located in Columbus, Ohio.</p>
+        <section className="flex flex-col">
+          <p className="text-3xl">
+            Bachelor of Science in Business Administration
+          </p>
+          <p className="text-lg italic">
+            Finance Specialization, Summa Cum Laude, 2020
+          </p>
+        </section>
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
       {/* PROJECTS SECTION */}
