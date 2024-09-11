@@ -4,11 +4,6 @@ type AboutCard = {
   caption: string;
 };
 
-type BackgroundCard = {
-  title: string;
-  content: string[];
-};
-
 type FavoriteCard = {
   title: string;
   content: string[];
