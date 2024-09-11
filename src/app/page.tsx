@@ -11,14 +11,15 @@ export default function HomePage() {
           Hello and welcome. I&apos;m Wes.
         </h1>
         <p className="text-3xl">
-          A full-stack web developer with experience in business analytics,
-          financial planning, and healthcare.
+          A full-stack web developer with experience in finance, business
+          analytics, and healthcare.
         </p>
         <p className="text-3xl">Located in Columbus, Ohio.</p>
         <section className="flex flex-col">
           <p className="text-3xl">
             Bachelor of Science in Business Administration
           </p>
+          <p className="text-lg italic">The Ohio State University</p>
           <p className="text-lg italic">
             Finance Specialization, Summa Cum Laude, 2020
           </p>
