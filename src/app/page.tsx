@@ -11,8 +11,8 @@ export default function HomePage() {
           Hello and welcome. I&apos;m Wes.
         </h1>
         <p className="text-3xl">
-          A full-stack web developer with a background in finance and business
-          analytics.
+          A full-stack web developer with a background in finance, business
+          analytics, and healthcare.
         </p>
         <p className="text-3xl">Located in Columbus, Ohio.</p>
       </section>
