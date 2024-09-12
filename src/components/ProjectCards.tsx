@@ -45,7 +45,7 @@ export default function ProjectCards() {
   const renderedProjects = projects.map((project) => (
     <Card key={project.title}>
       <CardHeader>
-        <CardTitle className="text-2xl">{project.title}</CardTitle>
+        <CardTitle className="text-center text-3xl">{project.title}</CardTitle>
         <CardDescription className="text-md">
           {project.description}
         </CardDescription>
