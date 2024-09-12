@@ -7,9 +7,9 @@ type Props = {
 
 export default function ButtonWithLink({ href, text }: Props) {
   return (
-    <Button className="w-full">
+    <Button>
       <a
-        className="text-xl font-bold"
+        className="font-bold sm:text-2xl"
         target="_blank"
         rel="noreferrer"
         href={href}
