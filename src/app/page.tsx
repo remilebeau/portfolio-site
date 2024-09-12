@@ -50,12 +50,15 @@ export default function HomePage() {
         <h1 className="text-center text-5xl font-bold">Contact</h1>
         {/* flexbox for GitHub, Email, and Resume buttons */}
         <div className="flex flex-col justify-evenly gap-4 p-4 sm:flex-row">
-          <ButtonWithLink href="https://github.com/remilebeau" text="GitHub" />
           <ButtonWithLink
             href="mailto:remilebeau90@gmail.com"
             text="remilebeau90@gmail.com"
           />
-          <ButtonWithLink href="/wes_s_resume.pdf" text="Resume" />
+          <ButtonWithLink href="/wes_s_resume.pdf" text="Download My Resume" />
+          <ButtonWithLink
+            href="https://github.com/remilebeau"
+            text="Visit My GitHub"
+          />
         </div>
         {/* end flexbox */}
 
