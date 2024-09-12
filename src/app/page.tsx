@@ -1,3 +1,4 @@
+import BackgroundCards from "@/components/BackgroundCards";
 import ButtonWithLink from "@/components/ButtonWithLink";
 import ProjectCards from "@/components/ProjectCards";
 import TechnologyCards from "@/components/TechnologyCards";
@@ -5,7 +6,7 @@ import TechnologyCards from "@/components/TechnologyCards";
 export default function HomePage() {
   return (
     <main className="mx-auto mt-6 flex max-w-4xl flex-col gap-4 p-4">
-      {/* HERO SECTION */}
+      {/* HERO AND BACKGROUND SECTION */}
       <section id="hero" className="flex scroll-mt-32 flex-col gap-4">
         <h1 className="text-center text-5xl font-bold">
           Hello and welcome. I&apos;m Wes.
@@ -15,6 +16,7 @@ export default function HomePage() {
           analytics, and healthcare.
         </p>
         <p className="text-3xl">Located in Columbus, Ohio.</p>
+        <BackgroundCards />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
       {/* PROJECTS SECTION */}
