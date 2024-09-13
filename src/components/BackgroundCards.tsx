@@ -12,7 +12,7 @@ export default function BackgroundCards() {
       <Card>
         <CardHeader>
           <CardTitle className="text-center">Financial Background</CardTitle>
-          <CardDescription>
+          <CardDescription className="font-bold">
             <p className="text-lg">BSBA, Finance Specialization</p>
             <p>
               <i>Summa Cum Laude</i>
