@@ -12,16 +12,15 @@ export default function BackgroundCards() {
       <Card>
         <CardHeader>
           <CardTitle className="text-center">Financial Background</CardTitle>
-          <CardDescription className="text-center text-lg">
-            <p className="font-bold">BSBA, Finance Specialization</p>
-            <p>
-              <i>The Ohio State University</i>
-            </p>
+          <CardDescription>
+            <p className="text-lg">BSBA, Finance Specialization</p>
             <p>
               <i>Summa Cum Laude</i>
             </p>
+            <p>
+              <i>The Ohio State University</i>
+            </p>
           </CardDescription>
-          <CardDescription className="text-center text-lg"></CardDescription>
         </CardHeader>
         <CardContent className="text-lg sm:grid sm:grid-cols-2">
           <p>Financial planning</p>

@@ -99,7 +99,7 @@ export default function TechnologyCards() {
           className={card.styling}
         />
       </CardHeader>
-      <CardFooter className="text-2xl font-bold">{card.title}</CardFooter>
+      <CardFooter className="text-2xl">{card.title}</CardFooter>
     </Card>
   ));
 
