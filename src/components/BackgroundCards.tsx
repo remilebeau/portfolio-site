@@ -8,7 +8,7 @@ import {
 
 export default function BackgroundCards() {
   return (
-    <>
+    <section className="flex flex-col gap-4 sm:flex-row">
       <Card>
         <CardHeader>
           <CardTitle className="text-center">Financial Background</CardTitle>
@@ -45,6 +45,6 @@ export default function BackgroundCards() {
           <p>Risk management</p>
         </CardContent>
       </Card>
-    </>
+    </section>
   );
 }
