@@ -23,10 +23,11 @@ export default function BackgroundCards() {
           </CardDescription>
         </CardHeader>
         <CardContent className="text-lg sm:grid sm:grid-cols-2">
+          <p>Corporate finance</p>
+          <p>Entrepreneurial finance</p>
           <p>Financial planning</p>
+          <p>Financial and managerial accounting</p>
           <p>Investment analysis</p>
-          <p>Financial accounting</p>
-          <p>Managerial accounting</p>
           <p>Risk management</p>
         </CardContent>
       </Card>

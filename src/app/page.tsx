@@ -22,19 +22,6 @@ export default function HomePage() {
       {/* PROJECTS SECTION */}
       <section id="projects" className="flex scroll-mt-32 flex-col gap-4">
         <h1 className="text-center text-5xl font-bold">Projects</h1>
-        <p className="text-3xl">
-          The APIs for these projects are hosted on the free tier of{" "}
-          <a
-            className="font-bold text-blue-500 hover:opacity-90"
-            href="https://render.com"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Render
-          </a>
-          . Therefore, please allow up to 60 seconds for the first server
-          request.
-        </p>
         <ProjectCards />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
@@ -54,7 +41,7 @@ export default function HomePage() {
         <div className="flex flex-col justify-evenly gap-4 p-4 sm:flex-row">
           <ButtonWithLink
             href="mailto:remilebeau90@gmail.com"
-            text="remilebeau90@gmail.com"
+            text="Send Me an Email"
           />
           <ButtonWithLink href="/wes_s_resume.pdf" text="Download My Resume" />
           <ButtonWithLink
