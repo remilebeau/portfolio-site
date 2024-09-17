@@ -46,7 +46,7 @@ export default function ProjectCards() {
     <Card key={project.title}>
       <CardHeader>
         <CardTitle className="text-center text-3xl">{project.title}</CardTitle>
-        <CardDescription className="text-md">
+        <CardDescription className="text-md font-bold">
           {project.description}
         </CardDescription>
       </CardHeader>

@@ -23,7 +23,7 @@ export default function BackgroundCards() {
             </p>
           </CardDescription>
         </CardHeader>
-        <CardContent className="text-lg sm:grid sm:grid-cols-2">
+        <CardContent className="text-lg font-bold sm:grid sm:grid-cols-2">
           <p>Corporate finance</p>
           <p>Entrepreneurial finance</p>
           <p>Financial accounting</p>
@@ -38,7 +38,7 @@ export default function BackgroundCards() {
             Business Analytics Background
           </CardTitle>
         </CardHeader>
-        <CardContent className="text-lg sm:grid sm:grid-cols-2">
+        <CardContent className="text-lg font-bold sm:grid sm:grid-cols-2">
           <p>Stochastic modeling</p>
           <p>Optimization modeling</p>
           <p>Predictive analytics</p>
