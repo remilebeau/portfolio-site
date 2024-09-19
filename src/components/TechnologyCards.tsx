@@ -39,7 +39,7 @@ export default function TechnologyCards() {
     {
       title: "Next.js",
       src: nextjs,
-      styling: "dark:invert",
+      styling: "invert",
     },
     {
       title: "Tailwind CSS",
@@ -52,7 +52,7 @@ export default function TechnologyCards() {
     {
       title: "Express.js",
       src: ex,
-      styling: "dark:invert",
+      styling: "invert",
     },
     {
       title: "NestJS",
@@ -69,7 +69,7 @@ export default function TechnologyCards() {
     {
       title: "FastAPI",
       src: fastapi,
-      styling: "dark:invert",
+      styling: "invert",
     },
     {
       title: "Linux",
