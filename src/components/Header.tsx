@@ -14,7 +14,7 @@ export default function Header() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
-    <header className="sticky top-0 z-10 rounded-b-xl bg-card">
+    <header className="sticky top-0 z-10 rounded-b-xl bg-slate-700">
       {isMobile ? (
         <MobileNavbar links={links} />
       ) : (
