@@ -11,7 +11,7 @@ export default function DesktopNavbar({ links }: Props) {
     </Link>
   ));
   return (
-    <nav className="mx-auto flex max-w-4xl flex-row justify-evenly p-4 text-3xl font-bold text-secondary">
+    <nav className="mx-auto flex max-w-4xl flex-row justify-evenly p-4 text-3xl font-bold">
       {renderedLinks}
     </nav>
   );
