@@ -8,21 +8,21 @@ import {
 
 export default function BackgroundCards() {
   return (
-    <section className="flex flex-col gap-4 sm:flex-row">
+    <section className="flex flex-col gap-4">
       <Card>
         <CardHeader>
-          <CardTitle className="text-center">Financial Background</CardTitle>
-          <CardDescription className="font-bold">
-            <p className="text-lg">BSBA, Finance Specialization</p>
-            <p>
-              <i>Summa Cum Laude</i>
-            </p>
+          <CardTitle className="text-center sm:text-2xl">
+            Financial Background
+          </CardTitle>
+          <CardDescription className="flex flex-col justify-evenly gap-0 text-center text-xl font-bold sm:text-2xl">
+            <p>BSBA, Finance Specialization</p>
+            <p>Summa Cum Laude</p>
             <p>
               <i>The Ohio State University</i>
             </p>
           </CardDescription>
         </CardHeader>
-        <CardContent className="text-lg font-bold sm:grid sm:grid-cols-2">
+        <CardContent className="text-xl font-bold sm:grid sm:grid-cols-2">
           <p>Corporate finance</p>
           <p>Entrepreneurial finance</p>
           <p>Risk management</p>
@@ -36,7 +36,7 @@ export default function BackgroundCards() {
             Business Analytics Background
           </CardTitle>
         </CardHeader>
-        <CardContent className="text-lg font-bold sm:grid sm:grid-cols-2">
+        <CardContent className="text-xl font-bold sm:grid sm:grid-cols-2">
           <p>Data-driven decision-making</p>
           <p>Risk management</p>
           <p>Machine learning</p>

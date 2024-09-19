@@ -8,14 +8,14 @@ export default function HomePage() {
     <main className="mx-auto mt-6 flex max-w-4xl flex-col gap-4 p-4">
       {/* HERO AND BACKGROUND SECTION */}
       <section id="hero" className="flex scroll-mt-32 flex-col gap-4">
-        <h1 className="text-center text-5xl font-bold">
+        <h1 className="text-center text-4xl font-bold">
           Hello and welcome. I&apos;m Wes.
         </h1>
-        <p className="text-3xl">
+        <p className="text-xl">
           A full-stack web developer with a background in finance, business
           analytics, and healthcare.
         </p>
-        <p className="text-3xl">Located in Columbus, Ohio.</p>
+        <p className="text-xl">Located in Columbus, Ohio.</p>
         <BackgroundCards />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
