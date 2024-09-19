@@ -13,8 +13,7 @@ export default function BackgroundCards() {
         <CardHeader>
           <CardTitle className="text-center">Financial Background</CardTitle>
           <CardDescription className="font-bold">
-            <p className="text-lg">BS, Business Administration</p>
-            <p>Finance Specialization</p>
+            <p className="text-lg">BSBA, Finance Specialization</p>
             <p>
               <i>Summa Cum Laude</i>
             </p>
@@ -26,10 +25,9 @@ export default function BackgroundCards() {
         <CardContent className="text-lg font-bold sm:grid sm:grid-cols-2">
           <p>Corporate finance</p>
           <p>Entrepreneurial finance</p>
-          <p>Financial accounting</p>
-          <p>Financial planning</p>
-          <p>Investment analysis</p>
           <p>Risk management</p>
+          <p>Financial planning</p>
+          <p>Financial accounting</p>
         </CardContent>
       </Card>
       <Card>
@@ -39,12 +37,12 @@ export default function BackgroundCards() {
           </CardTitle>
         </CardHeader>
         <CardContent className="text-lg font-bold sm:grid sm:grid-cols-2">
-          <p>Stochastic modeling</p>
-          <p>Optimization modeling</p>
+          <p>Data-driven decision-making</p>
+          <p>Risk management</p>
+          <p>Machine learning</p>
           <p>Predictive analytics</p>
           <p>Data visualization</p>
           <p>Data analysis</p>
-          <p>Risk management</p>
         </CardContent>
       </Card>
     </section>
