@@ -22,20 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={roboto.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <TooltipProvider>
-            <Header />
-            {children}
-            <Footer />
-          </TooltipProvider>
-        </ThemeProvider>
+    <html lang="en">
+      <body className={`bg-slate-900 text-white ${roboto.className}`}>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
