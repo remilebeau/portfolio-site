@@ -38,7 +38,7 @@ export default function HomePage() {
       >
         <h1 className="mb-8 text-center text-5xl font-bold">Contact</h1>
         {/* flexbox for GitHub, Email, and Resume buttons */}
-        <div className="flex flex-col justify-evenly gap-4 p-4 sm:flex-row">
+        <div className="mx-auto flex w-1/2 flex-col gap-8">
           <ButtonWithLink
             href="mailto:remilebeau90@gmail.com"
             text="Send Me an Email"
