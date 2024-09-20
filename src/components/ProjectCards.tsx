@@ -60,5 +60,5 @@ export default function ProjectCards() {
       </CardContent>
     </Card>
   ));
-  return renderedProjects;
+  return <section className="flex flex-col gap-16">{renderedProjects}</section>;
 }
