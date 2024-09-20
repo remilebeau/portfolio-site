@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
-import { ThemeProvider } from "../components/ThemeProvider";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import Footer from "@/components/Footer";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -22,20 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={roboto.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <TooltipProvider>
-            <Header />
-            {children}
-            <Footer />
-          </TooltipProvider>
-        </ThemeProvider>
+    <html lang="en" className="scroll-smooth">
+      <body className={`bg-black text-white ${roboto.className}`}>
+        <Header />
+        {children}
       </body>
     </html>
   );

@@ -1,11 +1,11 @@
-import BackgroundCards from "@/components/BackgroundCards";
+import Background from "@/components/Background";
 import ButtonWithLink from "@/components/ButtonWithLink";
 import ProjectCards from "@/components/ProjectCards";
 import TechnologyCards from "@/components/TechnologyCards";
 
 export default function HomePage() {
   return (
-    <main className="mx-auto mt-6 flex max-w-4xl flex-col gap-4 p-4">
+    <main className="mx-auto mt-6 flex max-w-4xl flex-col gap-4 p-4 text-center">
       {/* HERO AND BACKGROUND SECTION */}
       <section id="hero" className="flex scroll-mt-32 flex-col gap-4">
         <h1 className="text-center text-4xl font-bold">
@@ -16,18 +16,18 @@ export default function HomePage() {
           analytics, and healthcare.
         </p>
         <p className="text-xl">Located in Columbus, Ohio.</p>
-        <BackgroundCards />
+        <Background />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
       {/* PROJECTS SECTION */}
       <section id="projects" className="flex scroll-mt-32 flex-col gap-4">
-        <h1 className="text-center text-5xl font-bold">Projects</h1>
+        <h1 className="mb-8 text-center text-5xl font-bold">Projects</h1>
         <ProjectCards />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
       {/* TECHNOLOGIES SECTION */}
       <section id="technologies" className="flex scroll-mt-32 flex-col gap-4">
-        <h1 className="text-center text-5xl font-bold">Technologies</h1>
+        <h1 className="mb-8 text-center text-5xl font-bold">Technologies</h1>
         <TechnologyCards />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
@@ -36,9 +36,9 @@ export default function HomePage() {
         id="contact"
         className="flex min-h-screen scroll-mt-32 flex-col gap-4"
       >
-        <h1 className="text-center text-5xl font-bold">Contact</h1>
+        <h1 className="mb-8 text-center text-5xl font-bold">Contact</h1>
         {/* flexbox for GitHub, Email, and Resume buttons */}
-        <div className="flex flex-col justify-evenly gap-4 p-4 sm:flex-row">
+        <div className="mx-auto flex w-1/2 flex-col gap-8">
           <ButtonWithLink
             href="mailto:remilebeau90@gmail.com"
             text="Send Me an Email"
@@ -53,13 +53,13 @@ export default function HomePage() {
 
         <h2 className="text-center text-3xl font-bold">Want To...</h2>
 
-        <h2 className="text-3xl font-bold">Connect?</h2>
+        <h2 className="text-3xl font-bold text-teal-700">Connect?</h2>
         <p className="text-2xl">
           I am always interested in meeting new people and expanding my personal
           and professional circles.
         </p>
 
-        <h2 className="text-3xl  font-bold">Collaborate?</h2>
+        <h2 className="text-3xl font-bold text-teal-700">Collaborate?</h2>
         <p className="text-2xl">
           I am open to discussing job opportunities in web development, finance,
           or business analytics located in New York, Ohio, or Texas.

@@ -6,9 +6,11 @@ type Props = {
 
 export default function DesktopNavbar({ links }: Props) {
   const renderedLinks = links.map((link) => (
-    <Link key={link.name} href={link.href}>
-      <p className="hover:opacity-80">{link.name}</p>
-    </Link>
+    <button className="rounded-xl">
+      <Link key={link.name} href={link.href}>
+        <p className="hover:opacity-80">{link.name}</p>
+      </Link>
+    </button>
   ));
   return (
     <nav className="mx-auto flex max-w-4xl flex-row justify-evenly p-4 text-3xl font-bold">

@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 type Props = {
   href: string;
   text: string;
@@ -7,10 +5,10 @@ type Props = {
 
 export default function ButtonWithLink({ href, text }: Props) {
   return (
-    <Button className="font-bold">
+    <button className="rounded-xl bg-teal-700 p-4 font-bold transition-all duration-300 ease-in-out hover:bg-black ">
       <a target="_blank" rel="noreferrer" href={href}>
         {text}
       </a>
-    </Button>
+    </button>
   );
 }
