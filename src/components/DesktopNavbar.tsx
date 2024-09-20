@@ -6,7 +6,7 @@ type Props = {
 
 export default function DesktopNavbar({ links }: Props) {
   const renderedLinks = links.map((link) => (
-    <button className="rounded-xl">
+    <button key={link.name} className="rounded-xl">
       <Link key={link.name} href={link.href}>
         <p className="hover:opacity-80">{link.name}</p>
       </Link>
