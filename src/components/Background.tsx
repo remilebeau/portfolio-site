@@ -3,9 +3,9 @@ export default function BackgroundCards() {
     <>
       <h2 className="text-center text-3xl font-bold">Financial Background</h2>
       <ul className="text-center">
-        <li className="my-2 font-bold text-indigo-300">
-          BSBA, Finance Specialization, Summa Cum Laude, The Ohio State
-          University
+        <li className=" my-2 rounded-xl p-4 text-xl font-bold text-indigo-700">
+          BSBA, Finance Specialization,{" "}
+          <i>Summa Cum Laude, The Ohio State University</i>
         </li>
         <li>Corporate finance</li>
         <li>Entrepreneurial finance</li>

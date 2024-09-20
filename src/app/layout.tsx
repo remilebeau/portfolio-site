@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`bg-slate-900 text-white ${roboto.className}`}>
+      <body className={`bg-black text-white ${roboto.className}`}>
         <Header />
         {children}
       </body>
