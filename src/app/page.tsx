@@ -37,6 +37,19 @@ export default function HomePage() {
         className="flex min-h-screen scroll-mt-32 flex-col gap-4"
       >
         <h1 className="mb-8 text-center text-5xl font-bold">Contact</h1>
+        <div className="mb-4 flex flex-col gap-4">
+          <h2 className="text-center text-3xl font-bold">Want To...</h2>
+          <h2 className="text-3xl font-bold text-teal-700">Connect?</h2>
+          <p className="text-2xl">
+            I am always interested in meeting new people and expanding my
+            personal and professional circles.
+          </p>
+          <h2 className="text-3xl font-bold text-teal-700">Collaborate?</h2>
+          <p className="text-2xl">
+            I am open to discussing job opportunities in web development,
+            finance, or business analytics located in New York, Ohio, or Texas.
+          </p>
+        </div>
         {/* flexbox for GitHub, Email, and Resume buttons */}
         <div className="mx-auto flex w-1/2 flex-col gap-8">
           <ButtonWithLink
@@ -50,20 +63,6 @@ export default function HomePage() {
           />
         </div>
         {/* end flexbox */}
-
-        <h2 className="text-center text-3xl font-bold">Want To...</h2>
-
-        <h2 className="text-3xl font-bold text-teal-700">Connect?</h2>
-        <p className="text-2xl">
-          I am always interested in meeting new people and expanding my personal
-          and professional circles.
-        </p>
-
-        <h2 className="text-3xl font-bold text-teal-700">Collaborate?</h2>
-        <p className="text-2xl">
-          I am open to discussing job opportunities in web development, finance,
-          or business analytics located in New York, Ohio, or Texas.
-        </p>
       </section>
     </main>
   );
