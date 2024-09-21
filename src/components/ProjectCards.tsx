@@ -35,7 +35,7 @@ export default function ProjectCards() {
     {
       title: "TechNotes",
       description:
-        "Ticket management system with auth. Test username: 'testuser'. Test password: 'testpassword'. Built with MongoDB, Express.js, React, and Node.js.",
+        "Ticketing system. Test username: 'testuser'. Test password: 'testpassword'. Built with MongoDB, Express.js, React, and Node.js.",
       image: techNotes,
       live: "https://technotes-op6s.onrender.com",
       sourceCode: "https://github.com/remilebeau/techNotes",
