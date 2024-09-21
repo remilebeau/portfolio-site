@@ -1,4 +1,6 @@
 import Image from "next/image";
+import html from "../../public/images/html.svg";
+import css from "../../public/images/css.svg";
 import js from "../../public/images/js.svg";
 import ts from "../../public/images/ts.svg";
 import python from "../../public/images/python.svg";
@@ -11,10 +13,20 @@ import tailwind from "../../public/images/tailwind.svg";
 import django from "../../public/images/django.svg";
 import ubuntu from "../../public/images/ubuntu.svg";
 import fastapi from "../../public/images/fastapi.svg";
+import pandas from "../../public/images/pandas.svg";
+import numpy from "../../public/images/numpy.svg";
 import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 
 export default function TechnologyCards() {
   const cards: TechnologyCard[] = [
+    {
+      title: "HTML",
+      src: html,
+    },
+    {
+      title: "CSS",
+      src: css,
+    },
     {
       title: "JavaScript",
       src: js,
@@ -67,6 +79,15 @@ export default function TechnologyCards() {
     {
       title: "Linux",
       src: ubuntu,
+    },
+    {
+      title: "Pandas",
+      src: pandas,
+      styling: "invert",
+    },
+    {
+      title: "NumPy",
+      src: numpy,
     },
   ];
 
