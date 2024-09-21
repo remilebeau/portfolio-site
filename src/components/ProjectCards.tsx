@@ -17,7 +17,7 @@ export default function ProjectCards() {
     {
       title: "Monte Carlo Simulation",
       description:
-        "Monte Carlo simulations for production planning, marketing, and cash flow. Built with Next.js and FastAPI.",
+        "Monte Carlo simulation for production planning. Built with Next.js and FastAPI.",
       image: simulation,
       live: "https://remilebeau-simulation.vercel.app/",
       sourceCode: "https://github.com/remilebeau/simulation",
