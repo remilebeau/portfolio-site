@@ -1,4 +1,4 @@
-export default function BackgroundCards() {
+export default function Background() {
   return (
     <>
       <h2 className="text-center text-3xl font-bold">Financial Background</h2>
