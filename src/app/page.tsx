@@ -18,25 +18,31 @@ export default function HomePage() {
         <p className="text-xl">Located in Columbus, Ohio.</p>
         <Background />
       </section>
-      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
+      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-teal-700" />
       {/* PROJECTS SECTION */}
       <section id="projects" className="flex scroll-mt-32 flex-col gap-4">
-        <h1 className="mb-8 text-center text-5xl font-bold">Projects</h1>
+        <h1 className="mb-8 rounded-3xl bg-teal-700 p-2 text-center text-5xl font-bold">
+          Projects
+        </h1>
         <ProjectCards />
       </section>
-      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
+      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-teal-700" />
       {/* TECHNOLOGIES SECTION */}
       <section id="technologies" className="flex scroll-mt-32 flex-col gap-4">
-        <h1 className="mb-8 text-center text-5xl font-bold">Technologies</h1>
+        <h1 className="mb-8 rounded-3xl bg-teal-700 p-2 text-center text-5xl font-bold ">
+          Technologies
+        </h1>
         <TechnologyCards />
       </section>
-      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-primary" />
+      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-teal-700" />
       {/* CONTACT SECTION */}
       <section
         id="contact"
         className="flex min-h-screen scroll-mt-32 flex-col gap-4"
       >
-        <h1 className="mb-8 text-center text-5xl font-bold">Contact</h1>
+        <h1 className="mb-8 rounded-3xl bg-teal-700 p-2 text-center text-5xl font-bold">
+          Contact
+        </h1>
         <div className="mb-4 flex flex-col gap-4">
           <h2 className="text-center text-3xl font-bold">Want To...</h2>
           <h2 className="text-3xl font-bold text-teal-700">Connect?</h2>
