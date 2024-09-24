@@ -1,6 +1,6 @@
 export default function Background() {
   return (
-    <>
+    <section className="flex flex-col gap-4">
       <h2 className="rounded-3xl bg-indigo-700 p-2 text-center text-3xl font-bold ">
         Financial Background
       </h2>
@@ -28,6 +28,6 @@ export default function Background() {
         <li>Data visualization</li>
         <li>Data analysis</li>
       </ul>
-    </>
+    </section>
   );
 }
