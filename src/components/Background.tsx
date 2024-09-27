@@ -6,27 +6,35 @@ export default function Background() {
       </h2>
       <ul className="text-center text-xl text-indigo-700">
         <li className="mb-4 text-2xl font-bold">
-          BSBA, Finance Specialization,{" "}
-          <i>Summa Cum Laude, The Ohio State University</i>
+          BSBA: Finance, <i>Summa Cum Laude, The Ohio State University</i>
         </li>
-        <div className="flex flex-col sm:grid sm:grid-cols-2">
-          <li>Corporate finance</li>
-          <li>Entrepreneurial finance</li>
-          <li>Risk management</li>
-          <li>Financial planning</li>
-          <li>Financial accounting</li>
-        </div>
+        <section className="flex flex-col sm:grid sm:grid-cols-2">
+          <section className="flex flex-col">
+            <li>Financial planning</li>
+            <li>Financial accounting</li>
+            <li>Managerial accounting</li>
+          </section>
+          <section className="flex flex-col">
+            <li>Risk management</li>
+            <li>Corporate finance</li>
+            <li>Entrepreneurial finance</li>
+          </section>
+        </section>
       </ul>
       <h2 className="rounded-3xl bg-red-500 p-2 text-center text-3xl font-bold">
         Business Analytics Background
       </h2>
       <ul className="flex flex-col text-center text-xl text-red-500 sm:grid sm:grid-cols-2">
-        <li>Data-driven decision-making</li>
-        <li>Risk management</li>
-        <li>Machine learning</li>
-        <li>Predictive analytics</li>
-        <li>Data visualization</li>
-        <li>Data analysis</li>
+        <section className="flex flex-col">
+          <li>Data-driven decision-making</li>
+          <li>Machine learning</li>
+          <li>Data visualization</li>
+        </section>
+        <section className="flex flex-col">
+          <li>Predictive modeling</li>
+          <li>Simulation</li>
+          <li>Optimization</li>
+        </section>
       </ul>
     </section>
   );
