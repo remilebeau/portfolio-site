@@ -32,8 +32,8 @@ export default function Background() {
         </section>
         <section className="flex flex-col">
           <li>Predictive modeling</li>
-          <li>Simulation</li>
-          <li>Optimization</li>
+          <li>Stochastic modeling</li>
+          <li>Optimization modeling</li>
         </section>
       </ul>
     </section>
