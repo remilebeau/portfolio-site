@@ -10,14 +10,12 @@ export default function Background() {
         </li>
         <section className="flex flex-col sm:grid sm:grid-cols-2">
           <section className="flex flex-col">
-            <li>Financial planning</li>
-            <li>Financial accounting</li>
-            <li>Managerial accounting</li>
+            <li>Financial analysis</li>
+            <li>Investment analysis</li>
           </section>
           <section className="flex flex-col">
+            <li>Financial planning</li>
             <li>Risk management</li>
-            <li>Corporate finance</li>
-            <li>Entrepreneurial finance</li>
           </section>
         </section>
       </ul>
@@ -27,8 +25,8 @@ export default function Background() {
       <ul className="flex flex-col text-center text-xl text-red-500 sm:grid sm:grid-cols-2">
         <section className="flex flex-col">
           <li>Data-driven decision-making</li>
-          <li>Machine learning</li>
-          <li>Data visualization</li>
+          <li>Map business scenarios to math models</li>
+          <li>Solve business problems with data</li>
         </section>
         <section className="flex flex-col">
           <li>Predictive modeling</li>
