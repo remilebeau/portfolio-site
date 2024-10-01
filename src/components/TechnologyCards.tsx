@@ -13,6 +13,7 @@ import ubuntu from "../../public/images/ubuntu.svg";
 import fastapi from "../../public/images/fastapi.svg";
 import pandas from "../../public/images/pandas.svg";
 import numpy from "../../public/images/numpy.svg";
+import scikitlearn from "../../public/images/scikitlearn.svg";
 import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 
 export default function TechnologyCards() {
@@ -78,6 +79,11 @@ export default function TechnologyCards() {
     {
       title: "NumPy",
       src: numpy,
+    },
+    {
+      title: "SciKit-Learn",
+      src: scikitlearn,
+      styling: "invert",
     },
   ];
 
