@@ -25,11 +25,9 @@ export default function Background() {
       <ul className="flex flex-col text-center text-xl text-red-500 sm:grid sm:grid-cols-2">
         <section className="flex flex-col">
           <li>Data-driven decision-making</li>
-          <li>Map business scenarios to math models</li>
-          <li>Solve business problems with data</li>
+          <li>Predictive modeling</li>
         </section>
         <section className="flex flex-col">
-          <li>Predictive modeling</li>
           <li>Stochastic modeling</li>
           <li>Optimization modeling</li>
         </section>
