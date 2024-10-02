@@ -12,8 +12,8 @@ export default function HomePage() {
           Hello and welcome. I&apos;m Wes.
         </h1>
         <p className="text-xl">
-          A full-stack web developer with a background in finance and business
-          analytics.
+          A full-stack web developer with a background in finance, business
+          analytics, and healthcare.
         </p>
         <p className="text-xl">Located in Columbus, Ohio.</p>
         <Background />
@@ -53,7 +53,8 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold text-teal-700">Collaborate?</h2>
           <p className="text-2xl">
             I am open to discussing job opportunities in web development,
-            business analytics, or finance that are located in Ohio or New York.
+            business analytics, or finance that are located in Columbus, OH or
+            Buffalo, NY.
           </p>
         </section>
         {/* flexbox for GitHub, Email, and Resume buttons */}
