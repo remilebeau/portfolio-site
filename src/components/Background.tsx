@@ -6,7 +6,10 @@ export default function Background() {
       </h2>
       <ul className="text-center text-xl text-indigo-700">
         <li className="mb-4 text-2xl font-bold">
-          BSBA: Finance, <i>Summa Cum Laude, The Ohio State University</i>
+          <p>Bachelor of Science, Business Administration: Finance</p>
+          <p>
+            <i>Summa Cum Laude, The Ohio State University</i>
+          </p>
         </li>
         <section className="flex flex-col sm:grid sm:grid-cols-2">
           <section className="flex flex-col">
@@ -25,7 +28,7 @@ export default function Background() {
       <ul className="flex flex-col text-center text-xl text-red-500 sm:grid sm:grid-cols-2">
         <section className="flex flex-col">
           <li>Data-driven decision-making</li>
-          <li>Predictive modeling</li>
+          <li>Cluster analysis</li>
         </section>
         <section className="flex flex-col">
           <li>Stochastic modeling</li>
