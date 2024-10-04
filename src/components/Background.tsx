@@ -28,10 +28,10 @@ export default function Background() {
       <ul className="flex flex-col text-center text-xl text-red-500 sm:grid sm:grid-cols-2">
         <section className="flex flex-col">
           <li>Data-driven decision-making</li>
-          <li>Cluster analysis</li>
+          <li>Machine learning</li>
         </section>
         <section className="flex flex-col">
-          <li>Stochastic modeling</li>
+          <li>Simulation modeling</li>
           <li>Optimization modeling</li>
         </section>
       </ul>
