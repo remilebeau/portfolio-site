@@ -2,7 +2,7 @@ import Image from "next/image";
 import excel from "../../public/images/excel.svg";
 import python from "../../public/images/python.svg";
 import { Card, CardFooter, CardHeader } from "./ui/card";
-export default function Finance() {
+export default function Background() {
   const cards = [
     {
       title: "Excel",
