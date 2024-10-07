@@ -1,6 +1,5 @@
-import BusinessAnalytics from "@/components/BusinessAnalytics";
 import ButtonWithLink from "@/components/ButtonWithLink";
-import Finance from "@/components/Finance";
+import Background from "@/components/Background";
 import ProjectCards from "@/components/ProjectCards";
 import TechnologyCards from "@/components/TechnologyCards";
 
@@ -13,12 +12,10 @@ export default function HomePage() {
           Hello and welcome. I&apos;m Wes.
         </h1>
         <p className="text-xl">
-          A full-stack web developer with a background in finance, business
-          analytics, and healthcare.
+          A full-stack web developer with a background in financial analysis.
         </p>
         <p className="text-xl">Located in Columbus, Ohio.</p>
-        <Finance />
-        <BusinessAnalytics />
+        <Background />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-teal-700" />
       {/* PROJECTS SECTION */}

@@ -7,10 +7,6 @@ import react from "../../public/images/react.svg";
 import nextjs from "../../public/images/nextjs.svg";
 import django from "../../public/images/django.svg";
 import fastapi from "../../public/images/fastapi.svg";
-import pandas from "../../public/images/pandas.svg";
-import numpy from "../../public/images/numpy.svg";
-import scikitlearn from "../../public/images/scikitlearn.svg";
-import excel from "../../public/images/excel.svg";
 import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 
 export default function TechnologyCards() {
@@ -49,24 +45,6 @@ export default function TechnologyCards() {
     {
       title: "FastAPI",
       src: fastapi,
-      styling: "invert",
-    },
-    {
-      title: "Excel",
-      src: excel,
-    },
-    {
-      title: "Pandas",
-      src: pandas,
-      styling: "invert",
-    },
-    {
-      title: "NumPy",
-      src: numpy,
-    },
-    {
-      title: "SciKit-Learn",
-      src: scikitlearn,
       styling: "invert",
     },
   ];
