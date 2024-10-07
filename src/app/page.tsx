@@ -1,5 +1,6 @@
-import Background from "@/components/Background";
+import BusinessAnalytics from "@/components/BusinessAnalytics";
 import ButtonWithLink from "@/components/ButtonWithLink";
+import Finance from "@/components/Finance";
 import ProjectCards from "@/components/ProjectCards";
 import TechnologyCards from "@/components/TechnologyCards";
 
@@ -16,7 +17,8 @@ export default function HomePage() {
           analytics, and healthcare.
         </p>
         <p className="text-xl">Located in Columbus, Ohio.</p>
-        <Background />
+        <Finance />
+        <BusinessAnalytics />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-teal-700" />
       {/* PROJECTS SECTION */}
