@@ -3,17 +3,14 @@ import js from "../../public/images/js.svg";
 import ts from "../../public/images/ts.svg";
 import python from "../../public/images/python.svg";
 import nodejs from "../../public/images/nodejs.svg";
-import ex from "../../public/images/ex.svg";
-import nestjs from "../../public/images/nestjs.svg";
 import react from "../../public/images/react.svg";
 import nextjs from "../../public/images/nextjs.svg";
-import tailwind from "../../public/images/tailwind.svg";
 import django from "../../public/images/django.svg";
-import ubuntu from "../../public/images/ubuntu.svg";
 import fastapi from "../../public/images/fastapi.svg";
 import pandas from "../../public/images/pandas.svg";
 import numpy from "../../public/images/numpy.svg";
 import scikitlearn from "../../public/images/scikitlearn.svg";
+import excel from "../../public/images/excel.svg";
 import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 
 export default function TechnologyCards() {
@@ -42,21 +39,8 @@ export default function TechnologyCards() {
       styling: "invert",
     },
     {
-      title: "Tailwind CSS",
-      src: tailwind,
-    },
-    {
       title: "Node.js",
       src: nodejs,
-    },
-    {
-      title: "Express.js",
-      src: ex,
-      styling: "invert",
-    },
-    {
-      title: "NestJS",
-      src: nestjs,
     },
     {
       title: "Django",
@@ -68,8 +52,8 @@ export default function TechnologyCards() {
       styling: "invert",
     },
     {
-      title: "Linux",
-      src: ubuntu,
+      title: "Excel",
+      src: excel,
     },
     {
       title: "Pandas",
