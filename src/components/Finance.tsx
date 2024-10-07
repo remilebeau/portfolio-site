@@ -15,10 +15,12 @@ export default function Finance() {
           <section className="flex flex-col">
             <li>Financial analysis</li>
             <li>Investment analysis</li>
+            <li>Risk management</li>
           </section>
           <section className="flex flex-col">
             <li>Financial planning</li>
-            <li>Risk management</li>
+            <li>Financial accounting</li>
+            <li>Managerial accounting</li>
           </section>
         </section>
       </ul>
