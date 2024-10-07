@@ -44,13 +44,6 @@ export default function HomePage() {
           Contact
         </h1>
         <section className="mb-4 flex flex-col gap-4">
-          <h2 className="text-center text-3xl font-bold">Want To...</h2>
-          <h2 className="text-3xl font-bold text-teal-700">Connect?</h2>
-          <p className="text-2xl">
-            I am always interested in expanding my personal and professional
-            circles.
-          </p>
-          <h2 className="text-3xl font-bold text-teal-700">Collaborate?</h2>
           <p className="text-2xl">
             I am open to discussing job opportunities in web development,
             finance, or business analytics.
