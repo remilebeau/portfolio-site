@@ -36,16 +36,20 @@ export default function Finance() {
         </p>
       </h2>
       <ul className="flex flex-col text-center text-xl sm:grid sm:grid-cols-2">
-        <li>Data-driven decision-making</li>
-        <li>Expense analysis</li>
-        <li>Financial planning</li>
-        <li>Financial accounting</li>
-        <li>Investment analysis</li>
-        <li>Machine learning</li>
-        <li>Managerial accounting</li>
-        <li>Optimization modeling</li>
-        <li>Risk management</li>
-        <li>Simulation modeling</li>
+        <section className="flex flex-col">
+          <li>Data-driven decision-making</li>
+          <li>Expense analysis</li>
+          <li>Financial planning</li>
+          <li>Financial accounting</li>
+          <li>Investment analysis</li>
+        </section>
+        <section className="flex flex-col">
+          <li>Machine learning</li>
+          <li>Managerial accounting</li>
+          <li>Optimization modeling</li>
+          <li>Risk management</li>
+          <li>Simulation modeling</li>
+        </section>
       </ul>
       <ul className="flex flex-col items-center gap-4 sm:grid sm:grid-cols-2">
         {renderedCards}
