@@ -5,6 +5,7 @@ import python from "../../public/images/python.svg";
 import nodejs from "../../public/images/nodejs.svg";
 import react from "../../public/images/react.svg";
 import nextjs from "../../public/images/nextjs.svg";
+import tailwind from "../../public/images/tailwind.svg";
 import django from "../../public/images/django.svg";
 import fastapi from "../../public/images/fastapi.svg";
 import { Card, CardFooter, CardHeader } from "@/components/ui/card";
@@ -35,6 +36,10 @@ export default function TechnologyCards() {
       styling: "invert",
     },
     {
+      title: "Tailwind CSS",
+      src: tailwind,
+    },
+    {
       title: "Node.js",
       src: nodejs,
     },
@@ -52,7 +57,7 @@ export default function TechnologyCards() {
   const renderedCards = cards.map((card) => (
     <Card
       key={card.title}
-      className="flex flex-col items-center justify-evenly"
+      className="flex flex-col items-center justify-evenly border-none"
     >
       <CardHeader>
         <Image

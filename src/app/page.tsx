@@ -23,7 +23,7 @@ export default function HomePage() {
 
       <section id="technologies" className="flex scroll-mt-32 flex-col gap-4">
         <h1 className="mb-8 rounded-3xl bg-teal-700 p-2 text-center text-5xl font-bold ">
-          Technologies
+          Web Development Technologies
         </h1>
         <TechnologyCards />
       </section>
