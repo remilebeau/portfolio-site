@@ -1,8 +1,6 @@
 import Image from "next/image";
-import pandas from "../../public/images/pandas.svg";
-import numpy from "../../public/images/numpy.svg";
-import scikitlearn from "../../public/images/scikitlearn.svg";
 import excel from "../../public/images/excel.svg";
+import python from "../../public/images/python.svg";
 import { Card, CardFooter, CardHeader } from "./ui/card";
 export default function Finance() {
   const cards = [
@@ -11,18 +9,8 @@ export default function Finance() {
       src: excel,
     },
     {
-      title: "Pandas",
-      src: pandas,
-      styling: "invert",
-    },
-    {
-      title: "NumPy",
-      src: numpy,
-    },
-    {
-      title: "SciKit-Learn",
-      src: scikitlearn,
-      styling: "invert",
+      title: "Python",
+      src: python,
     },
   ];
   const renderedCards = cards.map((card) => (
@@ -31,13 +19,7 @@ export default function Finance() {
       className="flex flex-col items-center justify-evenly border-none"
     >
       <CardHeader>
-        <Image
-          src={card.src}
-          alt={card.title}
-          width={200}
-          height={200}
-          className={card.styling}
-        />
+        <Image src={card.src} alt={card.title} width={200} height={200} />
       </CardHeader>
       <CardFooter className="text-2xl font-bold">{card.title}</CardFooter>
     </Card>
@@ -65,7 +47,7 @@ export default function Finance() {
         <li>Risk management</li>
         <li>Simulation modeling</li>
       </ul>
-      <ul className="flex flex-col gap-4 p-4 sm:grid sm:grid-cols-2">
+      <ul className="flex flex-col items-center gap-4 sm:grid sm:grid-cols-2">
         {renderedCards}
       </ul>
     </section>

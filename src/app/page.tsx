@@ -44,8 +44,8 @@ export default function HomePage() {
         </h1>
         <section className="mb-4 flex flex-col gap-4">
           <p className="text-2xl">
-            I am open to discussing job opportunities in web development,
-            finance, or business analytics.
+            I am open to discussing job opportunities in web development or
+            financial analysis located in Ohio or New York.
           </p>
         </section>
         {/* flexbox for GitHub, Email, and Resume buttons */}
