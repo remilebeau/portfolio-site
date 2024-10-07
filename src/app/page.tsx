@@ -53,8 +53,7 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold text-teal-700">Collaborate?</h2>
           <p className="text-2xl">
             I am open to discussing job opportunities in web development,
-            business analytics, or finance that are located in Columbus, OH or
-            Buffalo, NY.
+            finance, or business analytics.
           </p>
         </section>
         {/* flexbox for GitHub, Email, and Resume buttons */}
