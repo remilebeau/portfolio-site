@@ -18,15 +18,9 @@ export default function HomePage() {
         <Background />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-teal-700" />
-      {/* PROJECTS SECTION */}
-      <section id="projects" className="flex scroll-mt-32 flex-col gap-4">
-        <h1 className="mb-8 rounded-3xl bg-teal-700 p-2 text-center text-5xl font-bold">
-          Projects
-        </h1>
-        <ProjectCards />
-      </section>
-      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-teal-700" />
+
       {/* TECHNOLOGIES SECTION */}
+
       <section id="technologies" className="flex scroll-mt-32 flex-col gap-4">
         <h1 className="mb-8 rounded-3xl bg-teal-700 p-2 text-center text-5xl font-bold ">
           Technologies
@@ -34,7 +28,19 @@ export default function HomePage() {
         <TechnologyCards />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-teal-700" />
+
+      {/* PROJECTS SECTION */}
+
+      <section id="projects" className="flex scroll-mt-32 flex-col gap-4">
+        <h1 className="mb-8 rounded-3xl bg-teal-700 p-2 text-center text-5xl font-bold">
+          Projects
+        </h1>
+        <ProjectCards />
+      </section>
+      <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-teal-700" />
+
       {/* CONTACT SECTION */}
+
       <section
         id="contact"
         className="flex min-h-screen scroll-mt-32 flex-col gap-4"

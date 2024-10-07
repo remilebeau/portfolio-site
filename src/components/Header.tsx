@@ -6,8 +6,8 @@ import { useMediaQuery } from "react-responsive";
 export default function Header() {
   const links = [
     { name: "Wes S", href: "#hero" },
-    { name: "Projects", href: "#projects" },
     { name: "Technologies", href: "#technologies" },
+    { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
 
