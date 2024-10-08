@@ -1,5 +1,5 @@
 import ButtonWithLink from "@/components/ButtonWithLink";
-import Background from "@/components/Background";
+import FinanceBackground from "@/components/FinanceBackground";
 import ProjectCards from "@/components/ProjectCards";
 import TechnologyCards from "@/components/TechnologyCards";
 
@@ -15,7 +15,7 @@ export default function HomePage() {
           A full-stack web developer experienced in financial analysis.
         </p>
         <p className="text-xl">Located in Columbus, Ohio.</p>
-        <Background />
+        <FinanceBackground />
       </section>
       <hr className="mx-auto my-8 w-1/2 rounded-xl border-4 border-teal-700" />
 
