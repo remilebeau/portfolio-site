@@ -12,7 +12,7 @@ export default function HomePage() {
           Hello and welcome. I&apos;m Wes.
         </h1>
         <p className="text-xl">
-          A full-stack web developer with a background in financial analysis.
+          A full-stack web developer experienced in financial analysis.
         </p>
         <p className="text-xl">Located in Columbus, Ohio.</p>
         <Background />
