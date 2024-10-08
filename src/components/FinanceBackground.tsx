@@ -39,8 +39,8 @@ export default function FinanceBackground() {
         <section className="flex flex-col">
           <li>Data-driven decision-making</li>
           <li>Expense analysis</li>
-          <li>Financial planning</li>
           <li>Financial accounting</li>
+          <li>Financial planning</li>
           <li>Investment analysis</li>
         </section>
         <section className="flex flex-col">
